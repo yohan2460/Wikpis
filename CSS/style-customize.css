@@ -1,0 +1,385 @@
+:root {
+    --main-color: #33ADB9;
+    --main-font: sans-serif;
+    --border-box: 1px solid black;
+    --font-color: #63737D;
+    --color-orange: #FF9300;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background-color: var(--main-color);
+    padding-bottom: 0%;
+}
+
+
+/*======Side Bar==============*/
+
+.sideBar {
+    margin-top: 6%;
+    padding-left: 3%;
+    margin-right: 1%;
+}
+
+.sideBarContent {
+    width: 160px;
+    height: 540px;
+    position: relative;
+}
+
+.sideBar_fillingBar {
+    width: 8px;
+    height: 500px;
+    margin-top: 3px;
+    margin-left: 26.5px;
+    position: absolute;
+    z-index: 1;
+    background-image: linear-gradient(to right, #E5E5E5, #CBCBCB);
+    display: flex;
+    justify-content: center;
+}
+
+.sideBar_progress {
+    width: 3px;
+    height: 350px;
+    position: absolute;
+    background-color: var(--color-orange);
+}
+
+.iconsContainer {
+    width: 73px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+}
+
+.sideBar_icon {
+    width: 63px;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    border-radius: 50%;
+    background-image: radial-gradient(circle, #E5E5E5, #CBCBCB);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.paso1naranja {
+    width: 55px;
+    height: 55px;
+}
+
+.sideBar_iconNames {
+    width: 50%;
+    height: 100%;
+    margin-left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-family: var(--main-font);
+    font-weight: lighter;
+    line-height: 73px;
+}
+
+
+/*=======Main Content =========*/
+
+.main {
+    height: 99%;
+    width: 100%;
+    padding: 1em 0 0em 0.5em;
+    margin-top: 2%;
+}
+
+.mainContent {
+    padding-top: 10px;
+    height: 684px;
+    width: 100%;
+    border-top-left-radius: 11%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.mainContent__header {
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContent__header__logo {
+    width: 133px;
+    height: 42px;
+}
+
+.mainContent__header__logo .wikpisLogo {
+    width: 100%;
+    height: 100%;
+}
+
+.mainContent__header__text {
+    padding-left: 1em;
+    margin-left: 1.2em;
+    font-family: var(--main-font);
+    color: var(--font-color);
+    font-size: 1.1em;
+    line-height: 2.4em;
+    border-left: 1px solid #63737D;
+}
+
+.mainContent__phrase {
+    margin-top: 1em;
+    padding-left: 1em;
+    font: Bold 1.1em/2em var(--main-font);
+    color: var(--font-color);
+    border-left: 0.4em solid var(--color-orange);
+}
+
+
+/*=======Quote container =========*/
+
+.containerQuotation {
+    height: 100%;
+    display: flex;
+    /* border: var(--border-box); */
+    font-family: var(--main-font);
+}
+
+
+/*=======Quote list =========*/
+
+.containerQuotation_qouteList {
+    width: 75%;
+    height: 91%;
+    /* border: var(--border-box); */
+    margin-left: 3%;
+    margin-top: 3%;
+    position: relative;
+}
+
+.containerQuotation_horizontalLine {
+    width: 95%;
+    border: .7px solid var(--main-color);
+}
+
+.containerQuotation_verticalLine {
+    height: 45%;
+    position: absolute;
+    width: 1px;
+    border: .7px solid var(--main-color);
+}
+
+.containerQuotation_personalized {
+    height: 510px;
+    /* border: 1px solid red; */
+    width: 100%;
+    overflow-y: scroll;
+    padding: 1.5%;
+}
+
+.containerQuotation_content {
+    height: 800px;
+}
+
+.containerQuotation_content p:nth-child(1) {
+    color: #808080;
+    width: 95%;
+    padding: 2%;
+    border: 1px solid #E5E5E5;
+    border-radius: 23px;
+    background-color: #F7F7F7;
+}
+
+.containerQuotation_content:nth-child(1) p span {
+    font-weight: bold;
+}
+
+.containerQuotation_phrase {
+    color: var(--color-orange);
+    font-size: 18px;
+    margin-top: 1.5%;
+}
+
+.containerQuotation_phrasesSocialNetworks {
+    margin: 1.5% 0 1.5% 0;
+    color: #33ADB9;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.containerQuotation_socialNetworks {
+    width: 95%;
+    height: 70px;
+    /* border: var(--border-box); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerQuotation_itemsSocialNetworks {
+    /* border: var(--border-box); */
+    width: 20%;
+    height: 50px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.containerQuotation_nameSocialNetworks {
+    width: 81%;
+    height: 100%;
+    border-radius: 7%;
+    position: absolute;
+    background-color: #33ADB9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.containerQuotation_nameSocialNetworks p {
+    display: inline-block;
+}
+
+.containerQuotation_imgSocialNetworks {
+    /* border: var(--border-box); */
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    width: 30%;
+    height: 90%;
+    z-index: 1;
+}
+
+.containerQuotation_imgSocialNetworks img {
+    width: 100%;
+    height: 100%;
+}
+
+.containerQuotation_text {
+    color: #808080;
+    width: 95%;
+    padding: 2%;
+    border-radius: 23px;
+}
+
+.containerQuotation_text span {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.containerQuotation_form input {
+    width: 95%;
+    color: #808080;
+    height: 100px;
+    background-color: #F7F7F7;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #E5E5E5;
+}
+
+.containerQuotation_nekworks {
+    width: 95%;
+    height: 40px;
+    border: var(--border-box);
+    display: flex;
+    align-items: center;
+}
+
+#contentContainer {
+    width: 100%;
+    height: 10px;
+    border-radius: 20px;
+    border: var(--border-box);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    transform: translate3d(50px, 0px, 0);
+}
+
+
+/*======= Total budget =========*/
+
+.containerQuotation_totalBudget {
+    width: 20%;
+    height: 96%;
+    box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.containerQuotation_title {
+    height: 9%;
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+@media screen and (max-width:1024px) {
+    .mainContent__phrase {
+        font: Bold 1em/2em var(--main-font);
+    }
+    .containerQuotation_qouteList {
+        width: 68%;
+    }
+    .containerQuotation_totalBudget {
+        width: 27%;
+    }
+    .containerQuotation_content p:nth-child(1) {
+        font-size: 12px;
+        padding: 1.5%;
+    }
+    .containerQuotation_phrase {
+        font-size: 15px;
+    }
+    .containerQuotation_phrasesSocialNetworks {
+        font-size: 13px;
+    }
+    .containerQuotation_nameSocialNetworks p {
+        font-size: 12px;
+        display: inline-block;
+    }
+    .containerQuotation_nameSocialNetworks {
+        height: 86%;
+        justify-content: initial;
+        padding-left: 7px;
+    }
+    .containerQuotation_itemsSocialNetworks {
+        width: 23%;
+    }
+    .containerQuotation_imgSocialNetworks {
+        width: 34%;
+        height: 81%;
+    }
+    .containerQuotation_text {
+        font-size: 12px;
+    }
+}

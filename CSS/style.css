@@ -1,0 +1,123 @@
+:root {
+    --color-mainfund: rgb(51, 173, 185, 1);
+    --color-white: #FFFFFF;
+    --border: 1px solid black;
+    --font-main: font-family: 'Barlow', sans-serif;
+}
+
+* {
+    background-color: var(--color-mainfund)
+}
+
+p {
+    display: inline;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container-box {
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    top: 200px;
+    left: auto;
+}
+
+.container-box--logos {
+    display: flex;
+    margin-left: 10%;
+    align-items: center;
+}
+
+.container-box--logos-wikpis {
+    border-right: 1px solid var(--color-white);
+    padding-right: 15px;
+    width: 40%;
+}
+
+.container-box--contizador p samp {
+    font-family: var(--font-main);
+    color: var(--color-white);
+    font-size: 43px;
+    padding: 20px;
+}
+
+.container-box--form {
+    margin-top: 20px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-box--form p {
+    color: var(--color-white);
+    height: 10px;
+    font-size: large;
+    text-align: justify;
+    margin-bottom: 25px;
+    font-stretch: 100%;
+}
+
+.container-box--form input:nth-child(2) {
+    width: 500px;
+    height: 37px;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--color-white);
+    text-align: center;
+    box-shadow: none;
+    outline: none;
+}
+
+.container-box--form-options {
+    margin-top: 10px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-box--form-options p {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.container-box--form-options select {
+    color: var(--color-white);
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.container-box--form-button {
+    /* border: var(--border); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 100px;
+}
+
+.container-box--form-button a {
+    width: 178px;
+    height: 30px;
+    text-decoration: none;
+    color: var(--color-white);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    color: var(--color-white);
+    font-size: 14px;
+    margin-top: 40px;
+}
