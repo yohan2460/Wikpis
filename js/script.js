@@ -9,18 +9,14 @@ function mouseOutFunction(id1, id2, source) {
     document.getElementById(id2).src = source;
 }
 
+function painting_slider(){
 
-// ==== SOCIAL NETWORK MODIFIERS===//
-
-var contentContainer = document.querySelector("#contentContainer");
-var ball = document.querySelector("#ball");
-contentContainer.addEventListener("click", getClickposition, false);
-
-function getClickposition(e) {
-    var xposition = e.clientX;
-    var yposition = e.clientY;
-
-    var translate3dValue = "translate3d(" + xposition + "xp," + yposition + "px, 0)";
-    console.log(translate3dValue)
-    ball.style.transform = translate3dValue;
+    var val = (this.value - this.min)/(this.max - this.min);
+    var percent = val * 100;
+    var gradient = "-webkit-gradient(linear, left top, right top, color-stop("+percent+"%, #FF9300), color-stop("+percent+"%, #EFEFEF))"
+    console.log(gradient);
+    this.style.background = gradient;
 }
+var slider = document.getElementById("slider");
+slider.addEventListener('input', painting_slider);
+

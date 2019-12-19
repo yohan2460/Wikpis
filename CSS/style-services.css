@@ -14,7 +14,7 @@
 }
 
 .container {
-    width: auto;
+    /* width: auto; */
     height: 730px;
     display: grid;
     grid-template-columns: 1fr 9fr;
