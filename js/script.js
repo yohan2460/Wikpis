@@ -98,6 +98,49 @@ function painting_slider_Twitter() {
 
 }
 
+// Facebook slider
+function btnFacebook() {
+    var btnFacebook = document.getElementById('containerQuotation_parent--facebook')
+    if (btnformFacebook.checked == true) {
+        btnFacebook.style.display = 'block'
+        console.log(btnFacebook)
+    } else {
+        btnFacebook.style.display = 'none'
+    }
+}
+
+//Instagram slider
+function btnInstagram() {
+    var btnInstagram = document.getElementById('containerQuotation_parent--Instagram')
+    if (btnformInstagram.checked == true) {
+        btnInstagram.style.display = 'block'
+        console.log(btnFacebook)
+    } else {
+        btnInstagram.style.display = 'none'
+    }
+}
+
+//Linkedin slider
+function btnLinkedin() {
+    var btnLinkedin = document.getElementById('containerQuotation_parent--Linkedin')
+    if (btnformLinkedin.checked == true) {
+        btnLinkedin.style.display = 'block'
+        console.log(btnFacebook)
+    } else {
+        btnLinkedin.style.display = 'none'
+    }
+}
+
+//Twitter slider
+function btnTwitter() {
+    var btnTwitter = document.getElementById('containerQuotation_parent--Twitter')
+    if (btnformTwitter.checked == true) {
+        btnTwitter.style.display = 'block'
+        console.log(btnFacebook)
+    } else {
+        btnTwitter.style.display = 'none'
+    }
+}
 
 
 // facebook
@@ -125,16 +168,19 @@ var sliderTwitter = document.getElementById("sliderTwitter");
 sliderTwitter.addEventListener('input', painting_slider_Twitter);
 
 // ------------------------------------------------------------------------------
-function btnFacebook() {
-    if (btnformFacebook.nekworks.checked == true) {
-        var selectorFacebook = document.querySelector('.containerQuotation_fader--facebook');
-        selectorFacebook.style.visibility = 'hidden';
-        selectorFacebook.style.position = 'absolute';
 
-    } else {
-
-    }
-}
-
-var btnformFacebook = document.getElementById('formF')
+// Facebook slider
+var btnformFacebook = document.getElementById('btnFacebook')
 btnformFacebook.addEventListener('click', btnFacebook)
+
+//Instagram slider
+var btnformInstagram = document.getElementById('btnInstagram')
+btnformInstagram.addEventListener('click', btnInstagram)
+
+//Linkedin slider
+var btnformLinkedin = document.getElementById('btnLinkedin')
+btnformLinkedin.addEventListener('click', btnLinkedin)
+
+//Twitter slider
+var btnformTwitter = document.getElementById('btnTwitter')
+btnformTwitter.addEventListener('click', btnTwitter)

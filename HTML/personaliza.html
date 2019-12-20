@@ -76,60 +76,62 @@
                                     Seleccione las redes sociales administrar
                                 </h3>
                                 <!-- =======  Container Social Networks  ========= -->
-                                <div class="containerQuotation_socialNetworks">
-                                    <!-- =======  Facebook  ========= -->
-                                    <div class="containerQuotation_itemsSocialNetworks">
-                                        <div class="containerQuotation_nameSocialNetworks">
+                                <form action="" name="formFacebook" id="formF">
+                                    <div class="containerQuotation_socialNetworks">
+                                        <!-- =======  Facebook  ========= -->
+                                        <div class="containerQuotation_itemsSocialNetworks">
+                                            <div class="containerQuotation_nameSocialNetworks">
 
-                                            <form action="" name="formFacebook" id="formF">
-                                                <input type="radio" value="Facebook" id="btnFacebook" name="nekworks">
-                                                <p>Facebook</p>
-                                            </form>
+                                                <input type="checkbox" value="Facebook" id="btnFacebook" name="nekworks">
+                                                <label for="btnFacebook"><p>Facebook</p></label>
+
+                                            </div>
+                                            <div class="containerQuotation_imgSocialNetworks">
+                                                <img src="../IMAGES/mas-recuros/iconof-opcion2.png" alt="">
+                                            </div>
                                         </div>
-                                        <div class="containerQuotation_imgSocialNetworks">
-                                            <img src="../IMAGES/mas-recuros/iconof-opcion2.png" alt="">
+                                        <!-- =======  Instagram  ========= -->
+                                        <div class="containerQuotation_itemsSocialNetworks">
+                                            <div class="containerQuotation_nameSocialNetworks">
+
+                                                <!-- <form action=""> -->
+                                                <input type="checkbox" value="Instagram" id="btnInstagram" name="nekworks">
+                                                <label for="btnInstagram"><p>Instagram</p></label>
+
+                                                <!-- </form> -->
+                                            </div>
+                                            <div class="containerQuotation_imgSocialNetworks">
+                                                <img src="../IMAGES/mas-recuros/iconoins-opcion2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- =======  Linkedin  ========= -->
+                                        <div class="containerQuotation_itemsSocialNetworks">
+                                            <div class="containerQuotation_nameSocialNetworks">
+
+                                                <!-- <form action=""> -->
+                                                <input type="checkbox" value="Linkedin" id="btnLinkedin" name="nekworks">
+                                                <label for="btnLinkedin"><p>Linkedin</p></label>
+                                                <!-- </form> -->
+                                            </div>
+                                            <div class="containerQuotation_imgSocialNetworks">
+                                                <img src="../IMAGES/mas-recuros/iconoin-opcion2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- =======  Twitter  ========= -->
+                                        <div class="containerQuotation_itemsSocialNetworks">
+                                            <div class="containerQuotation_nameSocialNetworks">
+
+                                                <!-- <form action=""> -->
+                                                <input type="checkbox" value="Twitter" id="btnTwitter" name="nekworks">
+                                                <label for="btnTwitter"><p>Twitter</p></label>
+                                                <!-- </form> -->
+                                            </div>
+                                            <div class="containerQuotation_imgSocialNetworks">
+                                                <img src="../IMAGES/mas-recuros/iconotwitter-opcion2.png" alt="">
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- =======  Instagram  ========= -->
-                                    <div class="containerQuotation_itemsSocialNetworks">
-                                        <div class="containerQuotation_nameSocialNetworks">
-
-                                            <form action="">
-                                                <input type="radio">
-                                                <p>Instagram</p>
-                                            </form>
-                                        </div>
-                                        <div class="containerQuotation_imgSocialNetworks">
-                                            <img src="../IMAGES/mas-recuros/iconoins-opcion2.png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- =======  Linkedin  ========= -->
-                                    <div class="containerQuotation_itemsSocialNetworks">
-                                        <div class="containerQuotation_nameSocialNetworks">
-
-                                            <form action="">
-                                                <input type="radio">
-                                                <p>Linkedin</p>
-                                            </form>
-                                        </div>
-                                        <div class="containerQuotation_imgSocialNetworks">
-                                            <img src="../IMAGES/mas-recuros/iconoin-opcion2.png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- =======  Twitter  ========= -->
-                                    <div class="containerQuotation_itemsSocialNetworks">
-                                        <div class="containerQuotation_nameSocialNetworks">
-
-                                            <form action="">
-                                                <input type="radio">
-                                                <p>Twitter</p>
-                                            </form>
-                                        </div>
-                                        <div class="containerQuotation_imgSocialNetworks">
-                                            <img src="../IMAGES/mas-recuros/iconotwitter-opcion2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
+                                </form>
                                 <!-- =======  Note  ========= -->
                                 <p class="containerQuotation_text">
                                     <strong>Nota:</strong> De requerir cotizar otras redes sociales como youtube, pinterest o alguna otra en especial puede agregar un campo haciendo <span>clic aquí</span> y detallaronos su necesidad puntual, de esta forma
@@ -145,7 +147,7 @@
                                 </h3>
 
                                 <!-- =======  Facebook  ========= -->
-                                <div class="containerQuotation_fader    containerQuotation_fader--facebook " id="Facebook">
+                                <div class="containerQuotation_parent" id="containerQuotation_parent--facebook">
                                     <p class="containerQuotation_phraseNekworks">Facebook</p>
                                     <div class="containerQuotation_nekworks">
                                         <div class="containerQuotation_bar" id="contentContainer">
@@ -160,7 +162,7 @@
                                     </div>
                                 </div>
                                 <!-- =======  Instagram  ========= -->
-                                <div class="containerQuotation_fader">
+                                <div class="containerQuotation_parent  " id="containerQuotation_parent--Instagram">
                                     <p class="containerQuotation_phraseNekworks">Instagram</p>
                                     <div class="containerQuotation_nekworks">
                                         <div class="containerQuotation_bar" id="contentContainer">
@@ -175,7 +177,7 @@
                                     </div>
                                 </div>
                                 <!-- =======  Linkedin  ========= -->
-                                <div class="containerQuotation_fader">
+                                <div class="containerQuotation_parent " id="containerQuotation_parent--Linkedin">
                                     <p class="containerQuotation_phraseNekworks">Linkedin</p>
                                     <div class="containerQuotation_nekworks">
                                         <div class="containerQuotation_bar" id="contentContainer">
@@ -190,7 +192,7 @@
                                     </div>
                                 </div>
                                 <!-- =======  Twitter  ========= -->
-                                <div class="containerQuotation_fader">
+                                <div class="containerQuotation_parent " id="containerQuotation_parent--Twitter">
                                     <p class="containerQuotation_phraseNekworks">Twitter</p>
                                     <div class="containerQuotation_nekworks">
                                         <div class="containerQuotation_bar" id="contentContainer">

@@ -240,6 +240,34 @@
     align-items: center;
 }
 
+.containerQuotation_nameSocialNetworks input[type="checkbox"] {
+    display: none;
+}
+
+.containerQuotation_nameSocialNetworks label {
+    padding-left: 1.2em;
+    position: relative;
+    cursor: pointer;
+}
+
+.containerQuotation_nameSocialNetworks label::before {
+    content: "";
+    border: 3px solid #F2F2F2;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background-color: #EFEFEF;
+    border-radius: 50%;
+    left: 0px;
+    bottom: 3.5px;
+}
+
+.containerQuotation_nameSocialNetworks input[type="checkbox"]:checked+label::before {
+    content: "";
+    background-color: var(--color-orange);
+    color: red;
+}
+
 .containerQuotation_nameSocialNetworks {
     width: 81%;
     height: 100%;
@@ -300,10 +328,10 @@
 /* -------------- */
 
 
-/* contenedor de rea */
+/* contenedor de area */
 
-.containerQuotation_fader {
-    /* border: var(--border-box); */
+.containerQuotation_parent {
+    display: none;
     position: relative;
 }
 
@@ -423,7 +451,6 @@ input[type=range]::-webkit-slider-thumb {
 
 input[type=range]::-moz-range-thumb {
     -moz-appearance: none !important;
-    background-color: #df7164;
     border: none;
     height: 13px;
     width: 13px;
