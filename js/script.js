@@ -9,8 +9,10 @@ function mouseOutFunction(id1, id2, source) {
     document.getElementById(id2).src = source;
 }
 
+// Socail nekworks
+
 // facebook
-function painting_slider() {
+function painting_slider_facebook() {
 
     var val = (this.value - this.min) / (this.max - this.min);
     var percent = val * 100;
@@ -102,7 +104,7 @@ function painting_slider_Twitter() {
 var Popup = document.getElementById('Popup')
 var Popup_label = document.getElementById('Popup_label')
 var slider = document.getElementById("slider");
-slider.addEventListener('input', painting_slider);
+slider.addEventListener('input', painting_slider_facebook);
 
 // Instagram
 var PopupInstagram = document.getElementById('PopupInstagram')
@@ -121,3 +123,18 @@ var PopupTwitter = document.getElementById('PopupTwitter')
 var Popup_label_Twitter = document.getElementById('Popup_label_Twitter')
 var sliderTwitter = document.getElementById("sliderTwitter");
 sliderTwitter.addEventListener('input', painting_slider_Twitter);
+
+// ------------------------------------------------------------------------------
+function btnFacebook() {
+    if (btnformFacebook.nekworks.checked == true) {
+        var selectorFacebook = document.querySelector('.containerQuotation_fader--facebook');
+        selectorFacebook.style.visibility = 'hidden';
+        selectorFacebook.style.position = 'absolute';
+
+    } else {
+
+    }
+}
+
+var btnformFacebook = document.getElementById('formF')
+btnformFacebook.addEventListener('click', btnFacebook)

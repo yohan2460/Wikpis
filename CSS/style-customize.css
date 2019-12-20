@@ -294,6 +294,12 @@
 }
 
 
+/* ---------------------------- */
+
+
+/* -------------- */
+
+
 /* contenedor de rea */
 
 .containerQuotation_fader {
@@ -427,16 +433,6 @@ input[type=range]::-moz-range-thumb {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-
-
-/* #ball {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.3);
-    background-color: white;
-    transform: translate3d(50px, 0px, 0);
-} */
 
 
 /*======= Total budget =========*/
