@@ -520,4 +520,17 @@ input[type=range]::-moz-range-thumb {
     .containerQuotation_text {
         font-size: 12px;
     }
+    .containerQuotation_nameSocialNetworks label {
+        padding-left: .9em;
+    }
+    #containerQuotation_parent--facebook p,
+    #containerQuotation_parent--Instagram p,
+    #containerQuotation_parent--Linkedin p,
+    #containerQuotation_parent--Twitter p {
+        font-size: 17px;
+        padding: .7%;
+    }
+    .containerQuotation_nameSocialNetworks label::before {
+        bottom: 1.5px;
+    }
 }
