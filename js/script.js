@@ -95,7 +95,7 @@ function painting_slider_Twitter() {
 
     console.log(Popup_label_Twitter)
 
-
+    console.log(cal)
 }
 
 // Facebook slider
