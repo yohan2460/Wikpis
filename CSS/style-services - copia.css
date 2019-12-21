@@ -3,7 +3,7 @@
 :root {
     --main-color: #33ADB9;
     --main-font: sans-serif;
-    --border-box: 1px solid black;
+    /* --border-box: 1px solid black; */
     --font-color: #63737D;
 }
 
@@ -22,8 +22,8 @@
     width: 100%; 
     display: grid;
 
-    grid-template-columns: 1fr 6fr;
-    grid-template-rows: 90% 10%;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 95% 5%;
     grid-template-areas: "sidebar main" "footer footer";
     background-color: var(--main-color);
     padding-bottom: 0%;
@@ -130,13 +130,13 @@
     padding-top: 10px;
     height: 100%;
     width: 100%;
-    border-top-left-radius: 15%;
-    border-bottom-left-radius: 15%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
     display: flex;
     flex-direction: column;
     background-color: white;
 }
-/*
+
 .mainContent__header {
     height: 12%;
     display: flex;
@@ -166,26 +166,30 @@
 }
 
 .mainContent__phrase {
-    margin-top: 2.5em;
+    margin-top: 1em;
     padding-left: 1em;
     font: Bold 1.1em/2em var(--main-font);
     color: var(--font-color);
     border: var(--border-box);
     border-left: 0.4em solid #FF9300;
 }
-
+            
 .mainContent__grid {
-    margin-top: 3em;
+    margin-top: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
     display: grid;
-    grid-template-columns: repeat(4, minmax(183px, 300px));
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(4, minmax(auto,1fr));
+    grid-template-rows: 170px 1fr;
+   /* grid-template-rows:  repeat(2, minmax(100px, 160px));*/
     align-self: center;
+
     border: var(--border-box);
 }
 
 .grid_images {
-    width: 220px;
-    height: 220px;
+    width: 60%;
+    height: 100%;
     position: relative;
     justify-self: center;
     border: var(--border-box)
@@ -207,7 +211,7 @@
 .grid_images .image_caption {
     width: 100%;
     position: absolute;
-    margin-top: 148px;
+    margin-top: 65%;
     text-align: center;
     border: var(--border-box);
     text-decoration: none;
@@ -217,13 +221,13 @@
 }
 
 .mainContent__grid__list {
-    padding-left: 15%;
+    padding-left: 22%;
     color: var(--main-color);
     border: var(--border-box);
 }
 
 .mainContent__grid__list span {
-    font-size: 1em;
+    font-size: 80%;
     font-family: var(--font-type);
     color: var(--font-color);
 }
@@ -265,7 +269,7 @@
     line-height: 30px;
     background-color: white;
     border: 1px solid var(--main-color);
-} */
+}
 
 
 /*=======Footer =========*/
