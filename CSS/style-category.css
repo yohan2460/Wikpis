@@ -13,21 +13,19 @@
     box-sizing: border-box;
 }
 
-.body{
+.body {
     width: 100%;
-    height: auto; 
+    height: auto;
 }
 
 .container {
-    width: 100%; 
+    width: 100%;
     display: grid;
-
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: .8fr 5.2fr;
     grid-template-rows: 95% 5%;
     grid-template-areas: "sidebar main" "footer footer";
     background-color: var(--main-color);
     padding-bottom: 0%;
-
     border: var(--border-box);
 }
 
@@ -40,8 +38,7 @@
     height: auto;
     grid-area: sidebar;
     align-self: center;
-    justify-self: end; 
-    
+    justify-self: end;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +47,7 @@
 
 .sideBarContent {
     width: 160px;
-    height: 480px;
+    height: 540px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -61,15 +58,22 @@
     width: 8px;
     height: 100%;
     margin: auto;
-     align-self: center; 
+    align-self: center;
     position: absolute;
     z-index: 1;
     background-image: linear-gradient(to right, #E5E5E5, #CBCBCB);
 }
 
+.sideBar_progress {
+    margin: 0 0px 0 2px;
+    width: 3px;
+    height: 180px;
+    position: absolute;
+    background-color: #FF9300;
+}
 
 .iconsContainer {
-    width: 42%;
+    width: 39.5%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -78,11 +82,13 @@
     z-index: 2;
     border: var(--border-box);
 }
- 
+
 .sideBar_icon {
     width: 100%;
-    height: 0; /* para que se vea cuadrado*/
-    padding-bottom: 100%; /* para qque se vea cuadrado*/
+    height: 0;
+    /* para que se vea cuadrado*/
+    padding-bottom: 100%;
+    /* para qque se vea cuadrado*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,10 +103,12 @@
 
 .paso1naranja {
     width: 90%;
-    padding-top: 100%; /*para compensar el padding-bottom de sideBar-icon*/
+    padding-top: 100%;
+    /*para compensar el padding-bottom de sideBar-icon*/
 }
 
 .sideBar_iconNames {
+    margin-right: 1%;
     width: 55%;
     height: 100%;
     margin-left: 45%;
@@ -114,24 +122,28 @@
     font-weight: lighter;
     line-height: 73px;
     border: var(--border-box);
-} 
+}
+
+.sideBar_iconNames p {
+    margin: 0 0 0 11px;
+}
 
 
 /*=======Main Content =========*/
 
 .main {
     height: 100%;
-    padding: 1em 0 1em 0.5em;
+    padding: 2.8em 0 1em 1.5em;
     grid-area: main;
     border: var(--border-box);
 }
- 
+
 .mainContent {
     padding-top: 10px;
     height: 100%;
     width: 100%;
-    border-top-left-radius: 10%;
-    border-bottom-left-radius: 10%;
+    border-top-left-radius: 11%;
+    border-bottom-left-radius: 11%;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -166,24 +178,23 @@
 }
 
 .mainContent__phrase {
-    margin-top: 1em;
+    margin-bottom: 2em;
     padding-left: 1em;
     font: Bold 1.1em/2em var(--main-font);
     color: var(--font-color);
     border: var(--border-box);
     border-left: 0.4em solid #FF9300;
 }
-            
+
 .mainContent__grid {
     margin-top: 1em;
     margin-left: 10px;
     margin-right: 10px;
     display: grid;
-    grid-template-columns: repeat(4, minmax(auto,1fr));
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
     grid-template-rows: 170px 1fr;
-   /* grid-template-rows:  repeat(2, minmax(100px, 160px));*/
+    /* grid-template-rows:  repeat(2, minmax(100px, 160px));*/
     align-self: center;
-
     border: var(--border-box);
 }
 
@@ -221,27 +232,36 @@
 }
 
 .mainContent__grid__list {
+    padding-top: 8%;
     padding-left: 22%;
     color: var(--main-color);
     border: var(--border-box);
+    /* border: 1px solid red; */
+}
+
+.mainContent__grid__list li {
+    text-decoration: none;
+    list-style: none;
 }
 
 .mainContent__grid__list span {
     font-size: 80%;
+    /* border: 1px solid red; */
     font-family: var(--font-type);
     color: var(--font-color);
 }
 
 .mainContent__buttons {
-    margin-top: 2.5em;
+    margin-top: 4em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     border: var(--border-box);
 }
 
 .mainContent__buttons .next {
+    margin-left: 25px;
     width: 178px;
     height: 30px;
     border-radius: 9px;

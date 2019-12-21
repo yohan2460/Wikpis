@@ -29,6 +29,10 @@ function painting_slider_facebook(value_popup) {
     document.getElementById('Popup_label').innerHTML = this.value_popup;
 
     // var calFacebook = value_popup
+    sumOfNekworks.addEventListener('click', callsumOfNekworks)
+    console.log(sumOfNekworks);
+
+
     return value_popup;
 
 
@@ -107,9 +111,11 @@ function btnFacebook() {
     var btnFacebook = document.getElementById('containerQuotation_parent--facebook')
     if (btnformFacebook.checked == true) {
         btnFacebook.style.display = 'block'
+        sumOfNekworks.style.display = 'flex'
         console.log(btnFacebook)
     } else {
         btnFacebook.style.display = 'none'
+        sumOfNekworks.style.display = 'none'
     }
 }
 
@@ -118,9 +124,11 @@ function btnInstagram() {
     var btnInstagram = document.getElementById('containerQuotation_parent--Instagram')
     if (btnformInstagram.checked == true) {
         btnInstagram.style.display = 'block'
+        sumOfNekworks.style.display = 'flex'
         console.log(btnFacebook)
     } else {
         btnInstagram.style.display = 'none'
+        sumOfNekworks.style.display = 'none'
     }
 }
 
@@ -129,9 +137,11 @@ function btnLinkedin() {
     var btnLinkedin = document.getElementById('containerQuotation_parent--Linkedin')
     if (btnformLinkedin.checked == true) {
         btnLinkedin.style.display = 'block'
+        sumOfNekworks.style.display = 'flex'
         console.log(btnFacebook)
     } else {
         btnLinkedin.style.display = 'none'
+        sumOfNekworks.style.display = 'none'
     }
 }
 
@@ -140,11 +150,14 @@ function btnTwitter() {
     var btnTwitter = document.getElementById('containerQuotation_parent--Twitter')
     if (btnformTwitter.checked == true) {
         btnTwitter.style.display = 'block'
+        sumOfNekworks.style.display = 'flex'
         console.log(btnFacebook)
     } else {
         btnTwitter.style.display = 'none'
+        sumOfNekworks.style.display = 'none'
     }
 }
+
 
 
 // facebook
@@ -188,3 +201,6 @@ btnformLinkedin.addEventListener('click', btnLinkedin)
 //Twitter slider
 var btnformTwitter = document.getElementById('btnTwitter')
 btnformTwitter.addEventListener('click', btnTwitter)
+
+// sum Of Nekworks
+var sumOfNekworks = document.getElementById('sumOfNekworks');
