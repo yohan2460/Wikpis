@@ -224,6 +224,9 @@
     font-weight: bold;
 }
 
+
+/* <!-- =======  Container Social Networks  ========= --> */
+
 .containerQuotation_socialNetworks {
     width: 95%;
     height: 70px;
@@ -238,6 +241,37 @@
     display: flex;
     position: relative;
     align-items: center;
+}
+
+
+/* <!-- =======  checkbox ========= --> */
+
+.containerQuotation_nameSocialNetworks input[type="checkbox"] {
+    display: none;
+}
+
+.containerQuotation_nameSocialNetworks label {
+    padding-left: 1.2em;
+    position: relative;
+    cursor: pointer;
+}
+
+.containerQuotation_nameSocialNetworks label::before {
+    content: "";
+    border: 3px solid #F2F2F2;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background-color: #EFEFEF;
+    border-radius: 50%;
+    left: 0px;
+    bottom: 3.5px;
+}
+
+.containerQuotation_nameSocialNetworks input[type="checkbox"]:checked+label::before {
+    content: "";
+    background-color: var(--color-orange);
+    color: red;
 }
 
 .containerQuotation_nameSocialNetworks {
@@ -282,6 +316,9 @@
     cursor: pointer;
 }
 
+
+/* <!-- =======  Form  ========= --> */
+
 .containerQuotation_form input {
     width: 95%;
     color: #808080;
@@ -294,16 +331,10 @@
 }
 
 
-/* ---------------------------- */
+/* <!-- =======  container area  ========= --> */
 
-
-/* -------------- */
-
-
-/* contenedor de rea */
-
-.containerQuotation_fader {
-    /* border: var(--border-box); */
+.containerQuotation_parent {
+    display: none;
     position: relative;
 }
 
@@ -380,6 +411,9 @@
     -o-border-radius: 20px;
 }
 
+
+/* <!-- =======  slider label  ========= --> */
+
 input[type=range] {
     -webkit-appearance: none;
     -moz-apperance: none;
@@ -423,7 +457,6 @@ input[type=range]::-webkit-slider-thumb {
 
 input[type=range]::-moz-range-thumb {
     -moz-appearance: none !important;
-    background-color: #df7164;
     border: none;
     height: 13px;
     width: 13px;
@@ -432,6 +465,17 @@ input[type=range]::-moz-range-thumb {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+
+
+/*=======sum of networks=========*/
+
+.containerQuotation_sumOfNekworks {
+    width: 40%;
+    height: 50px;
+    border: 1px solid black;
+    margin: 30px auto;
+    border-radius: 10px;
 }
 
 
@@ -453,6 +497,9 @@ input[type=range]::-moz-range-thumb {
     font-size: 13px;
     font-weight: normal;
 }
+
+
+/* <!-- =======  responsive 1024px ========= --> */
 
 @media screen and (max-width:1024px) {
     .mainContent__phrase {
@@ -492,5 +539,18 @@ input[type=range]::-moz-range-thumb {
     }
     .containerQuotation_text {
         font-size: 12px;
+    }
+    .containerQuotation_nameSocialNetworks label {
+        padding-left: .9em;
+    }
+    #containerQuotation_parent--facebook p,
+    #containerQuotation_parent--Instagram p,
+    #containerQuotation_parent--Linkedin p,
+    #containerQuotation_parent--Twitter p {
+        font-size: 17px;
+        padding: .7%;
+    }
+    .containerQuotation_nameSocialNetworks label::before {
+        bottom: 1.5px;
     }
 }
