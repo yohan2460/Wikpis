@@ -319,7 +319,11 @@
 
 /* <!-- =======  Form  ========= --> */
 
-.containerQuotation_form input {
+#formTextHide {
+    display: none;
+}
+
+#formTextHide input {
     width: 95%;
     color: #808080;
     height: 100px;

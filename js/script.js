@@ -26,7 +26,7 @@ function painting_slider_facebook(value_popup) {
 
 
     this.value_popup = (this.value - this.min)
-    document.getElementById('Popup_label').innerHTML = this.value_popup;
+    document.getElementById('Popup_label').textContent = this.value_popup;
 
     // var calFacebook = value_popup
     sumOfNekworks.addEventListener('click', callsumOfNekworks)
@@ -105,6 +105,18 @@ function painting_slider_Twitter() {
 
     console.log(cal)
 }
+// hiden form
+function funcionFormTextHide() {
+
+    formTextHide.style.display = 'block'
+}
+
+
+
+
+
+
+
 
 // Facebook slider
 function btnFacebook() {
@@ -112,7 +124,6 @@ function btnFacebook() {
     if (btnformFacebook.checked == true) {
         btnFacebook.style.display = 'block'
         sumOfNekworks.style.display = 'flex'
-        console.log(btnFacebook)
     } else {
         btnFacebook.style.display = 'none'
         sumOfNekworks.style.display = 'none'
@@ -183,8 +194,14 @@ var PopupTwitter = document.getElementById('PopupTwitter')
 var Popup_label_Twitter = document.getElementById('Popup_label_Twitter')
 var sliderTwitter = document.getElementById("sliderTwitter");
 sliderTwitter.addEventListener('input', painting_slider_Twitter);
+// ----------------------------------------------------------------------------------------------
 
-// ------------------------------------------------------------------------------
+//    hiden form
+
+var clickform = document.getElementById('clickform');
+var formTextHide = document.getElementById('formTextHide');
+clickform.addEventListener('click', funcionFormTextHide)
+    // ------------------------------------------------------------------------------
 
 // Facebook slider
 var btnformFacebook = document.getElementById('btnFacebook')
