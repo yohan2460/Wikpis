@@ -13,51 +13,63 @@
     box-sizing: border-box;
 }
 
+.body{
+    width: 100%;
+    height: auto; 
+}
+
 .container {
-    /* width: auto; */
-    height: 730px;
+    width: 100%; 
     display: grid;
-    grid-template-columns: 1fr 9fr;
-    grid-template-rows: 1fr 3fr;
+
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 90% 10%;
     grid-template-areas: "sidebar main" "footer footer";
     background-color: var(--main-color);
     padding-bottom: 0%;
+
+    border: var(--border-box);
 }
 
 
 /*======Side Bar==============*/
 
 .sideBar {
-    margin-top: 17%;
-    padding-left: 11%;
-    width: 250px;
-    height: 80%;
+    /* padding-left: 11%;  */
+    width: auto;
+    height: auto;
     grid-area: sidebar;
     align-self: center;
+    justify-self: end; 
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    border: var(--border-box);
 }
 
 .sideBarContent {
     width: 160px;
-    height: 540px;
+    height: 480px;
     position: relative;
+    display: flex;
+    flex-direction: column;
     border: var(--border-box);
 }
 
 .sideBar_fillingBar {
     width: 8px;
-    height: 533px;
-    margin-top: 71px;
-    margin-left: 32.5px;
+    height: 100%;
+    margin: auto;
+     align-self: center; 
     position: absolute;
     z-index: 1;
     background-image: linear-gradient(to right, #E5E5E5, #CBCBCB);
 }
 
+
 .iconsContainer {
-    width: 73px;
+    width: 42%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -66,10 +78,11 @@
     z-index: 2;
     border: var(--border-box);
 }
-
+ 
 .sideBar_icon {
-    width: 73px;
-    height: 73px;
+    width: 100%;
+    height: 0; /* para que se vea cuadrado*/
+    padding-bottom: 100%; /* para qque se vea cuadrado*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,14 +96,14 @@
 }
 
 .paso1naranja {
-    width: 65px;
-    height: 65px;
+    width: 90%;
+    padding-top: 100%; /*para compensar el padding-bottom de sideBar-icon*/
 }
 
 .sideBar_iconNames {
-    width: 50%;
+    width: 55%;
     height: 100%;
-    margin-left: 50%;
+    margin-left: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -101,7 +114,7 @@
     font-weight: lighter;
     line-height: 73px;
     border: var(--border-box);
-}
+} 
 
 
 /*=======Main Content =========*/
@@ -112,7 +125,7 @@
     grid-area: main;
     border: var(--border-box);
 }
-
+ 
 .mainContent {
     padding-top: 10px;
     height: 100%;
@@ -123,7 +136,7 @@
     flex-direction: column;
     background-color: white;
 }
-
+/*
 .mainContent__header {
     height: 12%;
     display: flex;
@@ -252,7 +265,7 @@
     line-height: 30px;
     background-color: white;
     border: 1px solid var(--main-color);
-}
+} */
 
 
 /*=======Footer =========*/
