@@ -12,7 +12,7 @@ function mouseOutFunction(id1, id2, source) {
 // Socail nekworks
 
 // facebook
-function painting_slider_facebook() {
+function painting_slider_facebook(value_popup) {
 
     var val = (this.value - this.min) / (this.max - this.min);
     var percent = val * 100;
@@ -25,13 +25,21 @@ function painting_slider_facebook() {
     Popup.style.marginLeft = cal;
 
 
-    var value_popup = (this.value - this.min)
-    document.getElementById('Popup_label').innerHTML = value_popup;
+    this.value_popup = (this.value - this.min)
+    document.getElementById('Popup_label').textContent = this.value_popup;
 
-    console.log(Popup_label)
+    // var calFacebook = value_popup
+    sumOfNekworks.addEventListener('click', callsumOfNekworks)
+    console.log(sumOfNekworks);
+
+
+    return value_popup;
 
 
 }
+var painting_slider_facebook;
+// painting_slider_facebook(value_popup)
+console.log(painting_slider_facebook)
 
 // Instagram
 function painting_slider_instagram() {
@@ -97,15 +105,28 @@ function painting_slider_Twitter() {
 
     console.log(cal)
 }
+// hiden form
+function funcionFormTextHide() {
+
+    formTextHide.style.display = 'block'
+}
+
+
+
+
+
+
+
 
 // Facebook slider
 function btnFacebook() {
     var btnFacebook = document.getElementById('containerQuotation_parent--facebook')
     if (btnformFacebook.checked == true) {
         btnFacebook.style.display = 'block'
-        console.log(btnFacebook)
+        sumOfNekworks.style.display = 'flex'
     } else {
         btnFacebook.style.display = 'none'
+        sumOfNekworks.style.display = 'none'
     }
 }
 
@@ -114,9 +135,11 @@ function btnInstagram() {
     var btnInstagram = document.getElementById('containerQuotation_parent--Instagram')
     if (btnformInstagram.checked == true) {
         btnInstagram.style.display = 'block'
+        sumOfNekworks.style.display = 'flex'
         console.log(btnFacebook)
     } else {
         btnInstagram.style.display = 'none'
+        sumOfNekworks.style.display = 'none'
     }
 }
 
@@ -125,9 +148,11 @@ function btnLinkedin() {
     var btnLinkedin = document.getElementById('containerQuotation_parent--Linkedin')
     if (btnformLinkedin.checked == true) {
         btnLinkedin.style.display = 'block'
+        sumOfNekworks.style.display = 'flex'
         console.log(btnFacebook)
     } else {
         btnLinkedin.style.display = 'none'
+        sumOfNekworks.style.display = 'none'
     }
 }
 
@@ -136,11 +161,14 @@ function btnTwitter() {
     var btnTwitter = document.getElementById('containerQuotation_parent--Twitter')
     if (btnformTwitter.checked == true) {
         btnTwitter.style.display = 'block'
+        sumOfNekworks.style.display = 'flex'
         console.log(btnFacebook)
     } else {
         btnTwitter.style.display = 'none'
+        sumOfNekworks.style.display = 'none'
     }
 }
+
 
 
 // facebook
@@ -166,8 +194,14 @@ var PopupTwitter = document.getElementById('PopupTwitter')
 var Popup_label_Twitter = document.getElementById('Popup_label_Twitter')
 var sliderTwitter = document.getElementById("sliderTwitter");
 sliderTwitter.addEventListener('input', painting_slider_Twitter);
+// ----------------------------------------------------------------------------------------------
 
-// ------------------------------------------------------------------------------
+//    hiden form
+
+var clickform = document.getElementById('clickform');
+var formTextHide = document.getElementById('formTextHide');
+clickform.addEventListener('click', funcionFormTextHide)
+    // ------------------------------------------------------------------------------
 
 // Facebook slider
 var btnformFacebook = document.getElementById('btnFacebook')
@@ -184,3 +218,6 @@ btnformLinkedin.addEventListener('click', btnLinkedin)
 //Twitter slider
 var btnformTwitter = document.getElementById('btnTwitter')
 btnformTwitter.addEventListener('click', btnTwitter)
+
+// sum Of Nekworks
+var sumOfNekworks = document.getElementById('sumOfNekworks');
