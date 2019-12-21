@@ -12,7 +12,7 @@ function mouseOutFunction(id1, id2, source) {
 // Socail nekworks
 
 // facebook
-function painting_slider_facebook() {
+function painting_slider_facebook(value_popup) {
 
     var val = (this.value - this.min) / (this.max - this.min);
     var percent = val * 100;
@@ -25,13 +25,17 @@ function painting_slider_facebook() {
     Popup.style.marginLeft = cal;
 
 
-    var value_popup = (this.value - this.min)
-    document.getElementById('Popup_label').innerHTML = value_popup;
+    this.value_popup = (this.value - this.min)
+    document.getElementById('Popup_label').innerHTML = this.value_popup;
 
-    console.log(Popup_label)
+    // var calFacebook = value_popup
+    return value_popup;
 
 
 }
+var painting_slider_facebook;
+// painting_slider_facebook(value_popup)
+console.log(painting_slider_facebook)
 
 // Instagram
 function painting_slider_instagram() {

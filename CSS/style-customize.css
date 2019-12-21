@@ -471,11 +471,35 @@ input[type=range]::-moz-range-thumb {
 /*=======sum of networks=========*/
 
 .containerQuotation_sumOfNekworks {
-    width: 40%;
+    padding: 2px 19px 2px 29px;
+    width: 30%;
     height: 50px;
-    border: 1px solid black;
+    border: 1px solid #EBEBEB;
     margin: 30px auto;
     border-radius: 10px;
+    display: flex;
+    background-color: var(--color-orange);
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.containerQuotation_sumTitle {
+    border-radius: 10px 0 0 10px;
+    color: white;
+}
+
+.containerQuotation_sumlabel {
+    border-radius: 5px;
+    width: 40px;
+    color: var(--color-orange);
+    height: 37px;
+    margin-left: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -511,7 +535,7 @@ input[type=range]::-moz-range-thumb {
     .containerQuotation_totalBudget {
         width: 27%;
     }
-    .containerQuotation_content p:nth-child(1) {
+    .containerQuotation_content p {
         font-size: 12px;
         padding: 1.5%;
     }
@@ -552,5 +576,13 @@ input[type=range]::-moz-range-thumb {
     }
     .containerQuotation_nameSocialNetworks label::before {
         bottom: 1.5px;
+    }
+    .containerQuotation_sumOfNekworks {
+        width: 43%;
+        font-size: 15px;
+        /* padding: 2px; */
+    }
+    .containerQuotation_sumOfNekworks p {
+        /* font-size: 15px; */
     }
 }
