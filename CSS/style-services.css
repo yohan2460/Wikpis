@@ -197,11 +197,12 @@
     border: var(--border-box)
 }
 
-.grid_images a {
+.grid_images .option {
     display: flex;
+    cursor: pointer;
 }
 
-.grid_images a:hover p {
+.grid_images .option:hover p {
     color: white;
 }
 
@@ -221,6 +222,14 @@
     font-family: var(--font-type);
     color: var(--main-color);
 }
+
+.image_caption--active{
+    color: white;
+}
+
+/* input[type="radio"]{
+    display: none;
+} */
 
 .mainContent__grid__list {
     padding-left: 22%;
