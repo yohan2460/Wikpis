@@ -202,10 +202,6 @@
     cursor: pointer;
 }
 
-.grid_images .option:hover p {
-    color: white;
-}
-
 .grid_images .image {
     width: 100%;
     position: absolute;
@@ -223,13 +219,13 @@
     color: var(--main-color);
 }
 
-.image_caption--active{
+.grid_images .image_caption--checked{
     color: white;
 }
 
-/* input[type="radio"]{
+input[type="radio"]{
     display: none;
-} */
+}
 
 .mainContent__grid__list {
     padding-left: 22%;
@@ -297,3 +293,4 @@
     border: var(--border-box);
     background-color: var(--main-color);
 }
+
