@@ -1,38 +1,59 @@
-// Hover Images 
-function mouseOverFunction(id1, id2, source) {
-    console.log(bullet, source);
-    bullet.style.color = ' #33ADB9';
-    this.src = source;
-    document.getElementById(id1).style.color = ' #FF9300';
-    document.getElementById(id2).src = source;
+// ===========Hover In  & Out Events ==================
+function mouseHoverIn(image, bullet, caption, radio, completePath){  // Color the caption an change image
+     if (!radio.checked){
+        bullet.style.color = ' #FF9300';
+        image.src = completePath;
+        caption.style.color = '#FFF';
+     }
+};
 
+function mouseHoverOut(image, bullet, caption, radio, completePath){ // Restore Default values
+    if (!radio.checked){
+        bullet.style.color = '#33ADB9';
+        image.src = completePath;
+        caption.style.color = '#33ADB9';
+    }
+};
+
+function radioChecked(){
+    console.log(this.value);
+    for(let i=0; i<radio.length; i++){
+        if (!radio[i].checked){
+            bullets[i].style.color = '#33ADB9';
+            images[i].src = pathSource + sourceHoverOut[i];
+            images_caption[i].style.color = '#33ADB9';
+        }
+    }
 }
+    //____________________
 
-function mouseOutFunction(bullet, source) {
-    console.log(bullet, source);
-    bullet.style.color = ' #33ADB9';
-    this.src = source;
-}
+var figures = document.querySelectorAll('.option')  
+var images = document.querySelectorAll('.image');
+var bullets = document.querySelectorAll('.mainContent__grid__list');
+var images_caption = document.querySelectorAll('.image_caption');
+var radio = document.querySelectorAll('input[type="radio"]');
 
+var sourceHoverIn = ['marketingdigital-hover.png',
+    'desarrollo-hover.png',
+    'admin-hover.png',
+    'consultoria-hover.png'
+];
+var sourceHoverOut = ['marketingdigital.png',
+    'desarrollo.png',
+    'admin.png',
+    'consultoria.png'
+];
+var pathSource = "../IMAGES/mas-recuros/";
 
-var bulletsId = ['list1', 'list2', 'list3', 'list4'];
-var imagesId = ['img1', 'img2', 'img3', 'img4']
-var source = ['marketingdigital-hover.png',
-    'desarrollo-hover-active.png',
-    'administracion-hover-active.png',
-    'consultorias-hover-active.png'
-]
-var pathSource = "../IMAGES/mas-recuros/"
-
-for (var i = 0; i < imagesId.length; i++) {
-    var bullet = document.getElementById(bulletsId[i])
-    var image = document.getElementById(imagesId[i])
-    var completePath = pathSource + source[i]
-    image.addEventListener('mouseover', function() {
-        mouseOverFunction(bullet, completePath);
+for (let i = 0; i < figures.length; i++) {
+    figures[i].addEventListener('mouseover', function() {
+        mouseHoverIn(images[i], bullets[i], images_caption[i], radio[i], pathSource + sourceHoverIn[i]);
     });
-
+    figures[i].addEventListener('mouseout', function() {
+        mouseHoverOut(images[i], bullets[i], images_caption[i], radio[i], pathSource + sourceHoverOut[i]);
+    });  
+    radio[i].addEventListener('click', radioChecked);
 }
-// Main Container
-var container = document.querySelector(".container")
+//====== Init Script ======================================
+var container = document.querySelector(".container");
 container.style.height = String(window.innerHeight) + "px";

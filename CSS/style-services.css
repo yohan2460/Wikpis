@@ -3,7 +3,7 @@
 :root {
     --main-color: #33ADB9;
     --main-font: sans-serif;
-    /* --border-box: 1px solid black; */
+    /* --border-box: 1px solid black;  */
     --font-color: #63737D;
 }
 
@@ -33,7 +33,6 @@
 /*======Side Bar==============*/
 
 .sideBar {
-    /* padding-left: 11%;  */
     width: auto;
     height: auto;
     grid-area: sidebar;
@@ -170,9 +169,9 @@
 }
 
 .mainContent__phrase {
-    margin-bottom: 2em;
+    margin-top: 1em;
     padding-left: 1em;
-    font: Bold 1.1em/2em var(--main-font);
+    font: Bold 1.1em/1.7em var(--main-font);
     color: var(--font-color);
     border: var(--border-box);
     border-left: 0.4em solid #FF9300;
@@ -198,12 +197,9 @@
     border: var(--border-box)
 }
 
-.grid_images a {
+.grid_images .option {
     display: flex;
-}
-
-.grid_images a:hover p {
-    color: white;
+    cursor: pointer;
 }
 
 .grid_images .image {
@@ -221,6 +217,14 @@
     font-size: 1em;
     font-family: var(--font-type);
     color: var(--main-color);
+}
+
+.grid_images .image_caption--checked{
+    color: white;
+}
+
+input[type="radio"]{
+    display: none;
 }
 
 .mainContent__grid__list {
@@ -289,3 +293,4 @@
     border: var(--border-box);
     background-color: var(--main-color);
 }
+
