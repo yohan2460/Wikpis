@@ -1,3 +1,13 @@
+var value_popupTwitter = 0
+var sumTotal = 0
+var value_popupsLinkedin = 0
+var value_popupInstagram = 0
+var value_popupFacebook = 0
+var moreNetworkSocials = 0
+var lessNetworkSocials = 0
+var sumphotography = 0
+
+
 function mouseOverFunction(id1, id2, source) {
     document.getElementById(id1).style.color = ' #FF9300';
     document.getElementById(id2).src = source;
@@ -11,9 +21,8 @@ function mouseOutFunction(id1, id2, source) {
 
 // Socail nekworks
 
-// facebook
-var calfa
 
+// facebook
 function painting_slider_facebook() {
 
     var val = (this.value - this.min) / (this.max - this.min);
@@ -27,14 +36,13 @@ function painting_slider_facebook() {
     Popup.style.marginLeft = cal;
 
 
-    this.value_popup = (this.value - this.min)
-    document.getElementById('Popup_label').textContent = this.value_popup;
+    value_popupFacebook = (this.value - this.min)
+    document.getElementById('Popup_label').textContent = value_popupFacebook;
+    sum()
 
 
 }
-var value_popups = 0
-var value_popupTwitter = 0
-var painting_slider_facebook;
+
 
 // Instagram
 function painting_slider_instagram() {
@@ -50,8 +58,9 @@ function painting_slider_instagram() {
     PopupInstagram.style.marginLeft = cal;
 
 
-    var value_popup = (this.value - this.min)
-    document.getElementById('Popup_label_Instagram').innerHTML = value_popup;
+    value_popupInstagram = (this.value - this.min)
+    document.getElementById('Popup_label_Instagram').innerHTML = value_popupInstagram;
+    sum()
 
 }
 
@@ -70,20 +79,12 @@ function painting_slider_Linkedin() {
     PopupLinkedin.style.marginLeft = cal;
 
 
-    value_popups = (this.value - this.min)
-    document.getElementById('Popup_label_Linkedin').innerHTML = value_popups;
+    value_popupsLinkedin = (this.value - this.min)
+    document.getElementById('Popup_label_Linkedin').innerHTML = value_popupsLinkedin;
     sum()
 }
 
-var sumTotal = 0
 
-
-console.log(value_popupTwitter)
-
-function sum() {
-    sumTotal = value_popups + 19;
-    var containerQuotation_sumlabel = document.querySelector('.containerQuotation_sumlabel').textContent = this.sumTotal;
-}
 // Twitter
 function painting_slider_Twitter() {
     var val = (this.value - this.min) / (this.max - this.min);
@@ -182,53 +183,126 @@ function hidenTheSlider() {
     }
 }
 
+//  sum Of Nekworks
+function sum() {
+    sumTotal = value_popupTwitter + value_popupsLinkedin + value_popupInstagram + value_popupFacebook;
+    var containerQuotation_sumlabel = document.querySelector('.containerQuotation_sumlabel').textContent = this.sumTotal;
+
+}
+
+//   <!-- ======= Photography or image without design========= -->
+
+function funSumPhotography() {
+    sumphotography = moreNetworkSocials + lessNetworkSocials
+    photography.textContent = sumphotography
+    photography.textContent = sumphotography
+
+}
+
+function functionmoreNetworkSocial() {
+    moreNetworkSocials++
+    funSumPhotography()
+}
+
+function functionlessNetworkSocial() {
+    if (sumphotography >= 1) {
+        lessNetworkSocials--
+        funSumPhotography()
+    }
+}
+
+var sumflatGraphicPiece = 0
+    // <!-- ======= Flat graphic piece========= -->
+
+function funSumPhotography() {
+    sumflatGraphicPiece = moreNetworkSocials + lessNetworkSocials
+    flatGraphicPiece.textContent = sumflatGraphicPiece
+    flatGraphicPiece.textContent = sumflatGraphicPiece
+
+}
+
+function funMoreflatgraphicNetworkSocial() {
+    moreNetworkSocials++
+    funSumPhotography()
+}
+
+function funLessflatgraphicNetworkSocial() {
+    if (sumphotography >= 1) {
+        lessNetworkSocials--
+        funSumPhotography()
+    }
+}
+
+
 // facebook
-var Popup = document.getElementById('Popup')
-var Popup_label = document.getElementById('Popup_label')
-var slider = document.getElementById("slider");
+const Popup = document.getElementById('Popup')
+const Popup_label = document.getElementById('Popup_label')
+const slider = document.getElementById("slider");
 slider.addEventListener('input', painting_slider_facebook);
 
 // Instagram
-var PopupInstagram = document.getElementById('PopupInstagram')
-var Popup_label_Instagram = document.getElementById('Popup_label_Instagram')
-var sliderInstagram = document.getElementById("sliderInstagram");
+const PopupInstagram = document.getElementById('PopupInstagram')
+const Popup_label_Instagram = document.getElementById('Popup_label_Instagram')
+const sliderInstagram = document.getElementById("sliderInstagram");
 sliderInstagram.addEventListener('input', painting_slider_instagram);
 
 // Linkedin
-var PopupLinkedin = document.getElementById('PopupLinkedin')
-var Popup_label_Linkedin = document.getElementById('Popup_label_Linkedin')
-var sliderLinkedin = document.getElementById("sliderLinkedin");
+const PopupLinkedin = document.getElementById('PopupLinkedin')
+const Popup_label_Linkedin = document.getElementById('Popup_label_Linkedin')
+const sliderLinkedin = document.getElementById("sliderLinkedin");
 sliderLinkedin.addEventListener('input', painting_slider_Linkedin);
 
 // Twitter
-var PopupTwitter = document.getElementById('PopupTwitter')
-var Popup_label_Twitter = document.getElementById('Popup_label_Twitter')
-var sliderTwitter = document.getElementById("sliderTwitter");
+const PopupTwitter = document.getElementById('PopupTwitter')
+const Popup_label_Twitter = document.getElementById('Popup_label_Twitter')
+const sliderTwitter = document.getElementById("sliderTwitter");
 sliderTwitter.addEventListener('input', painting_slider_Twitter);
 // ----------------------------------------------------------------------------------------------
 
 //    hiden form
 
-var clickform = document.getElementById('clickform');
-var formTextHide = document.getElementById('formTextHide');
+const clickform = document.getElementById('clickform');
+const formTextHide = document.getElementById('formTextHide');
 clickform.addEventListener('click', funcionFormTextHide)
 
 
 // Facebook slider
-var btnformFacebook = document.getElementById('btnFacebook')
+const btnformFacebook = document.getElementById('btnFacebook')
 btnformFacebook.addEventListener('click', btnFacebook)
 
 //Instagram slider
-var btnformInstagram = document.getElementById('btnInstagram')
+const btnformInstagram = document.getElementById('btnInstagram')
 btnformInstagram.addEventListener('click', btnInstagram)
 
 //Linkedin slider
-var btnformLinkedin = document.getElementById('btnLinkedin')
+const btnformLinkedin = document.getElementById('btnLinkedin')
 btnformLinkedin.addEventListener('click', btnLinkedin)
 
 //Twitter slider
-var btnformTwitter = document.getElementById('btnTwitter')
+const btnformTwitter = document.getElementById('btnTwitter')
 btnformTwitter.addEventListener('click', btnTwitter)
 
 // sum Of Nekworks
-var sumOfNekworks = document.getElementById('sumOfNekworks')
+const sumOfNekworks = document.getElementById('sumOfNekworks')
+
+
+// Reparticion de las redes sociales
+
+const flatGraphicPiece = document.getElementById('flatGraphicPiece');
+const animatedGraphicPiece = document.getElementById('animatedGraphicPiece');
+const gifs = document.getElementById('gifs');
+
+// buttons for number of photo publications
+const moreNetworkSocial = document.getElementById('moreNetworkSocial')
+moreNetworkSocial.addEventListener('click', functionmoreNetworkSocial)
+const lessNetworkSocial = document.getElementById('lessNetworkSocial')
+lessNetworkSocial.addEventListener('click', functionlessNetworkSocial)
+
+//buttons for quantity of publications of graphic pieces
+const moreflatgraphicNetworkSocial = document.getElementById('moreflatgraphicNetworkSocial')
+moreflatgraphicNetworkSocial.addEventListener('click', funMoreflatgraphicNetworkSocial)
+const lessflatgraphicNetworkSocial = document.getElementById('lessflatgraphicNetworkSocial')
+lessflatgraphicNetworkSocial.addEventListener('click', funLessflatgraphicNetworkSocial)
+
+
+const remainingPosts = document.getElementById('remainingPosts')
