@@ -182,8 +182,8 @@
     margin-left: 10px;
     margin-right: 10px;
     display: grid;
-    grid-template-columns: repeat(4, minmax(auto, 1fr));
-    grid-template-rows: 170px 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+    grid-template-rows: auto-fit 1fr;
     /* grid-template-rows:  repeat(2, minmax(100px, 160px));*/
     align-self: center;
     border: var(--border-box);

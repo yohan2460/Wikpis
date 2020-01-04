@@ -1,3 +1,4 @@
+"use strict";
 // ===========Hover In  & Out Events ==================
 function mouseHoverIn(image, bullet, completePath){  // Color the caption an change image
     bullet.style.color = ' #FF9300';
