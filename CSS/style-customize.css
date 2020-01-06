@@ -328,6 +328,14 @@
     display: none;
 }
 
+#btnLinkedinfollowers,
+#FollowersInstagram,
+#FollowerFacebook,
+#FollowerLinkedin,
+#FollowerTwitter {
+    display: none;
+}
+
 #formTextHide input {
     width: 95%;
     color: #808080;
@@ -366,10 +374,18 @@
 #Popup_label,
 #PopupInstagram,
 #PopupLinkedin,
+#PopupFollowersInstagram,
+#PopupFollowersTwitter,
+#PopupFollowersLinkedin,
+#Popup_label_FollowersFacebook,
+#Popup_label_FollowersTwitter,
 #PopupTwitter,
 #Popup_label_Twitter,
 #Popup_label_Instagram,
-#Popup_label_Linkedin {
+#Popup_label_Linkedin,
+#Popup_label_FollowersInstagram,
+#Popup_label_FollowersLinkedin,
+#PopupFollowersFacebook {
     position: absolute;
     left: 0%;
     z-index: 2;
@@ -388,7 +404,11 @@
 #Popup,
 #PopupInstagram,
 #PopupLinkedin,
-#PopupTwitter {
+#PopupTwitter,
+#PopupFollowersInstagram,
+#PopupFollowersLinkedin,
+#PopupFollowersTwitter,
+#PopupFollowersFacebook {
     background-color: transparent;
     z-index: 0;
 }
@@ -649,6 +669,9 @@ input[type=range]::-moz-range-thumb {
     font-size: 1em;
     font-weight: 100;
 }
+
+
+/*   ======= number of current followers ===== */
 
 .containerAttentionSchedule_number {
     width: 100px;
