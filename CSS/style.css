@@ -38,6 +38,10 @@ p {
     width: 40%;
 }
 
+img {
+    width: 100%;
+}
+
 .container-box--contizador p samp {
     font-family: var(--font-main);
     color: var(--color-white);

@@ -8,6 +8,8 @@
     <title>Categoria</title>
     <link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/style-mainFrame.css">
+    <link rel="stylesheet" href="../CSS/style-sideBar.css">
     <link rel="stylesheet" href="../CSS/style-category.css">
 </head>
 
@@ -31,6 +33,14 @@
                     </figure>
                     <div class="sideBar_fillingBar">
                         <div class="sideBar_progress"></div>
+                    </div>
+                    <div class="sideBar_progress">
+                        <div class="sideBar_progress_colored progress--1">
+                        </div>
+                        <div class="sideBar_progress_colored progress--2">
+                        </div>
+                        <div class="sideBar_progress_colored progress--3">
+                        </div>
                     </div>
                 </div>
                 <div class="sideBar_iconNames">
@@ -59,32 +69,36 @@
                 <div class="mainContent__grid">
                     <!-- === IMAGES ===== -->
                     <fig class="grid_images">
-                        <a href="">
-                            <img class="image" src="../IMAGES/redes-sociales.png" id='img1' alt="marketingdigital">
+                        <input type="checkbox" name="categoryOption" id="redesSociales" value = "redesSociale">
+                        <label for="redesSociales" class = 'option'>
+                            <img class="image" src="../IMAGES/mas-recuros/redessociales.png" id='img1' alt="marketingdigital">
                             <p class="image_caption"><strong>Redes</strong>
                                 <br>Sociales</p>
-                        </a>
+                        </label>
                     </fig>
                     <fig class="grid_images">
-                        <a href="">
-                            <img class="image" src="../IMAGES/sem.png" id='img2' alt="desarrollo">
+                        <input type="checkbox" name="categoryOption" id="sem" value = "sem">
+                        <label for="sem" class = 'option'>
+                            <img class="image" src="../IMAGES/mas-recuros/sem.png" id='img2' alt="desarrollo">
                             <p class="image_caption"><strong>SEM</strong>
                                 <br>publicidad en google</p>
-                        </a>
+                        </label>
                     </fig>
                     <fig class="grid_images">
-                        <a href="">
-                            <img class="image" src="../IMAGES/seo.png" id='img3' alt="admin">
+                        <input type="checkbox" name="categoryOption" id="seo" value = "seo">
+                        <label for="seo" class = 'option'>
+                            <img class="image" src="../IMAGES/mas-recuros/seo.png" id='img3' alt="admin">
                             <p class="image_caption"><strong>SEO</strong>
                                 <br>Posicionamiento</p>
-                        </a>
+                        </label>
                     </fig>
                     <fig class="grid_images">
-                        <a href="">
-                            <img class="image" src="../IMAGES/mail.png" id='img4' alt="consultorias">
+                        <input type="checkbox" name="categoryOption" id="email" value = "email">
+                        <label for="email" class = 'option'>
+                            <img class="image" src="../IMAGES/mas-recuros/email.png" id='img4' alt="consultorias">
                             <p class="image_caption"><strong>Mail </strong>
                                 <br>Marketing</p>
-                        </a>
+                        </label>
                     </fig>
                     <!-- === LISTS ===== -->
                     <ul class="mainContent__grid__list" id="list1">
@@ -123,7 +137,7 @@
         <!-- <script src="jquery-3.4.1.js"></script> -->
 
     </div>
-    <script src="../js/service.js"></script>
+    <script src="../js/category.js"></script>
     <!-- <script src="../js/script.js"></script> -->
 
 </body>
