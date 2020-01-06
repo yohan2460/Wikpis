@@ -246,17 +246,21 @@
 
 /* <!-- =======  checkbox ========= --> */
 
-.containerQuotation_nameSocialNetworks input[type="checkbox"] {
+.containerQuotation_nameSocialNetworks input[type="checkbox"],
+.containerAttentionSchedule_items input[type="checkbox"] {
     display: none;
 }
 
-.containerQuotation_nameSocialNetworks label {
+.containerQuotation_nameSocialNetworks label,
+.containerAttentionSchedule_items label {
     padding-left: 1.2em;
     position: relative;
+    display: inherit;
     cursor: pointer;
 }
 
-.containerQuotation_nameSocialNetworks label::before {
+.containerQuotation_nameSocialNetworks label::before,
+.containerAttentionSchedule_items label::before {
     content: "";
     border: 3px solid #F2F2F2;
     width: 6px;
@@ -268,10 +272,11 @@
     bottom: 3.5px;
 }
 
-.containerQuotation_nameSocialNetworks input[type="checkbox"]:checked+label::before {
+.containerQuotation_nameSocialNetworks input[type="checkbox"]:checked+label::before,
+.containerAttentionSchedule_items input[type="checkbox"]:checked+label::before {
     content: "";
     background-color: var(--color-orange);
-    color: red;
+    /* color: red; */
 }
 
 .containerQuotation_nameSocialNetworks {
@@ -602,6 +607,82 @@ input[type=range]::-moz-range-thumb {
 }
 
 
+/*======= Additional message and chat service hours =========*/
+
+.containerQuotation_text--nonepadding {
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+.containerAttentionSchedule_items {
+    width: 60%;
+    height: 60px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 40px;
+}
+
+.containerAttentionSchedule_items p {
+    color: white;
+    font-size: 1em;
+}
+
+.containerAttentionSchedule_items--space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerAttentionSchedule_items--space label {
+    padding-left: 2.2em;
+    /* width: 10px; */
+}
+
+.containerAttentionSchedule_items label::before {
+    width: 8px;
+    height: 8px;
+}
+
+.containerAttentionSchedule_number span {
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.containerAttentionSchedule_number {
+    width: 100px;
+    border-radius: 5px;
+    height: 70%;
+    border: 1px solid #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    color: var(--color-orange);
+}
+
+.containerNumberFollowers-general {
+    display: flex;
+    position: relative;
+}
+
+.containerQuotation_numberFollowersIntagram {
+    position: initial;
+    margin-right: 12px;
+    color: var(--color-orange)
+}
+
+.containerQuotation_parents--nekworks {
+    display: flex;
+    align-items: flex-end;
+}
+
+.Popup_label_Linkedin--followers {
+    width: 100px !important;
+}
+
+
 /*======= Total budget =========*/
 
 .containerQuotation_totalBudget {
@@ -619,10 +700,6 @@ input[type=range]::-moz-range-thumb {
     align-items: center;
     font-size: 13px;
     font-weight: normal;
-}
-
-.containerQuotation_text--nonepadding {
-    padding: 0;
 }
 
 
@@ -709,5 +786,19 @@ input[type=range]::-moz-range-thumb {
     }
     .containerQuotation_text--nonepadding {
         padding: 0 !important;
+    }
+    .containerAttentionSchedule_items--space label {
+        padding-left: 1em;
+    }
+    .containerAttentionSchedule_items {
+        width: 80%;
+        height: 50px;
+        padding: 0 10px 0 20px;
+    }
+    .containerAttentionSchedule_number {
+        width: 90px;
+    }
+    .containerAttentionSchedule_number span {
+        font-size: 1em;
     }
 }
