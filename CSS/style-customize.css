@@ -621,6 +621,10 @@ input[type=range]::-moz-range-thumb {
     font-weight: normal;
 }
 
+.containerQuotation_text--nonepadding {
+    padding: 0;
+}
+
 
 /* <!-- =======  responsive 1024px ========= --> */
 
@@ -681,7 +685,29 @@ input[type=range]::-moz-range-thumb {
         font-size: 15px;
         /* padding: 2px; */
     }
-    .containerQuotation_sumOfNekworks p {
-        /* font-size: 15px; */
+    .containerQuotation_format {
+        padding: 4px 1%;
+    }
+    .containerQuotation_Photography p {
+        font-size: 10px;
+        /* width: 27%; */
+    }
+    .containerQuotation_Photography {
+        width: 30%;
+    }
+    .containerQuotation_formatSumlabel {
+        width: 4%;
+    }
+    .containerQuotation_formatModifiers {
+        width: 4%;
+    }
+    .containerQuotation_Photography--Gifs {
+        width: 10%;
+    }
+    .formatModifiers {
+        cursor: pointer;
+    }
+    .containerQuotation_text--nonepadding {
+        padding: 0 !important;
     }
 }
