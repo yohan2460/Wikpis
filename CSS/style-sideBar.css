@@ -1,0 +1,113 @@
+
+/*======Side Bar==============*/
+
+.sideBar {
+    width: auto;
+    height: auto;
+    grid-area: sidebar;
+    align-self: center;
+    justify-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--border-box);
+}
+
+.sideBarContent {
+    width: 160px;
+    height: 540px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: var(--border-box);
+}
+
+.sideBar_fillingBar {
+    width: 8px;
+    height: 100%;
+    margin: auto;
+    align-self: center;
+    position: absolute;
+    z-index: 1;
+    background-image: linear-gradient(to right, #E5E5E5, #CBCBCB);
+}
+
+.sideBar_progress{
+    margin-top: 50px;
+    width: 3px;
+    height: 435px;
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    position: absolute;
+    z-index: 4;
+
+    justify-content: space-between;
+    /* border:1px solid black;  */
+}
+
+.sideBar_progress_colored{
+    width:100%;
+    height: 116px;
+    background-color: transparent;
+}
+
+.iconsContainer {
+    width: 39.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+    border: var(--border-box);
+}
+
+.sideBar_icon {
+    width: 100%;
+    height: 0;
+    /* para que se vea cuadrado*/
+    padding-bottom: 100%;
+    /* para qque se vea cuadrado*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    border-radius: 50%;
+    background-image: radial-gradient(circle, #E5E5E5, #CBCBCB);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.paso1naranja {
+    width: 90%;
+    padding-top: 100%;
+    /*para compensar el padding-bottom de sideBar-icon*/
+}
+
+.sideBar_iconNames {
+    margin-right: 1%;
+    width: 55%;
+    height: 100%;
+    margin-left: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-family: var(--main-font);
+    font-weight: lighter;
+    line-height: 73px;
+    border: var(--border-box);
+}
+
+.sideBar_iconNames p {
+    margin: 0 0 0 11px;
+}
+
+
+
+
