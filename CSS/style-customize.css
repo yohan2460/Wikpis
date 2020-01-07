@@ -788,6 +788,14 @@ input[type=range]::-moz-range-thumb {
 }
 
 
+/* ======containerAccompaniment-title ======= */
+
+.containerAccompaniment-title {
+    color: var(--color-orange);
+    margin-bottom: 4px;
+}
+
+
 /*======= Total budget =========*/
 
 .containerQuotation_totalBudget {
@@ -905,5 +913,23 @@ input[type=range]::-moz-range-thumb {
     }
     .containerAttentionSchedule_number span {
         font-size: 1em;
+    }
+    .numberPhotographs {
+        width: 270px;
+    }
+    .itemsNumber {
+        width: 20%;
+    }
+    .containerQuotation_formatSumlabel--numPhotographs {
+        width: 50%;
+    }
+    .containerQuotation_formatModifiers--itemsNumber {
+        width: 36%;
+    }
+    .itemspreci {
+        width: 30%;
+    }
+    .containerAccompaniment-title {
+        padding: .1% !important;
     }
 }

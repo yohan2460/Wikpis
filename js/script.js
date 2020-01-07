@@ -413,8 +413,6 @@ function funProfessionalPhotographyNO() {
 function funProfessionalPhotographyYes() {
     if (ProfessionalPhotographyYes.checked === true) {
         hidenNumberPhotographs.style.display = 'flex'
-
-
     }
 }
 
