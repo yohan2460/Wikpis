@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Categoria</title>
+    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/style-mainFrame.css">
+    <link rel="stylesheet" href="../CSS/style-sideBar.css">
+    <link rel="stylesheet" href="../CSS/style-generateQuote.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- ===SIDE BAR ===== -->
+        <aside class="sideBar">
+            <div class="sideBarContent">
+                <div class="iconsContainer">
+                    <figure class="sideBar_icon icon1">
+                        <img src="../IMAGES/mas-recuros/pasos/paso1naranja.png" class="paso1naranja" alt="">
+                    </figure>
+                    <figure class="sideBar_icon icon2">
+                        <img src="../IMAGES/mas-recuros/pasos/paso2naranja.png" class="paso1naranja" alt="">
+                    </figure>
+                    <figure class="sideBar_icon icon3">
+                        <img src="../IMAGES/mas-recuros/pasos/paso3naranja.png" class="paso1naranja" alt="">
+                    </figure>
+                    <figure class="sideBar_icon icon4">
+                        <img src="../IMAGES/mas-recuros/pasos/paso4naranja.png" class="paso1naranja" alt="">
+                    </figure>
+                    <div class="sideBar_fillingBar">
+                        <div class="sideBar_progress"></div>
+                    </div>
+                    <div class="sideBar_progress">
+                        <div class="sideBar_progress_colored progress--1">
+                        </div>
+                        <div class="sideBar_progress_colored progress--2">
+                        </div>
+                        <div class="sideBar_progress_colored progress--3">
+                        </div>
+                    </div>
+                </div>
+                <div class="sideBar_iconNames">
+                    <p>Servicio</p>
+                    <p>Categorías</p>
+                    <p>Personaliza</p>
+                    <p>Cotización</p>
+                </div>
+            </div>
+        </aside>
+        <!-- ===MAIN ===== -->
+        <main class="main">
+            <div class="mainContent">
+                <!-- === HEADER ===== -->
+                <div class="mainContent__header">
+                    <figure class="mainContent__header__logo">
+                        <img class="wikpisLogo" src="../IMAGES/mas-recuros/logo-color.png" alt="logo-color">
+                    </figure>
+                    <p class="mainContent__header__text">Cotizador Online</p>
+                </div>
+                <!-- === PHRASE ===== -->
+                <p class="mainContent__phrase">
+                    4. Genera tu cotización                
+                </p>
+                <!-- === FORM === -->
+                <div class="formContainer">
+                    <form action="" class="form">
+                        <p class = "formPhrase"><span>Sólo un último paso</span> para generar tu cotización personalizada</p>
+                        <div class="formInputText">
+                            <label for="name">Nombres y apellidos *</label>
+                             <input type="text" id="name" name="user_data" required>
+                            <label for="enterprise">Nombres de la empresa *</label> 
+                            <input type="text" id="enterprise" name="user_data" required>
+                            <label for="position">Tu cargo</label>
+                             <input type="text" id="position" name="user_data">
+                            <label for="cellphone">Tu numero de celular</label> 
+                            <input type="text" id="cellphone" name="user_data">
+                        </div>
+                        <div class="dataPolicy">
+                            <p class="title">Política de manejo de datos:</p>
+                            <p class="description">Para nuestra empresa el manejo de esta información es de mucha importancia por esta razón queremos consultarte
+                               el uso de ellos <a href="">Ver política de manejo de datos.</a>
+                            </p>
+                            <div class="questions">
+                                <div class="question1Container">
+                                    <p class="question1">¿Autoriza recibir Información ofertas o servicios de nuestra empresa alcorreo electrónico recibido?</p>
+
+                                    <label for="yes_1"><p>Si</p></label>
+                                    <input type="radio" name="question1" id="yes_1" value ="yes" checked>
+                                    <label for="no_1"><p>No, gracias</p></label>
+                                    <input type="radio" name="question1" id="no_1" value ="no">
+                                </div>
+                                
+                                <div class="question2Container">
+                                    <p class="question2">¿Autoriza que un asesor comercial se comunique para ampliar información de nuestra empresa y cotización?</p>
+                                    <label for="yes_2">Si</label>
+                                    <input type="radio" name="question2" id="yes_2" value ="yes" checked>
+                                    <label for="no_2">No, gracias</label>
+                                    <input type="radio" name="question2" id="no_2" value ="no">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!--=== FOOTER =====-->
+        <footer class="footer">
+            Wikpis Marketing Digital. Todos los derechos reservados
+        </footer>
+        <!-- <script src="jquery-3.4.1.js"></script> -->
+
+    </div>
+    <script src="../js/category.js"></script>
+    <!-- <script src="../js/script.js"></script> -->
+
+</body>
+
+</html>
