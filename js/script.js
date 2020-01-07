@@ -23,7 +23,13 @@ var sumHidenInstagram, sumHidenLinkedin, sumHidenFacebook, sumHidenTwitter,
     // fotografia
     moreNumberPhotograph = 0,
     lessNumberPhotograph = 0,
-    sumNumberphotography = 0;
+    sumNumberphotography = 0,
+    sumAccompanyingHours = 0,
+    moreAccompanyingHours = 0,
+    moresumAccompanyingHours = 0,
+    value_Accompaniment = 0,
+
+    lessAccompanyingHours = 0;
 // Socail nekworks
 // facebook
 
@@ -386,7 +392,6 @@ function funSumNumberPhotograph() {
         // console.log(sumNumberphotography)
     numPhotographs.textContent = sumNumberphotography
     numPhotographs.textContent = sumNumberphotography
-    sumNekworkSocial()
 }
 
 function funMoreNumberPhotographs() {
@@ -415,6 +420,57 @@ function funProfessionalPhotographyYes() {
         hidenNumberPhotographs.style.display = 'flex'
     }
 }
+
+// <!-- ========= Accompaniment in cities ==========-->
+
+
+function funhidenOtros() {
+    if (hidenOtros.checked === true) {
+        citiesInput.style.display = 'block'
+    } else {
+        citiesInput.style.display = 'none'
+    }
+}
+// <!-- =============accompanying hours========== -->
+
+
+function funSumAccompanyingHours() {
+    sumAccompanyingHours = moresumAccompanyingHours + lessAccompanyingHours
+        // console.log(sumNumberphotography)
+    labelAccompanyingHours.textContent = sumAccompanyingHours
+    labelAccompanyingHours.textContent = sumAccompanyingHours
+}
+
+function funLessAccompanyingHoursless() {
+    if (sumAccompanyingHours >= 1) {
+        lessAccompanyingHours--
+        funSumAccompanyingHours()
+    }
+}
+
+function funMoreAccompanyingHourss() {
+    moresumAccompanyingHours++
+    funSumAccompanyingHours()
+}
+// 
+
+function funNumPopup_label_PopupAccompaniment() {
+
+    var val = (this.value - this.min) / (this.max - this.min);
+    var percent = val * 100;
+    var gradient = "-webkit-gradient(linear, left top, right top, color-stop(" + percent + "%, #FF9300), color-stop(" + percent + "%, #EFEFEF))"
+
+    this.style.background = gradient;
+
+    var cals = percent - 150 / 100;
+    var cal = " " + cals + "%";
+    PopupAccompaniment.style.marginLeft = cal;
+
+
+    value_Accompaniment = (this.value - this.min)
+    document.getElementById('Popup_label_PopupAccompaniment').innerHTML = value_Accompaniment;
+}
+
 
 
 // facebook
@@ -541,4 +597,35 @@ const lessNumberPhotographs = document.getElementById('lessNumberPhotographs')
 lessNumberPhotographs.addEventListener('click', funLessNumberPhotographs)
 const numPhotographs = document.getElementById('numPhotographs')
 
-hidenNumberPhotographs = document.getElementById('hidenNumberPhotographs')
+const hidenNumberPhotographs = document.getElementById('hidenNumberPhotographs')
+
+//<!-- ========= Accompaniment in cities ==========-->
+const hidenOtros = document.getElementById('hidenOtros')
+hidenOtros.addEventListener('click', funhidenOtros)
+const citiesInput = document.getElementById('citiesInput')
+
+
+//  <!-- =============accompanying hours========== -->
+const moreAccompanyingHourss = document.getElementById('moreAccompanyingHourss')
+moreAccompanyingHourss.addEventListener('click', funMoreAccompanyingHourss)
+const lessAccompanyingHoursless = document.getElementById('lessAccompanyingHoursless')
+lessAccompanyingHoursless.addEventListener('click', funLessAccompanyingHoursless)
+const labelAccompanyingHours = document.getElementById('labelAccompanyingHours')
+
+
+// ======================investment==============
+const PopupAccompaniment = document.getElementById('PopupAccompaniment')
+const Accompanimenthiden = document.getElementById('Accompanimenthiden')
+pauta.addEventListener('click', funPautahiden)
+const numPopup_label_PopupAccompaniment = document.getElementById('numPopup_label_PopupAccompaniment')
+numPopup_label_PopupAccompaniment.addEventListener('input', funNumPopup_label_PopupAccompaniment)
+pauta = document.getElementById('pauta')
+
+function funPautahiden() {
+    if (pauta.checked == true) {
+        Accompanimenthiden.style.display = 'flex'
+    } else {
+
+        Accompanimenthiden.style.display = 'none'
+    }
+}

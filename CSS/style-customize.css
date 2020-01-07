@@ -335,7 +335,8 @@
 #FollowersInstagram,
 #FollowerFacebook,
 #FollowerLinkedin,
-#FollowerTwitter {
+#FollowerTwitter,
+#Accompanimenthiden {
     display: none;
 }
 
@@ -383,12 +384,14 @@
 #Popup_label_FollowersFacebook,
 #Popup_label_FollowersTwitter,
 #PopupTwitter,
+#PopupAccompaniment,
 #Popup_label_Twitter,
 #Popup_label_Instagram,
 #Popup_label_Linkedin,
 #Popup_label_FollowersInstagram,
 #Popup_label_FollowersLinkedin,
-#PopupFollowersFacebook {
+#PopupFollowersFacebook,
+#Popup_label_PopupAccompaniment {
     position: absolute;
     left: 0%;
     z-index: 2;
@@ -408,6 +411,7 @@
 #PopupInstagram,
 #PopupLinkedin,
 #PopupTwitter,
+#PopupAccompaniment,
 #PopupFollowersInstagram,
 #PopupFollowersLinkedin,
 #PopupFollowersTwitter,
@@ -793,6 +797,81 @@ input[type=range]::-moz-range-thumb {
 .containerAccompaniment-title {
     color: var(--color-orange);
     margin-bottom: 4px;
+}
+
+
+/*<!-- ========= Accompaniment in cities ==========-->*/
+
+.containerAccompaniment-cities {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.containerAccompaniment-cities p {
+    /* border: 1px solid red; */
+    padding-right: 10px;
+    color: #989898;
+    /* width: 150px */
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.containerAccompaniment-cities input[type="checkbox"] {
+    display: none;
+}
+
+.containerAccompaniment-cities label {
+    padding-left: 1.9em;
+    position: relative;
+    display: inherit;
+}
+
+.containerAccompaniment-cities label::before {
+    margin-bottom: 10px;
+    content: "";
+    border: 3px solid #F2F2F2;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background-color: #EFEFEF;
+    border-radius: 50%;
+    left: 12px;
+    bottom: 3.5px;
+}
+
+.containerAccompaniment-cities input[type="checkbox"]:checked+label::before {
+    content: "";
+    background-color: var(--color-orange);
+    /* color: red; */
+}
+
+.containerAccompaniment-cities--input input {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--color-orange);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: #989898;
+}
+
+#citiesInput {
+    display: none;
+}
+
+
+/*  <!-- =============accompanying hours========== --> */
+
+.containerAccompaniment-title--Acompany {
+    padding: 20px 0 10px 0;
+}
+
+hr {
+    margin-top: 1.5%;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
 }
 
 
