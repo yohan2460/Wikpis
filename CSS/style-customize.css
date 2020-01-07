@@ -278,6 +278,10 @@
     /* color: red; */
 }
 
+.containerQuotation_nameSocialNetworks--professionalPhotography input[type="checkbox"]:checked+label::before {
+    background-color: var(--color-orange);
+}
+
 .containerQuotation_nameSocialNetworks {
     width: 81%;
     height: 100%;
@@ -777,6 +781,10 @@ input[type=range]::-moz-range-thumb {
 
 .formatModifiers1 {
     margin-bottom: 5px;
+}
+
+#hidenNumberPhotographs {
+    display: none;
 }
 
 

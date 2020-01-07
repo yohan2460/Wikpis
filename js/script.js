@@ -134,6 +134,13 @@ function btnFacebook() {
         hidenTheSlider()
     }
 }
+
+
+
+
+
+
+
 //Instagram slider
 function btnInstagram() {
     var btnInstagram = document.getElementById('containerQuotation_parent--Instagram')
@@ -395,6 +402,23 @@ function funLessNumberPhotographs() {
 }
 
 
+function funProfessionalPhotographyNO() {
+    if (ProfessionalPhotographyNO.checked === true) {
+        hidenNumberPhotographs.style.display = 'none'
+        console.log('none')
+
+    }
+}
+
+function funProfessionalPhotographyYes() {
+    if (ProfessionalPhotographyYes.checked === true) {
+        hidenNumberPhotographs.style.display = 'flex'
+
+
+    }
+}
+
+
 // facebook
 const Popup = document.getElementById('Popup')
 const Popup_label = document.getElementById('Popup_label')
@@ -506,9 +530,10 @@ const numFollowersTwitter = document.getElementById('numFollowersTwitter')
 numFollowersTwitter.addEventListener('input', funNumFollowersTwitter)
 
 //checkbox yes o no of professional photography
-
 const ProfessionalPhotographyNO = document.getElementById('ProfessionalPhotographyNO')
-const ProfessionalPhotographySI = document.getElementById('ProfessionalPhotographySI')
+ProfessionalPhotographyNO.addEventListener('click', funProfessionalPhotographyNO)
+const ProfessionalPhotographyYes = document.getElementById('ProfessionalPhotographyYes')
+ProfessionalPhotographyYes.addEventListener('click', funProfessionalPhotographyYes)
 
 
 // =============== professional photography =============
@@ -517,3 +542,5 @@ moreNumberPhotographs.addEventListener('click', funMoreNumberPhotographs)
 const lessNumberPhotographs = document.getElementById('lessNumberPhotographs')
 lessNumberPhotographs.addEventListener('click', funLessNumberPhotographs)
 const numPhotographs = document.getElementById('numPhotographs')
+
+hidenNumberPhotographs = document.getElementById('hidenNumberPhotographs')
