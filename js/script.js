@@ -19,7 +19,11 @@ var sumHidenInstagram, sumHidenLinkedin, sumHidenFacebook, sumHidenTwitter,
     value_FollowerFacebook = 0,
     value_FollowerTwitter = 0,
     value_FollowerLinkedin = 0,
-    lessGIFS = 0;
+    lessGIFS = 0,
+    // fotografia
+    moreNumberPhotograph = 0,
+    lessNumberPhotograph = 0,
+    sumNumberphotography = 0;
 // Socail nekworks
 // facebook
 
@@ -367,6 +371,28 @@ function funNumFollowersTwitter() {
     document.getElementById('Popup_label_FollowersTwitter').innerHTML = value_FollowerTwitter;
 }
 
+//=============== professional photography =============
+
+
+function funSumNumberPhotograph() {
+    sumNumberphotography = moreNumberPhotograph + lessNumberPhotograph
+        // console.log(sumNumberphotography)
+    numPhotographs.textContent = sumNumberphotography
+    numPhotographs.textContent = sumNumberphotography
+    sumNekworkSocial()
+}
+
+function funMoreNumberPhotographs() {
+    moreNumberPhotograph++
+    funSumNumberPhotograph()
+}
+
+function funLessNumberPhotographs() {
+    if (sumNumberphotography >= 1) {
+        lessNumberPhotograph--
+        funSumNumberPhotograph()
+    }
+}
 
 // facebook
 const Popup = document.getElementById('Popup')
@@ -477,3 +503,16 @@ numFollowersLinkedin.addEventListener('input', funNumFollowersLinkedin)
 const PopupFollowersTwitter = document.getElementById('PopupFollowersTwitter')
 const numFollowersTwitter = document.getElementById('numFollowersTwitter')
 numFollowersTwitter.addEventListener('input', funNumFollowersTwitter)
+
+//checkbox yes o no of professional photography
+
+const ProfessionalPhotographyNO = document.getElementById('ProfessionalPhotographyNO')
+const ProfessionalPhotographySI = document.getElementById('ProfessionalPhotographySI')
+
+
+// =============== professional photography =============
+const moreNumberPhotographs = document.getElementById('moreNumberPhotographs')
+moreNumberPhotographs.addEventListener('click', funMoreNumberPhotographs)
+const lessNumberPhotographs = document.getElementById('lessNumberPhotographs')
+lessNumberPhotographs.addEventListener('click', funLessNumberPhotographs)
+const numPhotographs = document.getElementById('numPhotographs')

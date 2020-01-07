@@ -706,6 +706,81 @@ input[type=range]::-moz-range-thumb {
 }
 
 
+/* =============== professional photography ============ */
+
+.containerQuotation_nameSocialNetworks--professionalPhotography {
+    color: rgba(152, 152, 152, 1);
+    background-color: white;
+    margin: 0 10px;
+}
+
+.containerQuotation_nameSocialNetworks--professionalPhotography label {
+    margin-left: 40px;
+}
+
+.numberPhotographs {
+    display: inline-block;
+    /* border: var(--border-box); */
+    width: 350px;
+    height: 45px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-orange);
+}
+
+.itemstitle {
+    /* border: var(--border-box); */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: var(--color-orange);
+    border-radius: 5px 0 0 5px;
+}
+
+.itemsNumber {
+    /* border: var(--border-box); */
+    height: 90%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.itemspreci {
+    border: 1px solid #E5E5E5;
+    height: 80%;
+    border-radius: 5px;
+    background-color: white;
+    width: 23%;
+    margin-right: 3%;
+    display: flex;
+    color: var(--color-orange);
+    justify-content: center;
+    font-weight: lighter;
+    align-items: center;
+}
+
+.containerQuotation_formatModifiers--itemsNumber {
+    width: 25%;
+    border-radius: 0 5px 0 5px 0;
+    height: 90%;
+}
+
+.containerQuotation_formatSumlabel--numPhotographs {
+    border-radius: 5px 0 0 5px;
+    width: 65%;
+    height: 90%;
+}
+
+.formatModifiers1 {
+    margin-bottom: 5px;
+}
+
+
 /*======= Total budget =========*/
 
 .containerQuotation_totalBudget {
