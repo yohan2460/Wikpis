@@ -21,6 +21,9 @@ var sumHidenInstagram, sumHidenLinkedin, sumHidenFacebook, sumHidenTwitter,
     value_FollowerLinkedin = 0,
     lessGIFS = 0,
     // fotografia
+    moresEmailAmount = 0,
+    sumEmailAmount = 0,
+    lessEmailAmounts = 0,
     moreNumberPhotograph = 0,
     lessNumberPhotograph = 0,
     sumNumberphotography = 0,
@@ -28,7 +31,9 @@ var sumHidenInstagram, sumHidenLinkedin, sumHidenFacebook, sumHidenTwitter,
     moreAccompanyingHours = 0,
     moresumAccompanyingHours = 0,
     value_Accompaniment = 0,
-
+    sumIncreaseDatabase = 0,
+    moresIncreaseDatabase = 0,
+    lessIncreaseDatabases = 0,
     lessAccompanyingHours = 0;
 // Socail nekworks
 // facebook
@@ -140,12 +145,6 @@ function btnFacebook() {
         hidenTheSlider()
     }
 }
-
-
-
-
-
-
 
 //Instagram slider
 function btnInstagram() {
@@ -452,7 +451,8 @@ function funMoreAccompanyingHourss() {
     moresumAccompanyingHours++
     funSumAccompanyingHours()
 }
-// 
+
+// =============Budget for monthly advertising guidelines=================
 
 function funNumPopup_label_PopupAccompaniment() {
 
@@ -471,7 +471,52 @@ function funNumPopup_label_PopupAccompaniment() {
     document.getElementById('Popup_label_PopupAccompaniment').innerHTML = value_Accompaniment;
 }
 
+function funPautahiden() {
+    if (pauta.checked == true) {
+        Accompanimenthiden.style.display = 'none'
+    } else {
+        Accompanimenthiden.style.display = 'flex'
+    }
+}
+// <!-- ===========Monthly Shipments============ -->
 
+function funSumLessEmailAmount() {
+    sumEmailAmount = moresEmailAmount + lessEmailAmounts
+        // console.log(sumNumberphotography)
+    labelEmailAmount.textContent = sumEmailAmount
+    labelEmailAmount.textContent = sumEmailAmount
+}
+
+function funLessEmailAmount() {
+    if (sumEmailAmount >= 1) {
+        lessEmailAmounts--
+        funSumLessEmailAmount()
+    }
+}
+
+function funMoreEmailAmount() {
+    moresEmailAmount++
+    funSumLessEmailAmount()
+}
+// <!-- ===========Increase your database============  -->
+function funSumLessIncreaseDatabase() {
+    sumIncreaseDatabase = moresIncreaseDatabase + lessIncreaseDatabases
+        // console.log(sumNumberphotography)
+    labelIncreaseDatabase.textContent = sumIncreaseDatabase
+    labelIncreaseDatabase.textContent = sumIncreaseDatabase
+}
+
+function funLessIncreaseDatabase() {
+    if (sumIncreaseDatabase >= 1) {
+        lessIncreaseDatabases -= 200
+        funSumLessIncreaseDatabase()
+    }
+}
+
+function funMoreIncreaseDatabase() {
+    moresIncreaseDatabase += 200
+    funSumLessIncreaseDatabase()
+}
 
 // facebook
 const Popup = document.getElementById('Popup')
@@ -613,7 +658,7 @@ lessAccompanyingHoursless.addEventListener('click', funLessAccompanyingHoursless
 const labelAccompanyingHours = document.getElementById('labelAccompanyingHours')
 
 
-// ======================investment==============
+// ======================Budget for monthly advertising guidelines==============
 const PopupAccompaniment = document.getElementById('PopupAccompaniment')
 const Accompanimenthiden = document.getElementById('Accompanimenthiden')
 pauta.addEventListener('click', funPautahiden)
@@ -621,11 +666,16 @@ const numPopup_label_PopupAccompaniment = document.getElementById('numPopup_labe
 numPopup_label_PopupAccompaniment.addEventListener('input', funNumPopup_label_PopupAccompaniment)
 pauta = document.getElementById('pauta')
 
-function funPautahiden() {
-    if (pauta.checked == true) {
-        Accompanimenthiden.style.display = 'flex'
-    } else {
+//<!-- ===========Monthly Shipments============ -->
+const moreEmailAmount = document.getElementById('moreEmailAmount')
+moreEmailAmount.addEventListener('click', funMoreEmailAmount)
+const lessEmailAmount = document.getElementById('lessEmailAmount')
+lessEmailAmount.addEventListener('click', funLessEmailAmount)
+const labelEmailAmount = document.getElementById('labelEmailAmount')
 
-        Accompanimenthiden.style.display = 'none'
-    }
-}
+//<!--===========Increase your database============  -->
+const moreIncreaseDatabase = document.getElementById('moreIncreaseDatabase')
+moreIncreaseDatabase.addEventListener('click', funMoreIncreaseDatabase)
+const lessIncreaseDatabase = document.getElementById('lessIncreaseDatabase')
+lessIncreaseDatabase.addEventListener('click', funLessIncreaseDatabase)
+const labelIncreaseDatabase = document.getElementById('labelIncreaseDatabase')
