@@ -349,8 +349,7 @@
 #FollowersInstagram,
 #FollowerFacebook,
 #FollowerLinkedin,
-#FollowerTwitter,
-{
+#FollowerTwitter {
     display: none;
 }
 
@@ -948,16 +947,16 @@ hr {
 }
 
 
-/*======= Total budget =========*/
+/*======= Quotation Summary=========*/
 
-.containerQuotation_totalBudget {
+.containerQuotationSummary {
     width: 20%;
     height: 96%;
     box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-.containerQuotation_title {
-    height: 9%;
+.containerQuotationSummary_title {
+    height: 7%;
     background-color: var(--main-color);
     color: white;
     display: flex;
@@ -965,6 +964,93 @@ hr {
     align-items: center;
     font-size: 13px;
     font-weight: normal;
+}
+
+.containerQuotation_phrasesSocialNetworks--QuotationSummary {
+    padding-left: 2%;
+    margin-bottom: 4%;
+}
+
+.containerItemsQuotation {
+    height: 310px;
+    padding-left: 2%;
+    display: grid;
+    grid-template: repeat(10, 26px)/ 60% 30%;
+    grid-gap: 2%;
+}
+
+.QuotationItems {
+    background-color: #F1F1F1;
+    border: 1px solid #E5E5E5;
+    display: flex;
+    align-items: center;
+}
+
+.QuotationItems p {
+    color: #63737D;
+    font-size: 13px;
+}
+
+.QuotationItems-icon {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8% 0 3%;
+    background-color: var(--color-orange);
+    cursor: pointer;
+}
+
+.fa-question {
+    color: white;
+    font-weight: lighter;
+    font-size: 8px;
+}
+
+.QuotationItems--color {
+    border: 1px solid #E5E5E5;
+    background-color: #FFFFFF;
+    display: flex;
+    padding-right: 8%;
+    justify-content: flex-end;
+}
+
+.QuotationItems--color p {
+    font-size: 13px;
+    color: #63737D;
+}
+
+.containerQuotationSummaryh3 {
+    font-size: 14px;
+    margin: 3% 0;
+}
+
+
+/* =========Quotation Total */
+
+.QuotationItems--total {
+    margin-left: 1%;
+    background-color: white;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.QuotationItems--total p {
+    font-size: 13px;
+    font-weight: bolder;
+    color: var(--color-orange);
+}
+
+.QuotationItems--withoutIcon {
+    padding-left: 8%;
+}
+
+.containerItemsQuotation--height {
+    height: 140px;
 }
 
 
