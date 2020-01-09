@@ -85,20 +85,31 @@
                             </p>
                             <div class="questions">
                                 <div class="question1Container">
-                                    <p class="question1">¿Autoriza recibir Información ofertas o servicios de nuestra empresa alcorreo electrónico recibido?</p>
-
-                                    <input type="radio" name="question1" id="yes_1" value="yes" checked>
-                                    <label for="yes_1"><p>Si</p></label>
-                                    <input type="radio" name="question1" id="no_1" value="no">
-                                    <label for="no_1"><p>No, gracias</p></label>
+                                    <p class="question1">¿Autoriza recibir Información ofertas o servicios de nuestra empresa al correo electrónico recibido?</p>
+                                    <label  for="yes_1" class="labelRadio">
+                                        Si
+                                        <input type="radio" name="question1" id="yes_1" value="yes" checked>
+                                        <span class="customRadio"></span>
+                                    </label >
+                                    <label for="no_1" class="labelRadio">
+                                        No, gracias
+                                        <input type="radio" name="question1" id="no_1" value="no">
+                                        <span class="customRadio"></span>
+                                    </label>
                                 </div>
 
                                 <div class="question2Container">
                                     <p class="question2">¿Autoriza que un asesor comercial se comunique para ampliar información de nuestra empresa y cotización?</p>
-                                    <label for="yes_2">Si</label>
-                                    <input type="radio" name="question2" id="yes_2" value="yes">
-                                    <label for="no_2">No, gracias</label>
-                                    <input type="radio" name="question2" id="no_2" value="no">
+                                    <label for="yes_2"  class="labelRadio">
+                                        Si
+                                        <input type="radio" name="question2" id="yes_2" value="yes">
+                                        <span class="customRadio"></span>
+                                    </label>
+                                    <label for="no_2" class="labelRadio">
+                                        No, gracias
+                                        <input type="radio" name="question2" id="no_2" value="no">
+                                        <span class="customRadio"></span>
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +117,13 @@
                             Deseas aplicar a un descuento?
                         </p>
                         <div class="discountOptionsContainer">
-                            <p class="discountOption">Descuento del 5% por contrato a 6 meses</p>
+                            <div class="discountOption">
+                                <label for="five" class="labelRadio">
+                                    <input type="radio" name="discount" id="five" value="five">
+                                    <span class="customRadio"></span>
+                                    Descuento del 5% por contrato a 6 meses
+                                </label>
+                            </div>
                             <p class="discountOption">Descuento del 10% por contrato a 1 año</p>
                             <p class="discountOption">Tengo un cupón de descuento <input type="text" placeholder="Ingresa tu código"></p>
                         </div>

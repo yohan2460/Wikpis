@@ -101,13 +101,67 @@ input[type="text"] {
 .dataPolicy .question1Container,
 .dataPolicy .question2Container {
     display: flex;
-    position: relative;
     color: var(--font-color);
     font: normal 0.9em/1.2em var(--main-font);
     margin-left: 1.5em;
 }
 
-.question1Container input[type="radio"] {
+/*___________radio____________*/
+.labelRadio{
+    margin-left: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+.labelRadio input[type="radio"]{
+    display:none;
+}
+
+.labelRadio .customRadio{
+    height: 12px;
+    width: 12px;
+    position: relative;
+    border-radius: 50%;
+    left: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: radial-gradient(circle, white,rgba(0,0,0, 0.1));;
+    display: inline-block;
+}
+
+.customRadio:after {
+    content: "";
+    display: none;
+}
+
+.labelRadio input:checked ~ .customRadio:after {
+    display: block;
+}
+
+.labelRadio .customRadio:after{
+    content:"";
+    height: 5px;
+    width:5px;
+    background-color: var(--orange-color);
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+/* .question1Container input[type="radio"] {
     display: none;
 }
 
@@ -115,12 +169,12 @@ input[type="text"] {
     position: relative;
     display: inline-block;
     margin-left: 35px;
-}
+} */
 
 
 /*___radio button___*/
 
-.question1Container label::after {
+/* .question1Container label::after {
     content: "";
     border: 3px solid #F2F2F2;
     width: 6px;
@@ -140,7 +194,8 @@ input[type="text"] {
     content: "";
     background-color: black;
     /* color: red; */
-}
+/*} */
+
 
 .discountTitle {
     width: 105%;
@@ -176,13 +231,14 @@ input[type="text"] {
 }
 
 .discountOption input[type="text"] {
+    font: Normal 1em/1em var(--main-font);
     margin-left: 1em;
     height: 30px;
 }
 
 .discountOption input[type="text"]::placeholder {
+    font: Normal 1em/1em var(--main-font);
     padding-left: 10px;
-    font: var(--main-font);
     color: #CBCBCB;
 }
 
