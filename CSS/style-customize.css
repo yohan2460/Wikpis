@@ -1054,6 +1054,9 @@ hr {
 }
 
 
+/*<!-- ===============Mail Marketing================ --> */
+
+
 /* <!-- =======  responsive 1024px ========= --> */
 
 @media screen and (max-width:1024px) {
@@ -1181,5 +1184,8 @@ hr {
     }
     .itemspreci--IncreaseDatabase {
         width: 35%
+    }
+    .containerQuotationSummary {
+        width: 28%;
     }
 }

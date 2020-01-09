@@ -278,7 +278,7 @@ function funlessAnimatedGraphicPiece() {
     }
 }
 
-// <!-- ======= GIFS========= -->
+// <!-- ======= GIFS ========= -->
 
 function funSumGifs() {
     sumGifs = moreGIFS + lessGIFS
@@ -679,3 +679,6 @@ moreIncreaseDatabase.addEventListener('click', funMoreIncreaseDatabase)
 const lessIncreaseDatabase = document.getElementById('lessIncreaseDatabase')
 lessIncreaseDatabase.addEventListener('click', funLessIncreaseDatabase)
 const labelIncreaseDatabase = document.getElementById('labelIncreaseDatabase')
+
+// <!-- ===============Mail Marketing================ -->
+QuotationItemsBase = document.getElementById('QuotationItemsBase')
