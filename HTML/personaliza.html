@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <section class="container">
         <!-- ===SIDE BAR ===== -->
         <aside class="sideBar">
             <div class="sideBarContent">
@@ -387,22 +387,22 @@
                                 </section>
                                 <!-- ======professional photography  ============-->
                                 <section class="containerProfessionalPhotography">
-                                    <h3 class="containerQuotation_phrasesSocialNetworks">
+                                    <h3 class="containerQuotation_phrasesSocialNetworks ">
                                         Seleccione si requiere toma de fotografía profesional de sus productos
                                     </h3>
                                     <form action="">
                                         <div class="containerQuotation_itemsSocialNetworks">
-                                            <div class="containerQuotation_nameSocialNetworks containerQuotation_nameSocialNetworks--professionalPhotography">
+                                            <div class="containerQuotation_nameSocialNetworks containerQuotation_nameSocialNetworks--professionalPhotography ">
 
                                                 <input type="checkbox" value="ProfessionalPhotographyno" id="ProfessionalPhotographyNO" name="Photography">
                                                 <label for="ProfessionalPhotographyNO"><p>No</p></label>
 
-                                                <input type="checkbox" value="ProfessionalPhotographysyes" id="ProfessionalPhotographySI" name="Photography">
-                                                <label for="ProfessionalPhotographySI"><p>Si</p></label>
+                                                <input type="checkbox" value="ProfessionalPhotographysyes" id="ProfessionalPhotographyYes" name="Photography">
+                                                <label for="ProfessionalPhotographyYes"><p>Si</p></label>
                                             </div>
 
                                         </div>
-                                        <div class="numberPhotographs">
+                                        <div class="numberPhotographs" id="hidenNumberPhotographs">
                                             <div class="itemstitle">
                                                 <p>Horas Semanales</p>
                                             </div>
@@ -419,33 +419,320 @@
                                             <div class="itemspreci">
                                                 <span>$ <strong>750.000</strong></span>
                                             </div>
-
                                         </div>
                                     </form>
                                 </section>
-                                <div ">
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
+                                <!-- ========= Accompaniment in cities ==========-->
+                                <section class="containerAccompaniment">
+                                    <h3 class="containerQuotation_phrasesSocialNetworks">
+                                        Acompañamiento
+                                    </h3>
+                                    <p class="containerAccompaniment-title">Personal presente en sus eventos o locales comerciales para registros o cubrimientos</p>
+                                    <p class="containerQuotation_text containerQuotation_text--nonepadding">
+                                        Seleccione una o varias de las ciudades donde necesite la presencia de nuestro Community Manager, si la localidad de su interés no se encuentra puede seleccionar el ítem (otros), escribir el nombre del sitio y uno de nuestros agentes se pondrá en contacto
+                                        para darle el costo del acompañamiento.
+                                    </p>
+                                    <form action="">
+                                        <div class="containerAccompaniment-cities">
+                                            <input type="checkbox" value="Medellín" id="Medellín" name="city">
+                                            <label for="Medellín"><p>Medellín</p></label>
+
+                                            <input type="checkbox" value="Bello" id="Bello" name="city">
+                                            <label for="Bello"><p>Bello</p></label>
+
+                                            <input type="checkbox" value="Envigado" id="Envigado" name="city">
+                                            <label for="Envigado"><p>Envigado</p></label>
+
+                                            <input type="checkbox" value="Sabaneta" id="Sabaneta" name="city">
+                                            <label for="Sabaneta"><p>Sabaneta</p></label>
+
+                                            <input type="checkbox" value="Itagüi" id="Itagüi" name="city">
+                                            <label for="Itagüi"><p>Itagüi</p></label>
+
+                                            <input type="checkbox" value="LaEstrella" id="LaEstrella" name="city">
+                                            <label for="LaEstrella"><p>La estrella</p></label>
+
+                                            <input type="checkbox" value="OrienteAntioqueno" id="OrienteAntioqueno" name="city">
+                                            <label for="OrienteAntioqueno"><p>Oriente Antioqueño</p></label>
+
+                                            <input type="checkbox" value="Bogotá" id="Bogota" name="city">
+                                            <label for="Bogota"><p>Bogotá</p></label>
+
+                                            <input type="checkbox" value="Miami" id="Miami" name="city">
+                                            <label for="Miami"><p>Miami</p></label>
+
+                                            <input type="checkbox" value="Otros" id="hidenOtros" name="city">
+                                            <label for="hidenOtros"><p>Otros</p></label>
+                                            <form action="">
+                                                <div class="containerAccompaniment-cities--input">
+                                                    <input type="input" value="" id="citiesInput" name="city">
+                                                    <!-- <input type="submit"> -->
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </form>
+                                </section>
+
+                                <!-- =============accompanying hours========== -->
+
+                                <section class="containerAccompanyingHours">
+                                    <p class="containerAccompaniment-title containerAccompaniment-title--Acompany">Seleccione las horas de acompañamiento semanal que presupuesta</p>
+                                    <div class="numberPhotographs" id="">
+                                        <div class="itemstitle">
+                                            <p>Horas Semanales</p>
+                                        </div>
+
+                                        <div class="itemsNumber">
+                                            <div class="containerQuotation_formatSumlabel containerQuotation_formatSumlabel--numPhotographs" id="labelAccompanyingHours">
+                                                <span>0</span>
+                                            </div>
+                                            <div class="containerQuotation_formatModifiers containerQuotation_formatModifiers--itemsNumber">
+                                                <div class="formatModifiers formatModifiers1" id="moreAccompanyingHourss"></div>
+                                                <div class="formatModifiers formatModifiers2 " id="lessAccompanyingHoursless"></div>
+                                            </div>
+                                        </div>
+                                        <div class="itemspreci">
+                                            <span>$ <strong>750.000</strong></span>
+                                        </div>
+                                    </div>
+                                    <h3 class="containerQuotation_phrasesSocialNetworks">
+                                        Presupuesto de pauta publicitaria menual
+                                    </h3>
+                                    <p class="containerQuotation_text containerQuotation_text--nonepadding">
+                                        Presupuesto máximo mensual para invertir en los anuncios y lograr un mayor alcance de ellos <span class="AccompanyingHoursTitle"> Ver simulador de alcance.</span>
+                                    </p>
+                                    <div class="containerAccompaniment-cities">
+                                        <input type="checkbox" value="" id="pauta" name="city">
+                                        <label for="pauta"><p>No deseo invertir en publicidad.Manejo mi propia pauta.</p></label>
+                                    </div>
+                                    <!-- =============Budget for monthly advertising guidelines================= -->
+                                    <div class="containerQuotation_parent containerQuotation_parents containerQuotation_parents--nekworks" id="Accompanimenthiden">
+                                        <div class="containerQuotation_nekworks">
+                                            <div class="containerQuotation_bar" id="contentContainer">
+                                                <div id="PopupAccompaniment">
+                                                    <span class="Popup_label_Linkedin--followers" id="Popup_label_PopupAccompaniment"> 1892</span>
+                                                    <div class="containerQuotation_label">
+                                                    </div>
+                                                </div>
+                                                <input type="range" min="100000" max="5000000" step="1" value="951013" id="numPopup_label_PopupAccompaniment">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <hr>
+                                <section class="contentMailMarketing">
+                                    <h3 class="containerQuotation_phrase">
+                                        3.2 Mail Marketing
+                                    </h3>
+                                    <h3 class="containerQuotation_phrasesSocialNetworks">
+                                        Seleccione si los correos son para venta de productos o servicios
+                                    </h3>
+                                    <form action="">
+                                        <div class="containerAccompaniment-cities">
+                                            <input type="checkbox" value="saleProductsYes" id="saleProductsYES" name="MailMarketing">
+                                            <label for="saleProductsYES"><p>Si</p></label>
+
+                                            <input type="checkbox" value="saleProductsNo" id="saleProductsNo" name="MailMarketing">
+                                            <label for="saleProductsNo"><p>No</p></label>
+                                        </div>
+                                    </form>
+                                    <!-- ===========Monthly Shipments============ -->
+                                    <h3 class="containerQuotation_phrasesSocialNetworks">
+                                        Envíos Mensuales
+                                    </h3>
+                                    <p class="containerQuotation_text containerQuotation_text--nonepadding">
+                                        Los precios contemplan el diseño y envío de cada boletín
+                                    </p>
+                                    <div class="numberPhotographs" id="">
+                                        <div class="itemstitle">
+                                            <p>Cantidad de e-mail</p>
+                                        </div>
+
+                                        <div class="itemsNumber">
+                                            <div class="containerQuotation_formatSumlabel containerQuotation_formatSumlabel--numPhotographs" id="labelEmailAmount">
+                                                <span>0</span>
+                                            </div>
+                                            <div class="containerQuotation_formatModifiers containerQuotation_formatModifiers--itemsNumber">
+                                                <div class="formatModifiers formatModifiers1" id="moreEmailAmount"></div>
+                                                <div class="formatModifiers formatModifiers2 " id="lessEmailAmount"></div>
+                                            </div>
+                                        </div>
+                                        <div class="itemspreci">
+                                            <span>$ <strong>750.000</strong></span>
+                                        </div>
+                                    </div>
+
+                                    <!-- ===========Increase your database============ -->
+
+                                    <h3 class="containerQuotation_phrasesSocialNetworks">
+                                        Aumenta tu base de datos
+                                    </h3>
+                                    <p class="containerQuotation_text containerQuotation_text--nonepadding">
+                                        ¿Necesitas más de 2000 usuarios?
+                                    </p>
+                                    <div class="numberPhotographs" id="">
+                                        <div class="itemstitle">
+                                            <p>Base de datos</p>
+                                        </div>
+
+                                        <div class="itemsNumber itemsNumber--IncreaseDatabase">
+                                            <div class="containerQuotation_formatSumlabel containerQuotation_formatSumlabel--numPhotographs containerQuotation_formatSumlabel--IncreaseDatabase" id="labelIncreaseDatabase">
+                                                <span>200</span>
+                                            </div>
+                                            <div class="containerQuotation_formatModifiers containerQuotation_formatModifiers--itemsNumber containerQuotation_formatModifiers--IncreaseDatabase">
+                                                <div class="formatModifiers formatModifiers1" id="moreIncreaseDatabase"></div>
+                                                <div class="formatModifiers formatModifiers2 " id="lessIncreaseDatabase"></div>
+                                            </div>
+                                        </div>
+                                        <div class="itemspreci itemspreci--IncreaseDatabase">
+                                            <span>$ <strong>750.000</strong></span>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="mainContent__buttons">
+                                    <a href="" class=" button goBack">Atrás</a>
+                                    <a href="" class="button submitQuote">Siguiente</a>
                                 </div>
-    
 
                             </div>
                         </div>
                     </div>
 
                     <!-- ======= Total budget ========= -->
-                    <section class="containerQuotation_totalBudget ">
-                        <div class="containerQuotation_title ">
+                    <section class="containerQuotationSummary ">
+                        <div class="containerQuotationSummary_title ">
                             <p> Resumen de <strong>Cotización</strong></p>
                         </div>
+                        <h3 class="containerQuotationSummaryh3 containerQuotation_phrasesSocialNetworks containerQuotation_phrasesSocialNetworks--QuotationSummary ">
+                            Redes Sociales
+                        </h3>
+                        <section class="containerItemsQuotation">
+                            <div class="QuotationItems">
+                                <div class="QuotationItems-icon" id="">
+                                    <i class="fas fa-question"></i>
+                                </div>
+                                <p>Base</p>
+                            </div>
+                            <div class="QuotationItems QuotationItems--color">
+                                <p><span>$</span><span id=""> 120.000</span></p>
+                            </div>
+                            <div class="QuotationItems">
+                                <div class="QuotationItems-icon" id="">
+                                    <i class="fas fa-question"></i>
+                                </div>
+                                <p>Facebook</p>
+                            </div>
+                            <div class="QuotationItems QuotationItems--color">
+                                <p><span>$</span><span id=""> 120.000</span></p>
+                            </div>
+                            <div class="QuotationItems">
+                                <div class="QuotationItems-icon" id="">
+                                    <i class="fas fa-question"></i>
+                                </div>
+                                <p>Publicaciones</p>
+                            </div>
+                            <div class="QuotationItems QuotationItems--color">
+                                <p><span>$</span><span id=""> 120.000</span></p>
+                            </div>
+                            <div class="QuotationItems">
+                                <div class="QuotationItems-icon" id="">
+                                    <i class="fas fa-question"></i>
+                                </div>
+                                <p>Diseños</p>
+                            </div>
+                            <div class="QuotationItems QuotationItems--color">
+                                <p><span>$</span><span id=""> 120.000</span></p>
+                            </div>
+                            <div class="QuotationItems">
+                                <div class="QuotationItems-icon" id="">
+                                    <i class="fas fa-question"></i>
+                                </div>
+                                <p>Horario atención</p>
+                            </div>
+                            <div class="QuotationItems QuotationItems--color">
+                                <p><span>$</span><span id=""> 120.000</span></p>
+                            </div>
+                            <div class="QuotationItems">
+                                <div class="QuotationItems-icon" id="">
+                                    <i class="fas fa-question"></i>
+                                </div>
+                                <p>Seguidores</p>
+                            </div>
+                            <div class="QuotationItems QuotationItems--color">
+                                <p><span>$</span><span id=""> 120.000</span></p>
+                            </div>
+                            <div class="QuotationItems">
+                                <div class="QuotationItems-icon" id="">
+                                    <i class="fas fa-question"></i>
+                                </div>
+                                <p>Fotografía</p>
+                            </div>
+                            <div class="QuotationItems QuotationItems--color">
+                                <p><span>$</span><span id=""> 120.000</span></p>
+                            </div>
+                            <div class="QuotationItems">
+                                <div class="QuotationItems-icon" id="">
+                                    <i class="fas fa-question"></i>
+                                </div>
+                                <p>Acompañamiento</p>
+                            </div>
+                            <div class="QuotationItems QuotationItems--color">
+                                <p><span>$</span><span id=""> 120.000</span></p>
+                            </div>
+                            <div class="QuotationItems">
+                                <div class="QuotationItems-icon" id="">
+                                    <i class="fas fa-question"></i>
+                                </div>
+                                <p>Pauta publicitaria</p>
+                            </div>
+                            <div class="QuotationItems QuotationItems--color">
+                                <p><span> $ </span><span id=""> 120.000</span></p>
+                            </div>
+                            <div class="QuotationItems QuotationItems--total">
+                                <p>Total Redes Sociales</p>
+                            </div>
+                            <div class="QuotationItems QuotationItems--color QuotationItems--total ">
+                                <p><span> $ </span><span id="">4.487.200</span></p>
+                            </div>
+                        </section>
+                        <h3 class="containerQuotationSummaryh3 containerQuotation_phrasesSocialNetworks containerQuotation_phrasesSocialNetworks--QuotationSummary ">
+                            Mail Marketing
+                        </h3>
+                        <section class="containerItemsQuotation containerItemsQuotation--height">
+                            <div class="QuotationItems">
+                                <div class="QuotationItems-icon" id="">
+                                    <i class="fas fa-question"></i>
+                                </div>
+                                <p>Base</p>
+                            </div>
+                            <div class="QuotationItems QuotationItems--color">
+                                <p><span>$</span><span id=""> 120.000</span></p>
+                            </div>
+                            <div class="QuotationItems  QuotationItems--withoutIcon">
+                                <p>e-mail Mensuales</p>
+                            </div>
+                            <div class="QuotationItems QuotationItems--color">
+                                <p><span>$</span><span id=""> 120.000</span></p>
+                            </div>
+                            <div class="QuotationItems QuotationItems--withoutIcon">
+                                <p>+ Base de datos</p>
+                            </div>
+                            <div class="QuotationItems QuotationItems--color">
+                                <p><span>$</span><span id=""> 120.000</span></p>
+                            </div>
+                            <div class="QuotationItems QuotationItems--total">
+                                <p>Total Mail Marketing</p>
+                            </div>
+                            <div class="QuotationItems QuotationItems--color QuotationItems--total ">
+                                <p><span> $ </span><span id="">4.487.200</span></p>
+                            </div>
+                        </section>
                     </section>
 
             </div>
-    </div>
-    </main>
-    <script src="../js/script.js "></script>
+            </section>
+        </main>
+        <script src="https://kit.fontawesome.com/459fcfab37.js" crossorigin="anonymous"></script>
+        <script src="../js/script.js "></script>
 </body>
 </html

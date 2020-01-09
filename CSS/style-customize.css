@@ -194,6 +194,20 @@
     padding: 1.5%;
 }
 
+.containerQuotation_personalized::-webkit-scrollbar {
+    height: 60px;
+    width: 5px;
+}
+
+.containerQuotation_personalized::-webkit-scrollbar-thumb {
+    background: var(--color-orange);
+    border-radius: 5px;
+}
+
+.main::-webkit-scrollbar-scrollbar {
+    background: red;
+}
+
 .containerQuotation_content {
     height: 800px;
 }
@@ -256,7 +270,6 @@
     padding-left: 1.2em;
     position: relative;
     display: inherit;
-    cursor: pointer;
 }
 
 .containerQuotation_nameSocialNetworks label::before,
@@ -277,6 +290,10 @@
     content: "";
     background-color: var(--color-orange);
     /* color: red; */
+}
+
+.containerQuotation_nameSocialNetworks--professionalPhotography input[type="checkbox"]:checked+label::before {
+    background-color: var(--color-orange);
 }
 
 .containerQuotation_nameSocialNetworks {
@@ -380,12 +397,14 @@
 #Popup_label_FollowersFacebook,
 #Popup_label_FollowersTwitter,
 #PopupTwitter,
+#PopupAccompaniment,
 #Popup_label_Twitter,
 #Popup_label_Instagram,
 #Popup_label_Linkedin,
 #Popup_label_FollowersInstagram,
 #Popup_label_FollowersLinkedin,
-#PopupFollowersFacebook {
+#PopupFollowersFacebook,
+#Popup_label_PopupAccompaniment {
     position: absolute;
     left: 0%;
     z-index: 2;
@@ -405,6 +424,7 @@
 #PopupInstagram,
 #PopupLinkedin,
 #PopupTwitter,
+#PopupAccompaniment,
 #PopupFollowersInstagram,
 #PopupFollowersLinkedin,
 #PopupFollowersTwitter,
@@ -780,17 +800,163 @@ input[type=range]::-moz-range-thumb {
     margin-bottom: 5px;
 }
 
+#hidenNumberPhotographs {
+    display: none;
+}
 
-/*======= Total budget =========*/
 
-.containerQuotation_totalBudget {
+/* ======containerAccompaniment-title ======= */
+
+.containerAccompaniment-title {
+    color: var(--color-orange);
+    margin-bottom: 4px;
+}
+
+
+/*<!-- ========= Accompaniment in cities ==========-->*/
+
+.containerAccompaniment-cities {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.containerAccompaniment-cities p {
+    /* border: 1px solid red; */
+    padding-right: 10px;
+    color: #989898;
+    /* width: 150px */
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.containerAccompaniment-cities input[type="checkbox"] {
+    display: none;
+}
+
+.containerAccompaniment-cities label {
+    padding-left: 1.9em;
+    position: relative;
+    display: inherit;
+    cursor: pointer;
+}
+
+.containerAccompaniment-cities label::before {
+    margin-bottom: 10px;
+    content: "";
+    border: 3px solid #F2F2F2;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background-color: #EFEFEF;
+    border-radius: 50%;
+    left: 12px;
+    bottom: 3.5px;
+}
+
+.containerAccompaniment-cities input[type="checkbox"]:checked+label::before {
+    content: "";
+    background-color: var(--color-orange);
+    /* color: red; */
+}
+
+.containerAccompaniment-cities--input input {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--color-orange);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: #989898;
+}
+
+#citiesInput {
+    display: none;
+}
+
+
+/*  <!-- =============accompanying hours========== --> */
+
+.containerAccompaniment-title--Acompany {
+    padding: 20px 0 10px 0;
+}
+
+
+/* line  */
+
+hr {
+    margin-top: 1.5%;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    margin: 1em 1.6% 0 0;
+}
+
+
+/* ===========Increase your database============  */
+
+.itemsNumber--IncreaseDatabase {
+    width: 30%;
+}
+
+.containerQuotation_formatModifiers--IncreaseDatabase {
+    width: 21%;
+}
+
+
+/* _______Buttons_________*/
+
+.mainContent__buttons {
+    width: 100%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: var(--border-box); */
+}
+
+.mainContent__buttons .submitQuote {
+    width: 232px;
+    height: 30px;
+    margin-left: 25px;
+    border-radius: 9px;
+    font: Normal 0.9em/30px var(--main-font);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.mainContent__buttons .goBack {
+    width: 232px;
+    margin-bottom: 10px;
+    height: 30px;
+    margin-top: 12px;
+    border-radius: 9px;
+    font: Normal 0.9em/30px var(--main-font);
+    color: var(--main-color);
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    background-color: white;
+    border: 1px solid var(--main-color);
+}
+
+
+/*======= Quotation Summary=========*/
+
+.containerQuotationSummary {
     width: 20%;
     height: 96%;
     box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-.containerQuotation_title {
-    height: 9%;
+.containerQuotationSummary_title {
+    height: 7%;
     background-color: var(--main-color);
     color: white;
     display: flex;
@@ -798,6 +964,93 @@ input[type=range]::-moz-range-thumb {
     align-items: center;
     font-size: 13px;
     font-weight: normal;
+}
+
+.containerQuotation_phrasesSocialNetworks--QuotationSummary {
+    padding-left: 2%;
+    margin-bottom: 4%;
+}
+
+.containerItemsQuotation {
+    height: 310px;
+    padding-left: 2%;
+    display: grid;
+    grid-template: repeat(10, 26px)/ 60% 30%;
+    grid-gap: 2%;
+}
+
+.QuotationItems {
+    background-color: #F1F1F1;
+    border: 1px solid #E5E5E5;
+    display: flex;
+    align-items: center;
+}
+
+.QuotationItems p {
+    color: #63737D;
+    font-size: 13px;
+}
+
+.QuotationItems-icon {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8% 0 3%;
+    background-color: var(--color-orange);
+    cursor: pointer;
+}
+
+.fa-question {
+    color: white;
+    font-weight: lighter;
+    font-size: 8px;
+}
+
+.QuotationItems--color {
+    border: 1px solid #E5E5E5;
+    background-color: #FFFFFF;
+    display: flex;
+    padding-right: 8%;
+    justify-content: flex-end;
+}
+
+.QuotationItems--color p {
+    font-size: 13px;
+    color: #63737D;
+}
+
+.containerQuotationSummaryh3 {
+    font-size: 14px;
+    margin: 3% 0;
+}
+
+
+/* =========Quotation Total */
+
+.QuotationItems--total {
+    margin-left: 1%;
+    background-color: white;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.QuotationItems--total p {
+    font-size: 13px;
+    font-weight: bolder;
+    color: var(--color-orange);
+}
+
+.QuotationItems--withoutIcon {
+    padding-left: 8%;
+}
+
+.containerItemsQuotation--height {
+    height: 140px;
 }
 
 
@@ -898,5 +1151,35 @@ input[type=range]::-moz-range-thumb {
     }
     .containerAttentionSchedule_number span {
         font-size: 1em;
+    }
+    .numberPhotographs {
+        width: 270px;
+    }
+    .itemsNumber {
+        width: 20%;
+    }
+    .containerQuotation_formatSumlabel--numPhotographs {
+        width: 50%;
+    }
+    .containerQuotation_formatModifiers--itemsNumber {
+        width: 36%;
+    }
+    .itemspreci {
+        width: 30%;
+    }
+    .containerAccompaniment-title {
+        padding: .1% !important;
+    }
+    .containerQuotation_formatSumlabel--IncreaseDatabase {
+        width: 60%;
+    }
+    .itemsNumber--IncreaseDatabase {
+        width: 38%;
+    }
+    .containerQuotation_formatModifiers--IncreaseDatabase {
+        width: 21%;
+    }
+    .itemspreci--IncreaseDatabase {
+        width: 35%
     }
 }

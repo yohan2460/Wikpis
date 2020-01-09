@@ -21,9 +21,20 @@ var sumHidenInstagram, sumHidenLinkedin, sumHidenFacebook, sumHidenTwitter,
     value_FollowerLinkedin = 0,
     lessGIFS = 0,
     // fotografia
+    moresEmailAmount = 0,
+    sumEmailAmount = 0,
+    lessEmailAmounts = 0,
     moreNumberPhotograph = 0,
     lessNumberPhotograph = 0,
-    sumNumberphotography = 0;
+    sumNumberphotography = 0,
+    sumAccompanyingHours = 0,
+    moreAccompanyingHours = 0,
+    moresumAccompanyingHours = 0,
+    value_Accompaniment = 0,
+    sumIncreaseDatabase = 0,
+    moresIncreaseDatabase = 0,
+    lessIncreaseDatabases = 0,
+    lessAccompanyingHours = 0;
 // Socail nekworks
 // facebook
 
@@ -134,6 +145,7 @@ function btnFacebook() {
         hidenTheSlider()
     }
 }
+
 //Instagram slider
 function btnInstagram() {
     var btnInstagram = document.getElementById('containerQuotation_parent--Instagram')
@@ -379,7 +391,6 @@ function funSumNumberPhotograph() {
         // console.log(sumNumberphotography)
     numPhotographs.textContent = sumNumberphotography
     numPhotographs.textContent = sumNumberphotography
-    sumNekworkSocial()
 }
 
 function funMoreNumberPhotographs() {
@@ -392,6 +403,119 @@ function funLessNumberPhotographs() {
         lessNumberPhotograph--
         funSumNumberPhotograph()
     }
+}
+
+
+function funProfessionalPhotographyNO() {
+    if (ProfessionalPhotographyNO.checked === true) {
+        hidenNumberPhotographs.style.display = 'none'
+        console.log('none')
+
+    }
+}
+
+function funProfessionalPhotographyYes() {
+    if (ProfessionalPhotographyYes.checked === true) {
+        hidenNumberPhotographs.style.display = 'flex'
+    }
+}
+
+// <!-- ========= Accompaniment in cities ==========-->
+
+
+function funhidenOtros() {
+    if (hidenOtros.checked === true) {
+        citiesInput.style.display = 'block'
+    } else {
+        citiesInput.style.display = 'none'
+    }
+}
+// <!-- =============accompanying hours========== -->
+
+
+function funSumAccompanyingHours() {
+    sumAccompanyingHours = moresumAccompanyingHours + lessAccompanyingHours
+        // console.log(sumNumberphotography)
+    labelAccompanyingHours.textContent = sumAccompanyingHours
+    labelAccompanyingHours.textContent = sumAccompanyingHours
+}
+
+function funLessAccompanyingHoursless() {
+    if (sumAccompanyingHours >= 1) {
+        lessAccompanyingHours--
+        funSumAccompanyingHours()
+    }
+}
+
+function funMoreAccompanyingHourss() {
+    moresumAccompanyingHours++
+    funSumAccompanyingHours()
+}
+
+// =============Budget for monthly advertising guidelines=================
+
+function funNumPopup_label_PopupAccompaniment() {
+
+    var val = (this.value - this.min) / (this.max - this.min);
+    var percent = val * 100;
+    var gradient = "-webkit-gradient(linear, left top, right top, color-stop(" + percent + "%, #FF9300), color-stop(" + percent + "%, #EFEFEF))"
+
+    this.style.background = gradient;
+
+    var cals = percent - 150 / 100;
+    var cal = " " + cals + "%";
+    PopupAccompaniment.style.marginLeft = cal;
+
+
+    value_Accompaniment = (this.value - this.min)
+    document.getElementById('Popup_label_PopupAccompaniment').innerHTML = value_Accompaniment;
+}
+
+function funPautahiden() {
+    if (pauta.checked == true) {
+        Accompanimenthiden.style.display = 'none'
+    } else {
+        Accompanimenthiden.style.display = 'flex'
+    }
+}
+// <!-- ===========Monthly Shipments============ -->
+
+function funSumLessEmailAmount() {
+    sumEmailAmount = moresEmailAmount + lessEmailAmounts
+        // console.log(sumNumberphotography)
+    labelEmailAmount.textContent = sumEmailAmount
+    labelEmailAmount.textContent = sumEmailAmount
+}
+
+function funLessEmailAmount() {
+    if (sumEmailAmount >= 1) {
+        lessEmailAmounts--
+        funSumLessEmailAmount()
+    }
+}
+
+function funMoreEmailAmount() {
+    moresEmailAmount++
+    funSumLessEmailAmount()
+}
+// <!-- ===========Increase your database============  -->
+function funSumLessIncreaseDatabase() {
+    sumIncreaseDatabase = moresIncreaseDatabase + lessIncreaseDatabases
+        // console.log(sumNumberphotography)
+    labelIncreaseDatabase.textContent = sumIncreaseDatabase
+    labelIncreaseDatabase.textContent = sumIncreaseDatabase
+}
+
+function funLessIncreaseDatabase() {
+    if (sumIncreaseDatabase >= 1) {
+        lessIncreaseDatabases -= 200
+        funSumLessIncreaseDatabase()
+    }
+}
+
+function funMoreIncreaseDatabase() {
+    moresIncreaseDatabase += 200
+    funSumLessIncreaseDatabase()
 }
 
 // facebook
@@ -505,9 +629,10 @@ const numFollowersTwitter = document.getElementById('numFollowersTwitter')
 numFollowersTwitter.addEventListener('input', funNumFollowersTwitter)
 
 //checkbox yes o no of professional photography
-
 const ProfessionalPhotographyNO = document.getElementById('ProfessionalPhotographyNO')
-const ProfessionalPhotographySI = document.getElementById('ProfessionalPhotographySI')
+ProfessionalPhotographyNO.addEventListener('click', funProfessionalPhotographyNO)
+const ProfessionalPhotographyYes = document.getElementById('ProfessionalPhotographyYes')
+ProfessionalPhotographyYes.addEventListener('click', funProfessionalPhotographyYes)
 
 
 // =============== professional photography =============
@@ -516,3 +641,41 @@ moreNumberPhotographs.addEventListener('click', funMoreNumberPhotographs)
 const lessNumberPhotographs = document.getElementById('lessNumberPhotographs')
 lessNumberPhotographs.addEventListener('click', funLessNumberPhotographs)
 const numPhotographs = document.getElementById('numPhotographs')
+
+const hidenNumberPhotographs = document.getElementById('hidenNumberPhotographs')
+
+//<!-- ========= Accompaniment in cities ==========-->
+const hidenOtros = document.getElementById('hidenOtros')
+hidenOtros.addEventListener('click', funhidenOtros)
+const citiesInput = document.getElementById('citiesInput')
+
+
+//  <!-- =============accompanying hours========== -->
+const moreAccompanyingHourss = document.getElementById('moreAccompanyingHourss')
+moreAccompanyingHourss.addEventListener('click', funMoreAccompanyingHourss)
+const lessAccompanyingHoursless = document.getElementById('lessAccompanyingHoursless')
+lessAccompanyingHoursless.addEventListener('click', funLessAccompanyingHoursless)
+const labelAccompanyingHours = document.getElementById('labelAccompanyingHours')
+
+
+// ======================Budget for monthly advertising guidelines==============
+const PopupAccompaniment = document.getElementById('PopupAccompaniment')
+const Accompanimenthiden = document.getElementById('Accompanimenthiden')
+pauta.addEventListener('click', funPautahiden)
+const numPopup_label_PopupAccompaniment = document.getElementById('numPopup_label_PopupAccompaniment')
+numPopup_label_PopupAccompaniment.addEventListener('input', funNumPopup_label_PopupAccompaniment)
+pauta = document.getElementById('pauta')
+
+//<!-- ===========Monthly Shipments============ -->
+const moreEmailAmount = document.getElementById('moreEmailAmount')
+moreEmailAmount.addEventListener('click', funMoreEmailAmount)
+const lessEmailAmount = document.getElementById('lessEmailAmount')
+lessEmailAmount.addEventListener('click', funLessEmailAmount)
+const labelEmailAmount = document.getElementById('labelEmailAmount')
+
+//<!--===========Increase your database============  -->
+const moreIncreaseDatabase = document.getElementById('moreIncreaseDatabase')
+moreIncreaseDatabase.addEventListener('click', funMoreIncreaseDatabase)
+const lessIncreaseDatabase = document.getElementById('lessIncreaseDatabase')
+lessIncreaseDatabase.addEventListener('click', funLessIncreaseDatabase)
+const labelIncreaseDatabase = document.getElementById('labelIncreaseDatabase')
