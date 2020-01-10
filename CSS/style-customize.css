@@ -1054,6 +1054,118 @@ hr {
 }
 
 
+/*<!-- ===============pupup question================ --> */
+
+.ContinerQuestionOverlay.active {
+    display: flex;
+}
+
+.ContinerQuestionOverlay {
+    display: none;
+    background: rgba(0, 0, 0, .7);
+    z-index: 4;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.Question_popup {
+    width: 45%;
+    background-color: white;
+    height: 200px;
+}
+
+.question_title {
+    position: relative;
+    height: 25%;
+    width: 100%;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+    /* justify-content: space-between; */
+}
+
+.question_title--fa-question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    color: white;
+    border-radius: 50%;
+    background-color: var(--color-orange);
+    margin: 0 3%;
+}
+
+.question_title--fa-question i {
+    font-size: 12px;
+    /* font-weight: lighter; */
+}
+
+.question_title p {
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.btn-close-popup {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color-orange);
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.descriptionPupop {
+    padding: 3%;
+    font-size: 14px;
+    text-align: justify;
+    color: #63737D;
+}
+
+.descriptionPupop-number {
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+.QuotationItems_withoutIcon--padding {
+    padding-left: 20%;
+}
+
+
+/* <!-- ===============pupop Publications================ --> */
+
+.Question_popup--Publications {
+    height: 300px;
+}
+
+.question_title--Publications {
+    height: 15%;
+}
+
+.textp {
+    color: var(--color-orange);
+    padding-right: 1px;
+}
+
+
+/*<!-- ===============Mail Marketing================ --> */
+
+
 /* <!-- =======  responsive 1024px ========= --> */
 
 @media screen and (max-width:1024px) {
@@ -1181,5 +1293,8 @@ hr {
     }
     .itemspreci--IncreaseDatabase {
         width: 35%
+    }
+    .containerQuotationSummary {
+        width: 28%;
     }
 }

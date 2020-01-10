@@ -278,7 +278,7 @@ function funlessAnimatedGraphicPiece() {
     }
 }
 
-// <!-- ======= GIFS========= -->
+// <!-- ======= GIFS ========= -->
 
 function funSumGifs() {
     sumGifs = moreGIFS + lessGIFS
@@ -679,3 +679,84 @@ moreIncreaseDatabase.addEventListener('click', funMoreIncreaseDatabase)
 const lessIncreaseDatabase = document.getElementById('lessIncreaseDatabase')
 lessIncreaseDatabase.addEventListener('click', funLessIncreaseDatabase)
 const labelIncreaseDatabase = document.getElementById('labelIncreaseDatabase')
+
+// <!-- ===============Mail Marketing================ -->
+
+// <!-- ===============pupop Base================ -->
+const btnOpenpupop = document.getElementById('btnOpenquestionpupop')
+const btnClosePopup = document.getElementById('btnClosePopup')
+const hidenQuestionOverlayBase = document.getElementById('hidenQuestionOverlayBase')
+
+// <!-- ===============pupop Facebook================ -->
+const btnClosePopupFacebook = document.getElementById('btnClosePopupFacebook')
+const btnOpenpupopFacebook = document.getElementById('btnOpenquestionpupopFacebook')
+const hidenQuestionOverlayFacebook = document.getElementById('hidenQuestionOverlayFacebook')
+
+// <!-- ===============pupop Publications================ 
+const btnClosePopupPublications = document.getElementById('btnClosePopupPublications')
+const btnOpenquestionPublications = document.getElementById('btnOpenquestionPublications')
+const hidenQuestionOverlayPublications = document.getElementById('hidenQuestionOverlayPublications')
+    // <!-- ===============pupop followers================ -->
+const btnClosePopupfollowers = document.getElementById('btnClosePopupfollowers')
+const btnOpenquestionFollowers = document.getElementById('btnOpenquestionFollowers')
+const hidenQuestionOverlayfollowers = document.getElementById('hidenQuestionOverlayfollowers')
+
+// <!-- ===============pupop Accompaniment================ -->
+const btnClosePopupAccompaniment = document.getElementById('btnClosePopupAccompaniment')
+const btnOpenquestionAccompaniment = document.getElementById('btnOpenquestionAccompaniment')
+const hidenQuestionOverlayAccompaniment = document.getElementById('hidenQuestionOverlayAccompaniment')
+
+// <!-- ===============pupop advertising================ -->
+const btnClosePopupAdvertising = document.getElementById('btnClosePopupAdvertising')
+const btnOpenquestionAdvertising = document.getElementById('btnOpenquestionAdvertising')
+const hidenQuestionOverlayAdvertising = document.getElementById('hidenQuestionOverlayAdvertising')
+
+// <!-- ===============pupop contribution base ================ -->
+const btnClosePopupContributionBase = document.getElementById('btnClosePopupContributionBase')
+const btnOpenquestionContributionBase = document.getElementById('btnOpenquestionContributionBase')
+const hidenQuestionContributionBase = document.getElementById('hidenQuestionContributionBase')
+
+
+
+// <!-- ===============pupop Base================ -->
+btnOpenpupop.addEventListener('click', () => {
+    hidenQuestionOverlayBase.classList.add('active')
+})
+btnClosePopup.addEventListener('click', () =>
+        hidenQuestionOverlayBase.classList.remove('active'))
+    // <!-- ===============pupop Facebook================ -->
+btnOpenpupopFacebook.addEventListener('click', () => {
+    hidenQuestionOverlayFacebook.classList.add('active')
+})
+btnClosePopupFacebook.addEventListener('click', () =>
+        hidenQuestionOverlayFacebook.classList.remove('active'))
+    // <!-- ===============pupop Publications================ 
+btnOpenquestionPublications.addEventListener('click', () => {
+    hidenQuestionOverlayPublications.classList.add('active')
+})
+btnClosePopupPublications.addEventListener('click', () =>
+        hidenQuestionOverlayPublications.classList.remove('active'))
+    // <!-- ===============pupop followers================ -->
+btnOpenquestionFollowers.addEventListener('click', () => {
+    hidenQuestionOverlayfollowers.classList.add('active')
+})
+btnClosePopupfollowers.addEventListener('click', () =>
+        hidenQuestionOverlayfollowers.classList.remove('active'))
+    // <!-- ===============pupop Accompaniment================ -->
+btnOpenquestionAccompaniment.addEventListener('click', () => {
+    hidenQuestionOverlayAccompaniment.classList.add('active')
+})
+btnClosePopupAccompaniment.addEventListener('click', () =>
+        hidenQuestionOverlayAccompaniment.classList.remove('active'))
+    // <!-- ===============pupop advertising================ -->
+btnOpenquestionAdvertising.addEventListener('click', () => {
+    hidenQuestionOverlayAdvertising.classList.add('active')
+})
+btnClosePopupAdvertising.addEventListener('click', () =>
+        hidenQuestionOverlayAdvertising.classList.remove('active'))
+    // <!-- ===============pupop contribution base ================ -->
+btnOpenquestionContributionBase.addEventListener('click', () => {
+    hidenQuestionContributionBase.classList.add('active')
+})
+btnClosePopupContributionBase.addEventListener('click', () =>
+    hidenQuestionContributionBase.classList.remove('active'))
