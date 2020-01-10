@@ -4,10 +4,1157 @@
     /* --border-box: 1px solid black; */
     --font-color: #63737D;
     --color-orange: #FF9300;
+    --main-font: sans-serif;
 }
 
+
 /* ====Side Bar====================*/
+
 .progress--1,
-.progress--2{
+.progress--2 {
     background-color: var(--color-orange);
+}
+
+.containerQuotation {
+    height: 100%;
+    display: flex;
+    border: var(--border-box);
+    font-family: var(--main-font);
+}
+
+
+/*=======Quote list =========*/
+
+.containerQuotation_qouteList {
+    width: 75%;
+    height: 91%;
+    /* border: var(--border-box); */
+    margin-left: 3%;
+    margin-top: 3%;
+    position: relative;
+}
+
+.containerQuotation_horizontalLine {
+    width: 95%;
+    border: .7px solid var(--main-color);
+}
+
+.containerQuotation_verticalLine {
+    height: 45%;
+    position: absolute;
+    width: 1px;
+    border: .7px solid var(--main-color);
+}
+
+.containerQuotation_personalized {
+    height: 475px;
+    /* border: 1px solid red; */
+    width: 100%;
+    overflow-y: scroll;
+    padding: 1.5%;
+}
+
+.containerQuotation_personalized::-webkit-scrollbar {
+    height: 60px;
+    width: 5px;
+}
+
+.containerQuotation_personalized::-webkit-scrollbar-thumb {
+    background: var(--color-orange);
+    border-radius: 5px;
+}
+
+.main::-webkit-scrollbar-scrollbar {
+    background: red;
+}
+
+.containerQuotation_content {
+    height: 800px;
+}
+
+.containerQuotation_content_text {
+    color: #808080;
+    width: 95%;
+    padding: 2%;
+    border: 1px solid #E5E5E5;
+    border-radius: 23px;
+    background-color: #F7F7F7;
+}
+
+.containerQuotation_content:nth-child(1) p span {
+    font-weight: bold;
+}
+
+.containerQuotation_phrase {
+    color: var(--color-orange);
+    font-size: 18px;
+    margin-top: 1.5%;
+}
+
+.containerQuotation_phrasesSocialNetworks {
+    margin: 1.5% 0 1.5% 0;
+    color: #33ADB9;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* <!-- =======  Container Social Networks  ========= --> */
+
+.containerQuotation_socialNetworks {
+    width: 95%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerQuotation_itemsSocialNetworks {
+    width: 20%;
+    height: 50px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+
+/* <!-- =======  checkbox ========= --> */
+
+.containerQuotation_nameSocialNetworks input[type="checkbox"],
+.containerAttentionSchedule_items input[type="checkbox"] {
+    display: none;
+}
+
+.containerQuotation_nameSocialNetworks label,
+.containerAttentionSchedule_items label {
+    padding-left: 1.2em;
+    position: relative;
+    display: inherit;
+}
+
+.containerQuotation_nameSocialNetworks label::before,
+.containerAttentionSchedule_items label::before {
+    content: "";
+    border: 3px solid #F2F2F2;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background-color: #EFEFEF;
+    border-radius: 50%;
+    left: 0px;
+    bottom: 3.5px;
+}
+
+.containerQuotation_nameSocialNetworks input[type="checkbox"]:checked+label::before,
+.containerAttentionSchedule_items input[type="checkbox"]:checked+label::before {
+    content: "";
+    background-color: var(--color-orange);
+    /* color: red; */
+}
+
+.containerQuotation_nameSocialNetworks--professionalPhotography input[type="checkbox"]:checked+label::before {
+    background-color: var(--color-orange);
+}
+
+.containerQuotation_nameSocialNetworks {
+    width: 81%;
+    height: 100%;
+    border-radius: 7%;
+    position: absolute;
+    background-color: #33ADB9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.containerQuotation_nameSocialNetworks p {
+    display: inline-block;
+}
+
+.containerQuotation_imgSocialNetworks {
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    width: 30%;
+    height: 90%;
+    z-index: 1;
+}
+
+.containerQuotation_imgSocialNetworks img {
+    width: 100%;
+    height: 100%;
+}
+
+.containerQuotation_text {
+    color: #808080;
+    width: 95%;
+    padding: 2%;
+    border-radius: 23px;
+}
+
+.containerQuotation_text span {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+
+/* <!-- =======  Form  ========= --> */
+
+#formTextHide {
+    display: none;
+}
+
+#btnLinkedinfollowers,
+#FollowersInstagram,
+#FollowerFacebook,
+#FollowerLinkedin,
+#FollowerTwitter {
+    display: none;
+}
+
+#formTextHide input {
+    width: 95%;
+    color: #808080;
+    height: 100px;
+    background-color: #F7F7F7;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #E5E5E5;
+}
+
+
+/* <!-- =======  container area  ========= --> */
+
+.containerQuotation_parent {
+    display: none;
+    position: relative;
+}
+
+.containerQuotation_phraseNekworks {
+    position: absolute;
+    color: var(--color-orange);
+    font-size: 18px;
+    top: 12px;
+}
+
+.containerQuotation_nekworks {
+    width: 95%;
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+#Popup,
+#Popup_label,
+#PopupInstagram,
+#PopupLinkedin,
+#PopupFollowersInstagram,
+#PopupFollowersTwitter,
+#PopupFollowersLinkedin,
+#Popup_label_FollowersFacebook,
+#Popup_label_FollowersTwitter,
+#PopupTwitter,
+#PopupAccompaniment,
+#Popup_label_Twitter,
+#Popup_label_Instagram,
+#Popup_label_Linkedin,
+#Popup_label_FollowersInstagram,
+#Popup_label_FollowersLinkedin,
+#PopupFollowersFacebook,
+#Popup_label_PopupAccompaniment {
+    position: absolute;
+    left: 0%;
+    z-index: 2;
+    top: 4px;
+    padding: 2px;
+    margin-left: 18%;
+    width: 25px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--color-orange);
+}
+
+#Popup,
+#PopupInstagram,
+#PopupLinkedin,
+#PopupTwitter,
+#PopupAccompaniment,
+#PopupFollowersInstagram,
+#PopupFollowersLinkedin,
+#PopupFollowersTwitter,
+#PopupFollowersFacebook {
+    background-color: transparent;
+    z-index: 0;
+}
+
+#Popup_label span {
+    margin: 0;
+}
+
+.containerQuotation_label {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    transform: rotate(137deg);
+    background-color: var(--color-orange);
+    left: 13px;
+    bottom: -20px;
+}
+
+#contentContainer,
+#contentContainerLinkedin {
+    width: 100%;
+    height: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+
+/* <!-- =======  slider label  ========= --> */
+
+input[type=range] {
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    border-radius: 10px;
+    height: 15px;
+    width: 100%;
+    border: none;
+    background: -webkit-gradient(linear, left top, right top, color-stop(19%, #FF9300), color-stop(19%, #EFEFEF));
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-track {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+    border: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: white;
+    box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.3);
+    height: 20px;
+    width: 20px;
+    border: 0.1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+input[type=range]::-moz-range-thumb {
+    -moz-appearance: none !important;
+    border: none;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+/*=======sum of networks=========*/
+
+.containerQuotation_sumOfNekworks {
+    padding: 2px 19px 2px 29px;
+    width: 30%;
+    height: 50px;
+    border: 1px solid #EBEBEB;
+    margin: 30px auto;
+    border-radius: 10px;
+    display: none;
+    background-color: var(--color-orange);
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.containerQuotation_sumTitle {
+    border-radius: 10px 0 0 10px;
+    color: white;
+}
+
+.containerQuotation_sumlabel {
+    border-radius: 5px;
+    width: 40px;
+    color: var(--color-orange);
+    height: 37px;
+    margin-left: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ================= design formats for each publication================ */
+
+.containerQuotation_format {
+    height: 60px;
+    background-color: var(--color-orange);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 4px 2%;
+}
+
+.containerQuotation_Photography {
+    width: 27%;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px 0 0 5px;
+    background-color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerQuotation_Photography--graphicPiece {
+    width: 17%;
+    margin-left: 3%;
+}
+
+.containerQuotation_Photography--animatedGraphicPiece {
+    width: 20%;
+    margin-left: 3%;
+}
+
+.containerQuotation_Photography--Gifs {
+    width: 7%;
+    margin-left: 3%;
+}
+
+.containerQuotation_Photography p {
+    font-size: 14px;
+    color: #808080;
+}
+
+.containerQuotation_formatSumlabel {
+    width: 3%;
+    height: 40px;
+    border: 1px solid #E5E5E5;
+    border-collapse: separate;
+    background-color: white;
+    color: var(--color-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerQuotation_formatModifiers {
+    width: 2%;
+    height: 40px;
+    border: 1px solid #E5E5E5;
+    background-color: white;
+    border-radius: 0 5px 5px 0;
+    padding: 8px 3px;
+    /* display: flex; */
+}
+
+.formatModifiers {
+    background-color: var(--color-orange);
+    display: block;
+    clip-path: polygon(49% 2%, 0% 100%, 100% 100%);
+    -webkit-clip-path: polygon(49% 2%, 0% 100%, 100% 100%);
+    height: 8px;
+    cursor: pointer;
+}
+
+.formatModifiers2 {
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background-color: var(--color-orange);
+}
+
+.formatModifiers1 {
+    margin-bottom: 8px;
+}
+
+.remainingPosts {
+    font-size: 13px;
+    margin: 5px;
+    color: #808080;
+}
+
+.remainingPosts span {
+    color: var(--main-color);
+    font-size: 14px;
+}
+
+
+/*======= Additional message and chat service hours =========*/
+
+.containerQuotation_text--nonepadding {
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+.containerAttentionSchedule_items {
+    width: 60%;
+    height: 60px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 40px;
+}
+
+.containerAttentionSchedule_items p {
+    color: white;
+    font-size: 1em;
+}
+
+.containerAttentionSchedule_items--space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerAttentionSchedule_items--space label {
+    padding-left: 2.2em;
+    /* width: 10px; */
+}
+
+.containerAttentionSchedule_items label::before {
+    width: 8px;
+    height: 8px;
+}
+
+.containerAttentionSchedule_number span {
+    font-size: 1em;
+    font-weight: 100;
+}
+
+
+/*   ======= number of current followers ===== */
+
+.containerAttentionSchedule_number {
+    width: 100px;
+    border-radius: 5px;
+    height: 70%;
+    border: 1px solid #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    color: var(--color-orange);
+}
+
+.containerNumberFollowers-general {
+    display: flex;
+    position: relative;
+}
+
+.containerQuotation_numberFollowersIntagram {
+    position: initial;
+    margin-right: 12px;
+    color: var(--color-orange)
+}
+
+.containerQuotation_parents--nekworks {
+    display: flex;
+    align-items: flex-end;
+}
+
+.Popup_label_Linkedin--followers {
+    width: 100px !important;
+}
+
+
+/* =============== professional photography ============ */
+
+.containerQuotation_nameSocialNetworks--professionalPhotography {
+    color: rgba(152, 152, 152, 1);
+    background-color: white;
+    margin: 0 10px;
+}
+
+.containerQuotation_nameSocialNetworks--professionalPhotography label {
+    margin-left: 40px;
+}
+
+.numberPhotographs {
+    display: inline-block;
+    /* border: var(--border-box); */
+    width: 350px;
+    height: 45px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-orange);
+}
+
+.itemstitle {
+    /* border: var(--border-box); */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: var(--color-orange);
+    border-radius: 5px 0 0 5px;
+}
+
+.itemsNumber {
+    /* border: var(--border-box); */
+    height: 90%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.itemspreci {
+    border: 1px solid #E5E5E5;
+    height: 80%;
+    border-radius: 5px;
+    background-color: white;
+    width: 23%;
+    margin-right: 3%;
+    display: flex;
+    color: var(--color-orange);
+    justify-content: center;
+    font-weight: lighter;
+    align-items: center;
+}
+
+.containerQuotation_formatModifiers--itemsNumber {
+    width: 25%;
+    border-radius: 0 5px 0 5px 0;
+    height: 90%;
+}
+
+.containerQuotation_formatSumlabel--numPhotographs {
+    border-radius: 5px 0 0 5px;
+    width: 65%;
+    height: 90%;
+}
+
+.formatModifiers1 {
+    margin-bottom: 5px;
+}
+
+#hidenNumberPhotographs {
+    display: none;
+}
+
+
+/* ======containerAccompaniment-title ======= */
+
+.containerAccompaniment-title {
+    color: var(--color-orange);
+    margin-bottom: 4px;
+}
+
+
+/*<!-- ========= Accompaniment in cities ==========-->*/
+
+.containerAccompaniment-cities {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.containerAccompaniment-cities p {
+    /* border: 1px solid red; */
+    padding-right: 10px;
+    color: #989898;
+    /* width: 150px */
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.containerAccompaniment-cities input[type="checkbox"] {
+    display: none;
+}
+
+.containerAccompaniment-cities label {
+    padding-left: 1.9em;
+    position: relative;
+    display: inherit;
+    cursor: pointer;
+}
+
+.containerAccompaniment-cities label::before {
+    margin-bottom: 10px;
+    content: "";
+    border: 3px solid #F2F2F2;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background-color: #EFEFEF;
+    border-radius: 50%;
+    left: 12px;
+    bottom: 3.5px;
+}
+
+.containerAccompaniment-cities input[type="checkbox"]:checked+label::before {
+    content: "";
+    background-color: var(--color-orange);
+    /* color: red; */
+}
+
+.containerAccompaniment-cities--input input {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--color-orange);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: #989898;
+}
+
+#citiesInput {
+    display: none;
+}
+
+
+/*  <!-- =============accompanying hours========== --> */
+
+.containerAccompaniment-title--Acompany {
+    padding: 20px 0 10px 0;
+}
+
+
+/* line  */
+
+hr {
+    margin-top: 1.5%;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    margin: 1em 1.6% 0 0;
+}
+
+
+/* ===========Increase your database============  */
+
+.itemsNumber--IncreaseDatabase {
+    width: 30%;
+}
+
+.containerQuotation_formatModifiers--IncreaseDatabase {
+    width: 21%;
+}
+
+
+/* _______Buttons_________*/
+
+.mainContent__buttons {
+    width: 100%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: var(--border-box); */
+}
+
+.mainContent__buttons .submitQuote {
+    width: 232px;
+    height: 30px;
+    margin-left: 25px;
+    border-radius: 9px;
+    font: Normal 0.9em/30px var(--main-font);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.mainContent__buttons .goBack {
+    width: 232px;
+    margin-bottom: 10px;
+    height: 30px;
+    margin-top: 12px;
+    border-radius: 9px;
+    font: Normal 0.9em/30px var(--main-font);
+    color: var(--main-color);
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    background-color: white;
+    border: 1px solid var(--main-color);
+}
+
+
+/*======= Quotation Summary=========*/
+
+.containerQuotationSummary {
+    width: 20%;
+    height: 99%;
+    box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.containerQuotationSummary_title {
+    height: 7%;
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.containerQuotation_phrasesSocialNetworks--QuotationSummary {
+    padding-left: 2%;
+    margin-bottom: 4%;
+}
+
+.containerItemsQuotation {
+    height: 310px;
+    padding-left: 2%;
+    display: grid;
+    grid-template: repeat(10, 26px)/ 60% 30%;
+    grid-gap: 2%;
+}
+
+.QuotationItems {
+    background-color: #F1F1F1;
+    border: 1px solid #E5E5E5;
+    display: flex;
+    align-items: center;
+}
+
+.QuotationItems p {
+    color: #63737D;
+    font-size: 13px;
+}
+
+.QuotationItems-icon {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8% 0 3%;
+    background-color: var(--color-orange);
+    cursor: pointer;
+}
+
+.fa-question {
+    color: white;
+    font-weight: lighter;
+    font-size: 8px;
+}
+
+.QuotationItems--color {
+    border: 1px solid #E5E5E5;
+    background-color: #FFFFFF;
+    display: flex;
+    padding-right: 8%;
+    justify-content: flex-end;
+}
+
+.QuotationItems--color p {
+    font-size: 13px;
+    color: #63737D;
+}
+
+.containerQuotationSummaryh3 {
+    font-size: 14px;
+    margin: 3% 0;
+}
+
+
+/* =========Quotation Total */
+
+.QuotationItems--total {
+    margin-left: 1%;
+    background-color: white;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.QuotationItems--total p {
+    font-size: 13px;
+    font-weight: bolder;
+    color: var(--color-orange);
+}
+
+.QuotationItems--withoutIcon {
+    padding-left: 8%;
+}
+
+.containerItemsQuotation--height {
+    height: 140px;
+}
+
+
+/*<!-- ===============pupup question================ --> */
+
+.ContinerQuestionOverlay.active {
+    display: flex;
+}
+
+.ContinerQuestionOverlay {
+    display: none;
+    background: rgba(0, 0, 0, .7);
+    z-index: 4;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.Question_popup {
+    width: 45%;
+    background-color: white;
+    height: 200px;
+}
+
+.question_title {
+    position: relative;
+    height: 25%;
+    width: 100%;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+    /* justify-content: space-between; */
+}
+
+.question_title--fa-question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    color: white;
+    border-radius: 50%;
+    background-color: var(--color-orange);
+    margin: 0 3%;
+}
+
+.question_title--fa-question i {
+    font-size: 12px;
+    /* font-weight: lighter; */
+}
+
+.question_title p {
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.btn-close-popup {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color-orange);
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.descriptionPupop {
+    padding: 3%;
+    font-size: 14px;
+    text-align: justify;
+    color: #63737D;
+}
+
+.descriptionPupop-number {
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+.QuotationItems_withoutIcon--padding {
+    padding-left: 20%;
+}
+
+
+/* <!-- ===============pupop Publications================ --> */
+
+.Question_popup--Publications {
+    height: 300px;
+}
+
+.question_title--Publications {
+    height: 15%;
+}
+
+.textp {
+    color: var(--color-orange);
+    padding-right: 1px;
+}
+
+
+/*<!-- ===============Mail Marketing================ --> */
+
+
+/* <!-- =======  responsive 1024px ========= --> */
+
+@media screen and (max-width:1024px) {
+    .mainContent__phrase {
+        font: Bold 1em/2em var(--main-font);
+    }
+    .containerQuotation_qouteList {
+        width: 68%;
+    }
+    .containerQuotation_totalBudget {
+        width: 27%;
+    }
+    .containerQuotation_content p {
+        font-size: 12px;
+        padding: 1.5%;
+    }
+    .containerQuotation_phrase {
+        font-size: 15px;
+    }
+    .containerQuotation_phrasesSocialNetworks {
+        font-size: 13px;
+    }
+    .containerQuotation_nameSocialNetworks p {
+        font-size: 12px;
+        display: inline-block;
+    }
+    .containerQuotation_nameSocialNetworks {
+        height: 86%;
+        justify-content: initial;
+        padding-left: 7px;
+    }
+    .containerQuotation_itemsSocialNetworks {
+        width: 23%;
+    }
+    .containerQuotation_imgSocialNetworks {
+        width: 34%;
+        height: 81%;
+    }
+    .containerQuotation_text {
+        font-size: 12px;
+    }
+    .containerQuotation_nameSocialNetworks label {
+        padding-left: .9em;
+    }
+    #containerQuotation_parent--facebook p,
+    #containerQuotation_parent--Instagram p,
+    #containerQuotation_parent--Linkedin p,
+    #containerQuotation_parent--Twitter p {
+        font-size: 17px;
+        padding: .7%;
+    }
+    .containerQuotation_nameSocialNetworks label::before {
+        bottom: 1.5px;
+    }
+    .containerQuotation_sumOfNekworks {
+        width: 43%;
+        font-size: 15px;
+        /* padding: 2px; */
+    }
+    .containerQuotation_format {
+        padding: 4px 1%;
+    }
+    .containerQuotation_Photography p {
+        font-size: 10px;
+        /* width: 27%; */
+    }
+    .containerQuotation_Photography {
+        width: 30%;
+    }
+    .containerQuotation_formatSumlabel {
+        width: 4%;
+    }
+    .containerQuotation_formatModifiers {
+        width: 4%;
+    }
+    .containerQuotation_Photography--Gifs {
+        width: 10%;
+    }
+    .formatModifiers {
+        cursor: pointer;
+    }
+    .containerQuotation_text--nonepadding {
+        padding: 0 !important;
+    }
+    .containerAttentionSchedule_items--space label {
+        padding-left: 1em;
+    }
+    .containerAttentionSchedule_items {
+        width: 80%;
+        height: 50px;
+        padding: 0 10px 0 20px;
+    }
+    .containerAttentionSchedule_number {
+        width: 90px;
+    }
+    .containerAttentionSchedule_number span {
+        font-size: 1em;
+    }
+    .numberPhotographs {
+        width: 270px;
+    }
+    .itemsNumber {
+        width: 20%;
+    }
+    .containerQuotation_formatSumlabel--numPhotographs {
+        width: 50%;
+    }
+    .containerQuotation_formatModifiers--itemsNumber {
+        width: 36%;
+    }
+    .itemspreci {
+        width: 30%;
+    }
+    .containerAccompaniment-title {
+        padding: .1% !important;
+    }
+    .containerQuotation_formatSumlabel--IncreaseDatabase {
+        width: 60%;
+    }
+    .itemsNumber--IncreaseDatabase {
+        width: 38%;
+    }
+    .containerQuotation_formatModifiers--IncreaseDatabase {
+        width: 21%;
+    }
+    .itemspreci--IncreaseDatabase {
+        width: 35%
+    }
+    .containerQuotationSummary {
+        width: 28%;
+    }
 }
