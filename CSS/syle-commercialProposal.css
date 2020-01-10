@@ -1,0 +1,371 @@
+:root {
+    --main-color: #33ADB9;
+    --main-font: sans-serif;
+    /* --border-box: 1px solid black; */
+    --font-color: #63737D;
+    --color-orange: #FF9300;
+    --color-white: #ffffff;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+.contentMain {
+    background-color: var(--color-white);
+    width: 94%;
+    height: 250vh;
+    margin: 2% auto;
+    border-radius: 110px;
+    padding: 1.6em 0 0 0;
+}
+
+
+/* <!-- === HEADER ===== --> */
+
+.mainContent__header {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--border-box);
+}
+
+.mainContent__header__logo {
+    width: 133px;
+    height: 42px;
+}
+
+.mainContent__header__logo .wikpisLogo {
+    width: 100%;
+    height: 100%;
+}
+
+.mainContent__header figure {
+    margin: 0;
+}
+
+.mainContent__header__text {
+    padding-left: 1em;
+    margin-left: 1.2em;
+    font-family: var(--main-font);
+    color: var(--font-color);
+    font-size: 1.1em;
+    line-height: 2.4em;
+    border-left: 1px solid var(--font-color);
+}
+
+
+/* <!-- ======= title ==============--> */
+
+.titleCommercialProposal {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 5%;
+    margin-bottom: 0;
+    color: var(--font-color);
+    text-align: center;
+}
+
+.spamCommercialProposal {
+    color: var(--color-orange);
+}
+
+
+/* <!-- ==========  content commercial proposal ===========--> */
+
+.contentMain_ToPrintDownload {
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    width: 75%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contentMain-box {
+    display: inherit;
+    color: var(--main-color);
+    font-size: 1em;
+    align-items: center;
+}
+
+.contentMain-box p {
+    margin: 0 .5em;
+    cursor: pointer;
+}
+
+.toprint {
+    height: 100%;
+    width: 100px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+.toprint i,
+.download i {
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.download {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.contentCommercialProposal {
+    width: 80%;
+    margin: 0 auto;
+    height: 300px;
+    /* border: 1px solid red; */
+}
+
+hr {
+    color: transparent;
+    margin: 0;
+    height: 1px;
+    background-color: var(--main-color);
+}
+
+hr.v {
+    background-color: var(--main-color);
+    margin: 0;
+    position: absolute;
+    width: .1px;
+    height: 300px;
+    z-index: 0;
+}
+
+.CommercialProposal-name {
+    margin-top: 3%;
+    margin-bottom: 0;
+    font-size: 3em;
+    text-align: center;
+    color: var(--font-color);
+}
+
+.CommercialProposal-lineButton {
+    border-bottom: 2px solid var(--main-color);
+}
+
+.CommercialProposal-paragraph {
+    border-left: 8px solid var(--color-orange);
+    width: 80%;
+    padding-left: 7%;
+    margin-left: 0px;
+}
+
+.CommercialProposal-w {
+    color: var(--main-color);
+}
+
+.CommercialProposal-wikpis {
+    color: var(--color-orange);
+}
+
+.CommercialProposal-paragraph p {
+    color: var(--font-color);
+    font-size: 1.1em;
+}
+
+.CommercialProposal-date {
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: var(--main-color);
+    padding-left: 7%;
+}
+
+.CommercialProposal-date.data {
+    color: var(--font-color);
+    margin: 0;
+}
+
+.containerQuotation_content_text {
+    margin-left: 7%;
+    color: #808080;
+    width: 83%;
+    padding: 2% 2%;
+    border: 1px solid #E5E5E5;
+    border-radius: 23px;
+    font-size: 12px;
+    background-color: #F7F7F7;
+}
+
+.CommercialProposal-date.title {
+    text-align: center;
+    margin-top: 4%;
+}
+
+.itemsInvoiceSummary-titletr {
+    background-color: var(--color-orange);
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    justify-content: center;
+    height: 25px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 80%;
+    color: var(--color-white);
+}
+
+.itemsInvoiceSummary.a {
+    color: var(--color-white);
+    border: none;
+}
+
+.itemsInvoiceSummary.b,
+.itemsInvoiceSummary.c {
+    background-color: #E5E5E5;
+}
+
+.itemsInvoiceSummary.c p {
+    color: var(--main-color)
+}
+
+.contentInvoiceSummary {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template: repeat(18, 25px)/ 40% 40% 18%;
+    grid-gap: .7%;
+}
+
+.contentInvoiceSummaryservice2 {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template: repeat(8, 25px)/ 40% 40% 18%;
+    grid-gap: .7%;
+}
+
+.itemsInvoiceSummary p {
+    margin: 0;
+    color: var(--font-color);
+}
+
+.itemsInvoiceSummary {
+    padding: 0 0 0 3%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    border: 1px solid beige;
+}
+
+.itemsInvoiceSummary.design {
+    margin-left: 10%;
+}
+
+.itemsInvoiceSummary.total {
+    background-color: white;
+    font-weight: bolder;
+    border: none;
+}
+
+.itemsInvoiceSummary.total p {
+    color: var(--main-color);
+}
+
+.itemsInvoiceSummary-titletr.service {
+    margin-top: 1em;
+}
+
+.itemsInvoiceSummary.sumaryTotalb {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2%;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+.itemsInvoiceSummary.sumaryTotalc {
+    background-color: var(--color-orange);
+    display: flex;
+    justify-content: center;
+}
+
+.itemsInvoiceSummary.sumaryTotalc p {
+    color: var(--color-white);
+}
+
+.nextpag {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    color: var(--font-color);
+    font-weight: bolder;
+}
+
+.nextpag1 {
+    color: var(--color-orange);
+    padding: 0 12px;
+}
+
+.nextpag2 {
+    padding: 0 12px;
+}
+
+.contentMain_ToPrintDownload.botton {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.mainContent__buttons {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: var(--border-box); */
+}
+
+.mainContent__buttons .next {
+    width: 232px;
+    height: 30px;
+    border-radius: 9px;
+    font-family: var(--font-type);
+    font-size: 1em;
+    color: var(--main-color);
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    /* background-color: var(--main-color); */
+    border: 1px solid var(--main-color);
+}
+
+.mainContent__buttons .submitQuote {
+    width: 232px;
+    height: 30px;
+    border-radius: 9px;
+    font: Normal 0.9em/30px var(--main-font);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.mainContent__buttons .goBack {
+    width: 232px;
+    margin-bottom: 10px;
+    height: 30px;
+    margin-top: 12px;
+    border-radius: 9px;
+    font: Normal 0.9em/30px var(--main-font);
+    color: var(--main-color);
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    background-color: white;
+    border: 1px solid var(--main-color);
+}
