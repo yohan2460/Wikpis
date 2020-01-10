@@ -1,0 +1,13 @@
+:root {
+    --main-color: #33ADB9;
+    --main-font: sans-serif;
+    /* --border-box: 1px solid black; */
+    --font-color: #63737D;
+    --color-orange: #FF9300;
+}
+
+/* ====Side Bar====================*/
+.progress--1,
+.progress--2{
+    background-color: var(--color-orange);
+}

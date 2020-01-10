@@ -1,3 +1,7 @@
+//====== Init Script ======================================
+var container = document.querySelector(".container");
+container.style.height = String(window.innerHeight) + "px";
+
 var sumHidenInstagram, sumHidenLinkedin, sumHidenFacebook, sumHidenTwitter,
     value_popupTwitter = 0,
     sumTotal = 0,
