@@ -31,22 +31,21 @@
     background-image: linear-gradient(to right, #E5E5E5, #CBCBCB);
 }
 
-.sideBar_progress{
+.sideBar_progress {
     margin-top: 50px;
     width: 3px;
     height: 435px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-self: center;
     position: absolute;
     z-index: 4;
-
     justify-content: space-between;
     /* border:1px solid black;  */
 }
 
-.sideBar_progress_colored{
-    width:100%;
+.sideBar_progress_colored {
+    width: 100%;
     height: 116px;
     background-color: transparent;
 }
@@ -107,6 +106,14 @@
     margin: 0 0 0 11px;
 }
 
-
-
-
+@media screen and (max-width:1024px) {
+    .sideBarContent {
+        margin-left: 10%;
+    }
+    .sideBar_iconNames {
+        margin-right: .7%;
+    }
+    .sideBar_iconNames p {
+        font-size: 1em;
+    }
+}
