@@ -86,6 +86,7 @@ img {
 
 .container-box--form-options p {
     font-size: 14px;
+    cursor: pointer;
     padding-left: 10px;
 }
 
@@ -94,6 +95,7 @@ img {
     border: none;
     outline: none;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .container-box--form-button {
@@ -124,4 +126,18 @@ img {
     color: var(--color-white);
     font-size: 14px;
     margin-top: 40px;
+}
+
+@media screen and (max-width:1024px) {
+    .container-box--logos {
+        display: flex;
+        justify-content: center;
+    }
+    .container-box--logos-wikpis {
+        margin: 0;
+        width: 30%;
+    }
+    .container-box--contizador span {
+        font-size: .3em;
+    }
 }

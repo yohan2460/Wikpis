@@ -158,6 +158,7 @@ hr.v {
     width: 80%;
     padding-left: 7%;
     margin-left: 0px;
+    text-align: justify;
 }
 
 .CommercialProposal-w {
@@ -171,6 +172,7 @@ hr.v {
 .CommercialProposal-paragraph p {
     color: var(--font-color);
     font-size: 1.1em;
+    text-align: justify;
 }
 
 .CommercialProposal-date {
@@ -222,6 +224,10 @@ hr.v {
 .itemsInvoiceSummary.b,
 .itemsInvoiceSummary.c {
     background-color: #E5E5E5;
+}
+
+.itemsInvoiceSummary.c {
+    justify-content: center;
 }
 
 .itemsInvoiceSummary.c p {
@@ -298,16 +304,22 @@ hr.v {
     margin-top: 5%;
     display: flex;
     justify-content: center;
-    color: var(--font-color);
     font-weight: bolder;
 }
 
-.nextpag1 {
-    color: var(--color-orange);
-    padding: 0 12px;
+.nextpag a {
+    text-decoration: none;
 }
 
-.nextpag2 {
+.nextpag1 a {
+    color: var(--color-orange);
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.nextpag2 a {
+    color: var(--font-color);
+    cursor: pointer;
     padding: 0 12px;
 }
 
@@ -368,4 +380,39 @@ hr.v {
     line-height: 30px;
     background-color: white;
     border: 1px solid var(--main-color);
+}
+
+@media screen and (max-width:1024px) {
+    .contentMain {
+        height: 1700px;
+    }
+    .titleCommercialProposal {
+        font-size: 1.2em;
+    }
+    .CommercialProposal-name {
+        font-size: 2.5em;
+    }
+    .CommercialProposal-paragraph {
+        font-size: .9em;
+        padding-left: 5%;
+        text-align: justify;
+    }
+    .CommercialProposal-date {
+        font-size: 1.1em;
+        padding: 0;
+    }
+    .containerQuotation_content_text {
+        text-align: justify;
+        margin: 3% 0;
+    }
+    .CommercialProposal-date title {
+        font-size: 1em;
+    }
+    .itemsInvoiceSummary-titletr {
+        font-size: 1em;
+    }
+    .contentInvoiceSummary p,
+    .contentInvoiceSummaryservice2 p {
+        font-size: .8em;
+    }
 }

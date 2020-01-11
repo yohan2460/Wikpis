@@ -173,6 +173,7 @@ hr.v {
 .CommercialProposal-paragraph p {
     color: var(--font-color);
     font-size: 1.1em;
+    text-align: justify;
 }
 
 .transparent {
@@ -184,15 +185,21 @@ hr.v {
     margin-top: 15%;
     display: flex;
     justify-content: center;
-    color: var(--font-color);
     font-weight: bolder;
 }
 
-.nextpag1 {
-    padding: 0 12px;
+.nextpag a {
+    text-decoration: none;
 }
 
-.nextpag2 {
+.nextpag1 a {
+    color: var(--font-color);
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.nextpag2 a {
+    cursor: pointer;
     color: var(--color-orange);
     padding: 0 12px;
 }
@@ -254,4 +261,21 @@ hr.v {
     line-height: 30px;
     background-color: white;
     border: 1px solid var(--main-color);
+}
+
+@media screen and (max-width:1024px) {
+    .contentMain {
+        height: 1000px;
+    }
+    .titleCommercialProposal {
+        font-size: 1.2em;
+    }
+    .CommercialProposal-name {
+        font-size: 2em;
+    }
+    .CommercialProposal-paragraph {
+        font-size: .9em;
+        padding-left: 5%;
+        text-align: justify;
+    }
 }

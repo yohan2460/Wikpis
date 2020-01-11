@@ -1,4 +1,5 @@
 /*========Images and List===========*/
+
 .mainContent__grid {
     margin-top: 1em;
     margin-left: 10px;
@@ -42,11 +43,11 @@
     color: var(--main-color);
 }
 
-.grid_images .image_caption--checked{
+.grid_images .image_caption--checked {
     color: white;
 }
 
-input[type="radio"]{
+input[type="radio"] {
     display: none;
 }
 
@@ -101,3 +102,11 @@ input[type="radio"]{
     border: 1px solid var(--main-color);
 }
 
+@media screen and (max-width:1024px) {
+    .grid_images {
+        width: 78%;
+    }
+    .image_caption {
+        font-size: .5em;
+    }
+}
