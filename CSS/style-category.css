@@ -14,7 +14,7 @@
     margin-right: 10px;
     display: grid;
     grid-template-columns: repeat(4, minmax(auto, 1fr));
-    grid-template-rows: 180px 1fr;
+    grid-template-rows: min-content auto;
     /* grid-template-rows:  repeat(2, minmax(100px, 160px));*/
     align-self: center;
     border: var(--border-box);
@@ -30,7 +30,7 @@
 
 .grid_images .image {
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .grid_images .option {
@@ -122,4 +122,18 @@ input[type="checkbox"]{
     line-height: 30px;
     background-color: white;
     border: 1px solid var(--main-color);
+}
+
+
+@media (max-width:1200px){
+    .content{
+        height: default;
+    }
+    .grid_images .image_caption  {
+        font-size: .8em;
+    }
+    .mainContent__buttons {
+        background-color: green;
+        margin-top: 1.0em;
+    }
 }

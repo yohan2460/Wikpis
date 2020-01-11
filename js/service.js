@@ -56,5 +56,13 @@ for (let i = 0; i < figures.length; i++) {
     radio[i].addEventListener('click', radioChecked);
 }
 //====== Init Script ======================================
-var container = document.querySelector(".container");
-container.style.height = String(window.innerHeight) + "px";
+// var container = document.querySelector(".container");
+// container.style.height = String(window.innerHeight) + "px";
+
+
+// const width  = window.innerWidth || document.documentElement.clientWidth || 
+// document.body.clientWidth;
+// const height = window.screen.height;
+
+// container.style.height = String(height) + "px";
+// console.log(screen.height, screen.availHeight);
