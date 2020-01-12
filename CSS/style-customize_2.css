@@ -132,7 +132,67 @@
     display: inherit;
 }
 
-.containerQuotation_nameSocialNetworks label::before,
+
+   /*_____Radio buttons-_____*/
+.labelRadio{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.labelRadio input[type="radio"]{
+    display:none;
+}
+
+.labelRadio .customRadio{
+    height: 12px;
+    width: 12px;
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: white;
+    background-image: radial-gradient(circle, white,rgba(0,0,0, 0.2));;
+    display: inline-block;
+}
+
+.customRadio--question{
+    right: 5px;
+}
+
+.customRadio:after {
+    content: "";
+    display: none;
+}
+
+.labelRadio input:checked ~ .customRadio:after {
+    display: block;
+}
+
+.labelRadio .customRadio:after{
+    content:"";
+    height: 5px;
+    width:5px;
+    background-color: var(--orange-color);
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+
+/* .containerQuotation_nameSocialNetworks label::before,  */
 .containerAttentionSchedule_items label::before {
     content: "";
     border: 3px solid #F2F2F2;
@@ -703,7 +763,7 @@ input[type=range]::-moz-range-thumb {
     cursor: pointer;
 }
 
-.containerAccompaniment-cities label::before {
+/* .containerAccompaniment-cities label::before {
     margin-bottom: 10px;
     content: "";
     border: 3px solid #F2F2F2;
@@ -714,7 +774,7 @@ input[type=range]::-moz-range-thumb {
     border-radius: 50%;
     left: 12px;
     bottom: 3.5px;
-}
+} */
 
 .containerAccompaniment-cities input[type="checkbox"]:checked+label::before {
     content: "";
