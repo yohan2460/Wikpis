@@ -103,7 +103,12 @@ input[type="radio"] {
     border: 1px solid var(--main-color);
 }
 
-
+/*=======Media Queries===========*/
+@media (min-width:1500px){
+    .mainContent__buttons{
+        margin-top: 0.5em;
+    }
+}
 @media (max-width:1200px){
     .content{
         height: default;

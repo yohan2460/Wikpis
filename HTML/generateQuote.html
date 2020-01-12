@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Categoria</title>
+    <title>Cotización</title>
     <link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/normalize.css">
     <link rel="stylesheet" href="../CSS/style-mainFrame.css">
@@ -57,7 +57,7 @@
                 <!-- === HEADER ===== -->
                 <div class="mainContent__header">
                     <figure class="mainContent__header__logo">
-                        <img class="wikpisLogo" src="../IMAGES/logo-color.png" alt="logo-color">
+                        <img class="wikpisLogo" src="../IMAGES/mas-recuros/logo-color.png" alt="logo-color">
                     </figure>
                     <p class="mainContent__header__text">Cotizador Online</p>
                 </div>
@@ -86,29 +86,29 @@
                             <div class="questions">
                                 <div class="question1Container">
                                     <p class="question1">¿Autoriza recibir Información ofertas o servicios de nuestra empresa al correo electrónico recibido?</p>
-                                    <label for="yes_1" class="labelRadio">
+                                    <label for="yes_1" class="labelRadio labelRadio--question">
                                         Si
                                         <input type="radio" name="question1" id="yes_1" value="yes" checked>
-                                        <span class="customRadio"></span>
+                                        <span class="customRadio customRadio--question"></span>
                                     </label >
-                                    <label for="no_1" class="labelRadio">
+                                    <label for="no_1" class="labelRadio labelRadio--question">
                                         No, gracias
                                         <input type="radio" name="question1" id="no_1" value="no">
-                                        <span class="customRadio"></span>
+                                        <span class="customRadio customRadio--question"></span>
                                     </label>
                                 </div>
 
                                 <div class="question2Container">
                                     <p class="question2">¿Autoriza que un asesor comercial se comunique para ampliar información de nuestra empresa y cotización?</p>
-                                    <label for="yes_2" class="labelRadio">
+                                    <label for="yes_2" class="labelRadio labelRadio--question">
                                         Si
                                         <input type="radio" name="question2" id="yes_2" value="yes">
-                                        <span class="customRadio"></span>
+                                        <span class="customRadio customRadio--question"></span>
                                     </label>
-                                    <label for="no_2" class="labelRadio">
+                                    <label for="no_2" class="labelRadio labelRadio--question">
                                         No, gracias
                                         <input type="radio" name="question2" id="no_2" value="no">
-                                        <span class="customRadio"></span>
+                                        <span class="customRadio customRadio--question"></span>
                                     </label>
                                 </div>
                             </div>
@@ -118,20 +118,32 @@
                         </p>
                         <div class="discountOptionsContainer">
                             <div class="discountOption">
-                                <label for="five" class="labelRadio">
+                                <label for="five" class="labelRadio labelRadio--discount">
                                     <input type="radio" name="discount" id="five" value="five">
-                                    <span class="customRadio"></span>
+                                    <span class="customRadio customRadio--discount"></span>
                                     Descuento del 5% por contrato a 6 meses
                                 </label>
                             </div>
-                            <p class="discountOption">Descuento del 10% por contrato a 1 año</p>
-                            <p class="discountOption">Tengo un cupón de descuento <input type="text" placeholder="Ingresa tu código"></p>
+                            <div class="discountOption">
+                                <label for="ten" class="labelRadio labelRadio--discount">
+                                    <input type="radio" name="discount" id="ten" value="ten">
+                                    <span class="customRadio customRadio--discount"></span>
+                                    Descuento del 10% por contrato a 1 año
+                                </label>
+                            </div>
+                            <div class="discountOption">
+                                <label for="cupon" class="labelRadio labelRadio--discount">
+                                    <input type="radio" name="discount" id="cupon" value="cupon">
+                                    <span class="customRadio customRadio--discount"></span>
+                                    Tengo un cupón de descuento <input type="text" placeholder="Ingresa tu código">
+                                </label>
+                            </div>
                         </div>
 
                     </form>
                 </div>
                 <div class="mainContent__buttons">
-                    <a href="category.html" class=" button goBack">Atrás</a>
+                    <a href="customize.html" class=" button goBack">Atrás</a>
                     <a href="commercialProposal.html" class="button submitQuote">Recibir Cotización</a>
                 </div>
             </div>
@@ -140,11 +152,9 @@
         <footer class="footer">
             Wikpis Marketing Digital. Todos los derechos reservados
         </footer>
-        <!-- <script src="jquery-3.4.1.js"></script> -->
 
     </div>
     <script src="../js/category.js"></script>
-    <!-- <script src="../js/script.js"></script> -->
 
 </body>
 
