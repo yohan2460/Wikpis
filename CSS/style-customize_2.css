@@ -10,6 +10,17 @@
 
 /* ====Side Bar====================*/
 
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: .8fr 5.2fr;
+    grid-template-rows: 98% 2%;
+    grid-template-areas: "sidebar main" "footer footer";
+    background-color: var(--main-color);
+    padding-bottom: 0%;
+    border: var(--border-box);
+}
+
 .progress--1,
 .progress--2 {
     background-color: var(--color-orange);
@@ -20,6 +31,19 @@
     display: flex;
     border: var(--border-box);
     font-family: var(--main-font);
+}
+
+.sideBar {
+    position: fixed;
+    top: 10.5%;
+    left: 3%;
+}
+
+.containerQuotationSummary {
+    height: 80%;
+    position: fixed;
+    right: 1%;
+    top: 18%;
 }
 
 
@@ -47,7 +71,7 @@
 }
 
 .containerQuotation_personalized {
-    height: 98%;
+    /* height: 98%; */
     /* border: 1px solid red; */
     width: 100%;
     overflow-y: scroll;
@@ -810,8 +834,8 @@ hr {
 /*======= Quotation Summary=========*/
 
 .containerQuotationSummary {
-    width: 20%;
-    height: 99%;
+    width: 18%;
+    height: 75%;
     box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -1027,6 +1051,12 @@ hr {
 
 .main {
     padding: 2.8em 0 0em 1.5em;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
