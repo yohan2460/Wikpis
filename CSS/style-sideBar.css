@@ -6,8 +6,14 @@
     grid-area: sidebar;
     align-self: center;
     justify-self: end;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border: var(--border-box);
 }
@@ -16,7 +22,12 @@
     width: 160px;
     height: 540px;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     border: var(--border-box);
 }
@@ -25,9 +36,11 @@
     width: 8px;
     height: 100%;
     margin: auto;
+    -ms-flex-item-align: center;
     align-self: center;
     position: absolute;
     z-index: 1;
+    background-image: -webkit-gradient(linear, left top, right top, from(#E5E5E5), to(#CBCBCB));
     background-image: linear-gradient(to right, #E5E5E5, #CBCBCB);
 }
 
@@ -35,11 +48,19 @@
     margin-top: 50px;
     width: 3px;
     height: 435px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-item-align: center;
     align-self: center;
     position: absolute;
     z-index: 4;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     /* border:1px solid black;  */
 }
@@ -53,8 +74,15 @@
 .iconsContainer {
     width: 39.5%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     position: absolute;
     z-index: 2;
@@ -67,8 +95,14 @@
     /* para que se vea cuadrado*/
     padding-bottom: 100%;
     /* para qque se vea cuadrado*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     z-index: 2;
     border-radius: 50%;
@@ -90,8 +124,15 @@
     width: 55%;
     height: 100%;
     margin-left: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     position: absolute;
     z-index: 2;

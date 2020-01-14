@@ -103,22 +103,23 @@ input[type="radio"] {
     border: 1px solid var(--main-color);
 }
 
+
 /*=======Media Queries===========*/
-@media (min-width:1500px){
-    .mainContent__buttons{
+
+@media (min-width:1500px) {
+    .mainContent__buttons {
         margin-top: 0.5em;
     }
 }
-@media (max-width:1200px){
-    .content{
+
+@media (max-width:1200px) {
+    .content {
         height: default;
     }
-
-    .grid_images .image_caption  {
+    .grid_images .image_caption {
         font-size: .8em;
     }
     .mainContent__buttons {
         margin-top: 1.0em;
     }
-
 }
