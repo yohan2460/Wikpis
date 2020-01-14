@@ -75,6 +75,7 @@
 .containerQuotation_personalized {
     width: 100%;
     padding: 1.5%;
+    padding-right: 2em;
 }
 
 .containerQuotation_content {
