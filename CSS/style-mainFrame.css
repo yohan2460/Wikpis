@@ -85,9 +85,9 @@
 .mainContent__header__text {
     padding-left: 1em;
     margin-left: 1.2em;
-    font-family: var(--main-font);
+    font-family: 'Roboto', sans-serif;
     color: var(--font-color);
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 2.4em;
     border-left: 1px solid #63737D;
 }
@@ -95,7 +95,7 @@
 .mainContent__phrase {
     margin-top: 1em;
     padding-left: 1em;
-    font: Bold 1.1em/1.7em var(--main-font);
+    font: Bold 1.1em/1.7em 'Roboto', sans-serif;
     color: var(--font-color);
     border: var(--border-box);
     border-left: 0.4em solid var(--orange-color);
@@ -108,8 +108,9 @@
     width: 100%;
     margin-top: 0%;
     grid-area: footer;
+    font-weight: bolder;
     text-align: center;
-    font-family: var(--font-type);
+    font-family: 'Roboto', sans-serif;
     font-size: 0.8em;
     color: white;
     line-height: 2em;

@@ -202,7 +202,6 @@
     right: 0;
     border-radius: 50%;
     width: 30%;
-    height: 90%;
     z-index: 1;
 }
 
@@ -936,8 +935,8 @@ hr {
 .containerQuotationSummary {
     width: 18%;
     height: 75%;
-    -webkit-box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.3);
-    box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 8px 6px 9px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 6px 9px 0px rgba(0, 0, 0, 0.2);
 }
 
 .containerQuotationSummary_title {
@@ -1295,7 +1294,6 @@ hr {
     }
     .containerQuotation_Photography p {
         font-size: 10px;
-        /* width: 27%; */
     }
     .containerQuotation_Photography {
         width: 30%;
@@ -1365,6 +1363,13 @@ hr {
 }
 
 @media (min-width: 1025px) and (max-width: 1264px) {
+    .containerQuotation_itemsSocialNetworks {
+        width: 24%;
+    }
+    .containerQuotation_nameSocialNetworks {
+        justify-content: initial;
+        padding-left: 10px;
+    }
     .containerQuotationSummary_title {
         height: 14%;
     }
@@ -1389,6 +1394,36 @@ hr {
     .QuotationItems p {
         font-size: .7em;
     }
+    .containerQuotation_imgSocialNetworks {
+        height: 90%;
+        width: 45px;
+    }
+    .containerAttentionSchedule_items p {
+        font-size: .7em;
+    }
+    .containerAttentionSchedule_items {
+        width: 500px;
+        height: 50px;
+    }
+    .containerQuotation_sumOfNekworks {
+        width: 44%;
+    }
+    .containerQuotation_format {
+        margin-right: 1.2em;
+        padding: 0 1%;
+    }
+    .containerQuotation_Photography p {
+        font-size: 1em;
+    }
+    .containerQuotation_formatModifiers {
+        width: 3%;
+    }
+    .containerQuotation_Photography {
+        font-size: .7em;
+    }
+    .containerQuotation_formatModifiers--itemsNumber {
+        width: 23%;
+    }
 }
 
 @media (min-width: 1265px) and (max-width: 1400px) {
@@ -1400,5 +1435,152 @@ hr {
     }
     .sideBar_iconNames {
         margin-left: 38%;
+    }
+    .containerQuotation_personalized {
+        max-width: 770px;
+    }
+    .containerQuotation_Photography p {
+        font-size: .7em;
+    }
+    .containerAttentionSchedule_items p {
+        font-size: .7em;
+    }
+    .containerAttentionSchedule_items--space label {
+        padding-left: 2em;
+    }
+    .containerQuotation_imgSocialNetworks {
+        height: 100%;
+    }
+}
+
+@media (min-width: 1800px) and (max-width: 2000px) {
+    .containerQuotation_content_text {
+        font-size: 1.2em;
+    }
+    .sideBar_iconNames {
+        font-size: 1.5em;
+    }
+    .iconsContainer {
+        width: 44%;
+    }
+    .containerQuotation_itemsSocialNetworks {
+        height: 60px
+    }
+    .mainContent__phrase {
+        font-size: 1.7em;
+    }
+    .containerQuotation_text {
+        font-size: 1.2em;
+    }
+    .containerQuotation_phrase {
+        font-size: 1.5em;
+    }
+    .containerQuotation_phrasesSocialNetworks {
+        font-size: 1.2em;
+    }
+    .containerQuotation_nameSocialNetworks {
+        justify-content: initial;
+        align-items: center;
+        padding: 25px;
+        font-size: 1.2em;
+    }
+    .containerQuotation_format {
+        height: 70px;
+    }
+    .containerQuotation_Photography,
+    .containerQuotation_formatSumlabel,
+    .containerQuotation_formatModifiers {
+        height: 50px;
+    }
+    .containerQuotation_formatModifiers {
+        width: 2.3%;
+    }
+    .formatModifiers {
+        height: 12px;
+    }
+    .containerQuotation_Photography p {
+        font-size: 1.1em;
+    }
+    .containerQuotation_formatSumlabel {
+        font-size: 1.2em;
+    }
+    .remainingPosts {
+        font-size: 1em;
+    }
+    .containerAttentionSchedule_items {
+        width: 62%;
+        height: 70px;
+    }
+    .containerAttentionSchedule_items p {
+        font-size: 1.2em;
+    }
+    .numberPhotographs {
+        height: 70px;
+    }
+    .containerQuotation_formatModifiers--itemsNumber {
+        width: 33%;
+    }
+    .containerAccompaniment-title {
+        font-size: 1.2em;
+    }
+    .containerAccompaniment-cities p {
+        font-size: 1.4em;
+        padding-right: 50px;
+    }
+    #Popup_label_PopupAccompaniment {
+        font-size: 1.5em;
+        top: 0;
+    }
+    .containerQuotation_label {
+        width: 10px;
+        height: 10px;
+        bottom: -5px;
+    }
+    #Popup,
+    #PopupInstagram,
+    #PopupLinkedin,
+    #PopupTwitter,
+    #PopupAccompaniment,
+    #PopupFollowersInstagram,
+    #PopupFollowersLinkedin,
+    #PopupFollowersTwitter,
+    #PopupFollowersFacebook {
+        height: 0px;
+        width: 40px;
+    }
+    #Popup,
+    #Popup_label,
+    #PopupInstagram,
+    #PopupLinkedin,
+    #PopupFollowersInstagram,
+    #PopupFollowersTwitter,
+    #PopupFollowersLinkedin,
+    #Popup_label_FollowersFacebook,
+    #Popup_label_FollowersTwitter,
+    #PopupTwitter,
+    #PopupAccompaniment,
+    #Popup_label_Twitter,
+    #Popup_label_Instagram,
+    #Popup_label_Linkedin,
+    #Popup_label_FollowersInstagram,
+    #Popup_label_FollowersLinkedin,
+    #PopupFollowersFacebook,
+    #Popup_label_PopupAccompaniment {
+        width: 39px;
+        height: 22px;
+        top: 0;
+        font-size: 1em;
+    }
+    .QuotationItems p {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 2000px) {
+    .containerQuotation_personalized {
+        max-width: 1200px;
+    }
+    .containerQuotationSummary {
+        margin-left: 10%;
     }
 }

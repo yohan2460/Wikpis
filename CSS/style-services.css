@@ -1,7 +1,7 @@
 /*========Images and List===========*/
 
 .mainContent__grid {
-    margin-top: 1em;
+    margin-top: 2em;
     margin-left: 10px;
     margin-right: 10px;
     display: grid;
@@ -29,24 +29,25 @@
 
 .grid_images .image {
     width: 100%;
+    margin-bottom: 1em;
     /* position: absolute; */
 }
 
 .grid_images .image_caption {
     width: 100%;
     position: absolute;
-    margin-top: 65%;
+    margin-top: 69%;
     text-align: center;
     border: var(--border-box);
     text-decoration: none;
-    font-size: 1em;
-    font-family: var(--font-type);
+    font-size: .9em;
+    font-family: 'Roboto', sans-serif;
     color: var(--main-color);
 }
 
-.grid_images .image_caption--checked {
+/* .grid_images .image_caption--checked {
     color: white;
-}
+} */
 
 input[type="radio"] {
     display: none;
@@ -59,8 +60,8 @@ input[type="radio"] {
 }
 
 .mainContent__grid__list span {
-    font-size: 80%;
-    font-family: var(--font-type);
+    font-size: .8em;
+    font-family: 'Roboto', sans-serif;
     color: var(--font-color);
 }
 
@@ -108,7 +109,7 @@ input[type="radio"] {
 
 @media (min-width:1500px) {
     .mainContent__buttons {
-        margin-top: 0.5em;
+        margin-top: 2.5em;
     }
 }
 
