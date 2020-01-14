@@ -1,19 +1,33 @@
-:root{
-    --orange-color: #FF9300 ;
+:root {
+    --orange-color: #FF9300;
     /* --border-box: 1px solid black; */
 }
 
+
 /* ====Side Bar====================*/
-.progress--1{
-    background-color: var(--orange-color) ;
+
+.icon1 a {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 5;
+    border: 1px solid black;
 }
+
+.progress--1 {
+    background-color: var(--orange-color);
+}
+
+
 /*====MainContent =================*/
+
 .mainContent__grid {
     margin-top: 1em;
     margin-left: 10px;
     margin-right: 10px;
     display: grid;
     grid-template-columns: repeat(4, minmax(auto, 1fr));
+    grid-template-rows: -webkit-min-content auto;
     grid-template-rows: min-content auto;
     /* grid-template-rows:  repeat(2, minmax(100px, 160px));*/
     align-self: center;
@@ -36,18 +50,21 @@
 
 .grid_images .option {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     cursor: pointer;
 }
 
 .grid_images a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .grid_images a:hover p {
     color: white;
 }
-
 
 .grid_images .image_caption {
     width: 100%;
@@ -61,8 +78,8 @@
     color: var(--main-color);
 }
 
-input[type="checkbox"]{
-    display:none;
+input[type="checkbox"] {
+    display: none;
 }
 
 .mainContent__grid__list {
@@ -87,9 +104,18 @@ input[type="checkbox"]{
 
 .mainContent__buttons {
     margin-top: 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     border: var(--border-box);
 }
@@ -125,12 +151,11 @@ input[type="checkbox"]{
     border: 1px solid var(--main-color);
 }
 
-
-@media (max-width:1200px){
-    .content{
+@media (max-width:1200px) {
+    .content {
         height: default;
     }
-    .grid_images .image_caption  {
+    .grid_images .image_caption {
         font-size: .8em;
     }
 }

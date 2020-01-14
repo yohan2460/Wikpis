@@ -25,8 +25,14 @@ body {
 
 .mainContent__header {
     height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border: var(--border-box);
 }
@@ -80,7 +86,11 @@ body {
     /* border: 1px solid black; */
     width: 75%;
     height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
@@ -88,6 +98,8 @@ body {
     display: inherit;
     color: var(--main-color);
     font-size: 1em;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -100,7 +112,11 @@ body {
     height: 100%;
     width: 100px;
     /* border: 1px solid red; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -113,7 +129,11 @@ body {
 .download {
     height: 100%;
     width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     /* border: 1px solid red; */
 }
@@ -205,9 +225,15 @@ hr.v {
 
 .itemsInvoiceSummary-titletr {
     background-color: var(--color-orange);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-weight: bolder;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: 25px;
     margin: 0 auto;
@@ -227,6 +253,8 @@ hr.v {
 }
 
 .itemsInvoiceSummary.c {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -257,7 +285,11 @@ hr.v {
 
 .itemsInvoiceSummary {
     padding: 0 0 0 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin: 0;
     border: 1px solid beige;
@@ -282,7 +314,11 @@ hr.v {
 }
 
 .itemsInvoiceSummary.sumaryTotalb {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     padding-right: 2%;
     background-color: transparent;
@@ -292,7 +328,11 @@ hr.v {
 
 .itemsInvoiceSummary.sumaryTotalc {
     background-color: var(--color-orange);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -302,7 +342,11 @@ hr.v {
 
 .nextpag {
     margin-top: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     font-weight: bolder;
 }
@@ -324,7 +368,11 @@ hr.v {
 }
 
 .contentMain_ToPrintDownload.botton {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 10px;
 }
@@ -333,9 +381,18 @@ hr.v {
     width: 100%;
     margin-top: 1em;
     margin-bottom: 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     /* border: var(--border-box); */
 }

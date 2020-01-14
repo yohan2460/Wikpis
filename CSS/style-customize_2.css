@@ -37,15 +37,15 @@
 
 .sideBar {
     position: fixed;
-    top: 10.5%;
-    left: 3%;
+    top: 80px;
+    left: 45px;
 }
 
 .containerQuotationSummary {
     height: 80%;
     position: fixed;
-    right: 1%;
-    top: 18%;
+    right: 10px;
+    top: 150px;
 }
 
 
@@ -1217,11 +1217,14 @@ hr {
 /* <!--ñ =======  responsive 1024px ========= --> */
 
 @media screen and (max-width:1024px) {
+    .containerQuotationSummary_title {
+        height: 14%;
+    }
     .sideBar {
         left: 0%;
     }
     .sideBarContent {
-        margin-left: 3%;
+        margin-left: 12px;
     }
     .sideBar_iconNames {
         margin-left: 38%;
@@ -1358,5 +1361,44 @@ hr {
     }
     .containerQuotationSummary {
         width: 24%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1264px) {
+    .containerQuotationSummary_title {
+        height: 14%;
+    }
+    .sideBar {
+        left: 0%;
+    }
+    .sideBarContent {
+        margin-left: 5px;
+    }
+    .sideBar_iconNames {
+        margin-left: 38%;
+    }
+    .sideBar_iconNames {
+        font-size: 1.2em;
+    }
+    .sideBar_iconNames {
+        font-size: .9em;
+    }
+    .containerQuotationSummary {
+        width: 20%;
+    }
+    .QuotationItems p {
+        font-size: .7em;
+    }
+}
+
+@media (min-width: 1265px) and (max-width: 1400px) {
+    .sideBarContent {
+        margin-left: 5px;
+    }
+    .sideBar {
+        left: 17px;
+    }
+    .sideBar_iconNames {
+        margin-left: 38%;
     }
 }
