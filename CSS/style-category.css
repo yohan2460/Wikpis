@@ -12,12 +12,12 @@
     position: absolute;
     z-index: 5;
     border: 1px solid black;
+
 }
 
 .progress--1 {
     background-color: var(--orange-color);
 }
-
 
 /*====MainContent =================*/
 

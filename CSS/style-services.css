@@ -109,7 +109,9 @@ input[type="radio"] {
 
 @media (min-width:1500px) {
     .mainContent__buttons {
+
         margin-top: 2.5em;
+
     }
 }
 
