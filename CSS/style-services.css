@@ -44,9 +44,9 @@
     color: var(--main-color);
 }
 
-.grid_images .image_caption--checked {
+/* .grid_images .image_caption--checked {
     color: white;
-}
+} */
 
 input[type="radio"] {
     display: none;
