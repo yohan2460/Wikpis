@@ -1,5 +1,6 @@
 :root {
     --orange-color: #FF9300;
+    --main-font: 'Roboto', sans-serif;
     /* --border-box: 1px solid black; */
 }
 
@@ -126,7 +127,7 @@ input[type="checkbox"] {
     width: 232px;
     height: 30px;
     border-radius: 9px;
-    font-family: var(--font-type);
+    font-family: var(--main-font);
     font-size: 1em;
     color: white;
     text-decoration: none;
@@ -142,7 +143,7 @@ input[type="checkbox"] {
     height: 30px;
     margin-top: 12px;
     border-radius: 9px;
-    font-family: var(--font-type);
+    font-family: var(--main-font);
     font-size: 1em;
     color: var(--main-color);
     text-decoration: none;

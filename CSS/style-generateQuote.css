@@ -1,7 +1,7 @@
 :root {
     --main-color: #33ADB9;
     --orange-color: #FF9300;
-    --main-font: sans-serif;
+    --main-font: 'Roboto', sans-serif;
     /* --border-box: 1px solid black;    */
     --font-color: #63737D;
     --white-color: #fff;
