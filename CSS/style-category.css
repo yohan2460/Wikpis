@@ -74,7 +74,7 @@
     text-align: center;
     border: var(--border-box);
     text-decoration: none;
-    font-size: .9em;
+    font-size: .8em;
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
 }
@@ -157,6 +157,6 @@ input[type="checkbox"] {
         height: default;
     }
     .grid_images .image_caption {
-        font-size: .8em;
+        font-size: .7em;
     }
 }
