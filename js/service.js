@@ -18,6 +18,9 @@ function mouseHoverOut(image, bullet, caption, radio, completePath) { // Restore
 
 function radioChecked() {
     console.log(this.value);
+    nextButton.style.color = '#FFF';
+    nextButton.style.background = '#33ADB9';
+    nextButton.href = "category.html";
     for(let i=0; i<radio.length; i++){
         // if (!radio[i].checked){
         //     bullets[i].style.color = '#33ADB9';
@@ -26,10 +29,25 @@ function radioChecked() {
         // }
     }
 }
-//____________________________________________
 
+function serviceNextAnchor(){
+    popupAlert.style.display ='flex';
+    document.querySelector('.alertOverlay').style.display = 'flex';
+
+}
+
+function closeAlert(){
+    popupAlert.style.display ='none';
+    document.querySelector('.alertOverlay').style.display = 'none';
+}
+
+
+
+//____________________________________________
+var popupAlert = document.querySelector('.alertContainer');  
+var buttonAlert = document.querySelector('.alertSubmit');  
+var nextButton = document.querySelector('.next');  
 var figures = [document.querySelectorAll('.option')[0]];  
-console.log(figures);
 var images = document.querySelectorAll('.image');
 var bullets = document.querySelectorAll('.mainContent__grid__list');
 var images_caption = document.querySelectorAll('.image_caption');
@@ -56,6 +74,9 @@ for (let i = 0; i < figures.length; i++) {
     });
     radio[i].addEventListener('click', radioChecked);
 }
+
+nextButton.href = "javascript: serviceNextAnchor()";
+buttonAlert.addEventListener('click', closeAlert);
 //====== Init Script ======================================
 // var container = document.querySelector(".container");
 // container.style.height = String(window.innerHeight) + "px";
