@@ -83,6 +83,7 @@ var sourceHoverOut = ['redessociales.png',
 ];
 var pathSource = "../IMAGES/mas-recuros/";
 
+
 for (let i = 0; i < figures.length; i++) {
     if (i==0 || i ==3){ 
         figures[i].addEventListener('mouseover', function() {
