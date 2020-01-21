@@ -78,7 +78,7 @@
                         </label>
                     </fig>
                     <fig class="grid_images">
-                        <input type="checkbox" name="categoryOption" id="sem" value="sem">
+                        <input type="checkbox" name="categoryOption" id="sem" value="sem" disabled>
                         <label for="sem" class='option'>
                             <img class="image" src="../IMAGES/mas-recuros/semproxima.png" id='img2' alt="desarrollo">
                             <p class="image_caption"><strong>SEM</strong>
@@ -86,7 +86,7 @@
                         </label>
                     </fig>
                     <fig class="grid_images">
-                        <input type="checkbox" name="categoryOption" id="seo" value="seo">
+                        <input type="checkbox" name="categoryOption" id="seo" value="seo" disabled>
                         <label for="seo" class='option'>
                             <img class="image" src="../IMAGES/mas-recuros/seoproxima.png" id='img3' alt="admin">
                             <p class="image_caption"><strong>SEO</strong>
@@ -135,6 +135,13 @@
         <footer class="footer">
             Wikpis Marketing Digital. Todos los derechos reservados
         </footer>
+        <!-- === POP UP ALERT ===-->
+        <div class="alertOverlay">
+            <div class="alertContainer" id ="customAlert">
+                <p class="alertMessage">Por favor seleccione almenos una categoría para continuar</p>
+                <button class="alertSubmit">Aceptar</button>
+            </div>  
+        </div>
         <!-- <script src="jquery-3.4.1.js"></script> -->
 
     </div>

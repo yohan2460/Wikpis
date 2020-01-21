@@ -1,6 +1,6 @@
 :root {
     --main-color: #33ADB9;
-    --main-font: sans-serif;
+    --main-font: 'Robot', sans-serif;
     /* --border-box: 1px solid black; */
     --font-color: #63737D;
     --color-orange: #FF9300;
@@ -9,6 +9,7 @@
 
 body {
     background-color: var(--main-color);
+    font-family: var(--main-font);
 }
 
 .contentMain {
