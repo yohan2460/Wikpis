@@ -2,7 +2,13 @@
     --color-mainfund: rgb(51, 173, 185, 1);
     --color-white: #FFFFFF;
     --border: 1px solid black;
+<<<<<<< HEAD
     --main-font: 'Roboto', sans-serif;
+=======
+
+    --font-main: 'Roboto', sans-serif;
+   
+>>>>>>> 45534149c268659f35c4454e2d9839bf18ac6f7e
 }
 
 * {
@@ -143,8 +149,10 @@ img {
     color: var(--color-white);
     border-radius: .7em;
     border: none;
+
     -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+
     outline: none;
     cursor: pointer;
     display: -webkit-box;

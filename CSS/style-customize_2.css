@@ -1371,6 +1371,7 @@ hr {
         justify-content: initial;
         padding-left: 10px;
     }
+
     .containerQuotationSummary_title {
         height: 14%;
     }
@@ -1395,6 +1396,7 @@ hr {
     .QuotationItems p {
         font-size: .7em;
     }
+
     .containerQuotation_imgSocialNetworks {
         height: 90%;
         width: 45px;
@@ -1437,6 +1439,7 @@ hr {
     .sideBar_iconNames {
         margin-left: 38%;
     }
+
     .containerQuotation_personalized {
         max-width: 770px;
     }
@@ -1584,4 +1587,5 @@ hr {
     .containerQuotationSummary {
         margin-left: 10%;
     }
+
 }
