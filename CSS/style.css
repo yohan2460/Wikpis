@@ -2,9 +2,13 @@
     --color-mainfund: rgb(51, 173, 185, 1);
     --color-white: #FFFFFF;
     --border: 1px solid black;
+<<<<<<< HEAD
+    --main-font: 'Roboto', sans-serif;
+=======
 
     --font-main: 'Roboto', sans-serif;
    
+>>>>>>> 45534149c268659f35c4454e2d9839bf18ac6f7e
 }
 
 * {
@@ -52,10 +56,10 @@ img {
     width: 100%;
 }
 
-.container-box--contizador p samp {
-    font-family: var(--font-main);
+.container-box--contizador .title {
+    font-family: var(--main-font);
     color: var(--color-white);
-    font-size: 43px;
+    font-size: 2.5em;
     padding: .5em;
 }
 
@@ -75,6 +79,7 @@ img {
 .container-box--form p {
     color: var(--color-white);
     height: 10px;
+    font-family: var(--main-font);
     font-size: large;
     text-align: justify;
     margin-bottom: 1.5em;
@@ -86,6 +91,7 @@ img {
     height: 37px;
     border: none;
     border-radius: .5em;
+    font-family: var(--main-font);
     background-color: var(--color-white);
     text-align: center;
     -webkit-box-shadow: none;
@@ -106,6 +112,7 @@ img {
 
 .container-box--form-options p {
     font-size: .9em;
+    font-family: var(--main-font);
     cursor: pointer;
     padding-left: .7em;
 }
@@ -114,6 +121,7 @@ img {
     color: var(--color-white);
     border: none;
     outline: none;
+    font-family: var(--main-font);
     font-size: 1em;
     cursor: pointer;
 }
@@ -136,6 +144,7 @@ img {
 .container-box--form-button a {
     width: 159px;
     height: 2em;
+    font-family: var(--main-font);
     text-decoration: none;
     color: var(--color-white);
     border-radius: .7em;
@@ -167,6 +176,7 @@ img {
     color: var(--color-white);
     font-size: 1em;
     margin-top: 40px;
+    font-family: var(--main-font);
 }
 
 @media screen and (max-width:1024px) {
